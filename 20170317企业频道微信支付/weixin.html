@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信支付</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/weixin.css">
+</head>
+<body>
+    <div class="weixin_pay_container">
+        <!-- header start -->
+        <div class="cashier_header wrap">
+            <h1>
+                <a href="http://www.yhd.com" class="logo"></a>
+                <a href="javascript:;" class="logo_txt"></a>
+            </h1>
+        </div>
+        <!-- header end -->
+        <!-- 订单信息 start -->
+        <div class="order_wrap wrap">
+            <div class="order_simple clearfix">
+                <div class="order_code">
+                    <p class="order_txt"><i class="iconfont">&#xe628;</i>订单提交成功，请您尽快付款。订单号：<a href="javascript:;">11028724138663</a></p>
+                    <p class="pay_info">未成功支付订单将在<em>1</em>小时<em>04</em>分钟后自动取消，请及时付款。</p>
+                    <p class="pay_info info2"><span>提示：</span>未成功支付订单将在<em>1</em>小时<em>04</em>分钟后自动取消，请及时付款</p>
+                </div>
+                <div class="order_info">
+                    <div class="order_count">
+                        <p>应付金额：<span><em>&yen;</em><b>1166.00</b></span><s>166.6</s></p>
+                        <div class="discount_detail">
+                            订单打折了！为您优惠<b>500</b>元
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="detail_info"><span>订单详情</span><i class="iconfont">&#xe627;</i></a>
+                </div>
+            </div>
+            <!--  订单详情 -->
+            <div class="order_detail">
+                <div class="add">
+                    <i class="iconfont">&#xe630;</i>
+                    <span>送货至：<em>李先生</em></span>
+                    <span><em>上海</em><em>上海市</em><em>浦东新区</em><em>祖冲之路295号</em></span>
+                    <span><em>1862*****36</em></span>
+                    <a href="javascript:;" class="blue_link edit_add">修改</a>
+                </div>
+                <div class="dc">
+                    <p>
+                        <i class="iconfont">&#xe629;</i>
+                        配送信息：<span><em>2</em>个包裹</span><span class="num">（共<b>4</b>个商品）</span>
+                    </p>
+                    <table cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="100" align="center"><i class="iconfont">&#xe623;</i>包裹1</td>
+                            <td width="400"><p>普通快递（送达时间：2015-09-01<em>周二</em>09:00-12:00）</p></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><i class="iconfont">&#xe623;</i>包裹2</td>
+                            <td><p>普通快递（将在工作日期间(周一到周五)为您送达）</p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="invoice">
+                    <i class="iconfont">&#xe61f;</i>
+                    <span>发票信息：<em>未索要发票</em></span>
+                </div>
+            </div>
+        </div>
+        <!-- 订单信息 end -->
+        <!--微信支付-->
+        <div class="weixin_pay wrap">
+            <div class="pay_list">
+                <p class="tit">支付平台</p>
+                <ul class="pay_way_list pay_plat_list clearfix">
+                    <li data-plat="weixin">
+                        <div class="pay_item">
+                            <img src="images/bank/pay_wx.png">
+                            <em class="check"><i class="iconfont"></i></em>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="qr_code qr_ali">
+                <p class="tit">使用支付宝扫描二维码付款</p>
+                <div class="qr_img">
+                    <img src="images/qr_ali.png" alt="">
+                    <div class="error_mask">
+                    </div>
+                </div>
+                <div class="opa_guide">
+                    <img src="images/scan_ali.png">
+                </div>
+                <div class="btn_box">
+                    <div class="qa">
+                        <span>完成支付没有提示？</span>
+                        <div class="tip">
+                            <div class="t_arrow"><span></span><i></i></div>支付完成后,页面没有任何提示,请至<a href="http://my.yhd.com/order/orderDetail.do?orderCode=12358676757321" target="_blank" class="blue_link">我的订单</a>查看支付结果
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    $('.weixin_pay .qr_code .qa').hover(function(){
+        $(this).addClass('hover');
+    },function(){
+        $(this).removeClass('hover');
+    });
+
+    var nomalTxt = '订单详情',
+            downTxt = '收起';
+    $('.detail_info').on('click',function(e){
+        e.stopPropagation();
+        if(!$('.order_detail').is(':animated')){
+            if($(this).find('span').text() == nomalTxt){
+                $(this).find('span').text(downTxt);
+            }else{
+                $(this).find('span').text(nomalTxt);
+            }
+            $(this).toggleClass('down');
+            $('.order_detail').slideToggle();
+        }
+
+    })
+</script>
+</html>

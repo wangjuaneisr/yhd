@@ -1,0 +1,89 @@
+@charset "utf-8";
+/*
+ *Description :  类目优化;
+ *Author : Wang Juan;
+ *Date : 2016/08/22;
+**/
+
+.icon{background: url("../images/icon.png")}
+.category_optimize{position:relative;width: 701px;}
+.category_optimize .category_table{width: 701px;margin-top: 20px;border: 1px #ddd solid;border-bottom: none;}
+.category_optimize .category_hd{height: 26px;padding: 15px 10px;border-bottom: 1px #ddd solid;}
+.category_optimize .category_hd .search_con{width: 313px;border: 1px #ddd solid;}
+.category_optimize .category_hd .search_cancel_btn{height: 24px;margin-left:10px;line-height: 24px;color: #0066cc;font-family: 'Microsoft YaHei';}
+    /*确认小提示 气泡*/
+.category_optimize .clear_pop{display:none;position: absolute;top: 36px;left: -40px;padding: 15px;border: 1px #ddd solid;background-color: #fff;z-index: 10;}
+.category_optimize .clear_pop p{height: 20px;line-height: 20px;color: #666;text-align: center;}
+.category_optimize .clear_pop .btn_box{padding: 5px 0;text-align: center;}
+.category_optimize .clear_pop .btn_box .pop_btn{height: 24px;padding: 0 18px;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;line-height: 24px;}
+.category_optimize .clear_pop .btn_box .sure_btn{margin-right:14px;background-color:#f99a34;color: #fff;}
+.category_optimize .clear_pop .btn_box .cancel_btn{background-color: #e5e5e5;color: #666;}
+.category_optimize .clear_pop .corner{position: absolute;display: block;left: 50%;width: 0px;height: 0px;margin-left:-8px;border-width: 8px;border-style: solid;}
+.category_optimize .clear_pop .corner_before{top: -16px;border-color: transparent transparent #ddd transparent;}
+.category_optimize .clear_pop .corner_after{top: -15px;border-color: transparent transparent #fff transparent;}
+
+
+.category_hd .search_con input.search_input{width: 220px;height: 14px;padding: 5px 10px;border:none;outline: none;line-height: 14px;color: #666;}
+.category_hd .search_con a.search_btn{width: 50px;height: 14px;padding: 5px 0px;border-left: 1px #ddd solid;background-color: #f7f7f7;line-height: 14px;color: #b6b6b6;text-align: center;}
+.category_hd .search_con a.search_btn:hover{background-color: #e7e7e7;}
+.category_hd .search_con i.multiple{display: none;width: 20px;height: 24px;line-height: 24px;text-align: center;color: #999;font-size: 18px;font-style:normal;font-family: 'SimSum';cursor: pointer;}
+.category_hd .search_con a.cancel_btn{display: none;}
+.category_hd .clear_con{position: relative;}
+.category_hd .clear_con a.clear_btn{float: left;height: 24px;padding: 0 15px;margin-right:10px;border:1px #ddd solid;line-height: 24px;color: #b6b6b6;}
+.category_hd .clear_con a.clear_btn:hover{background-color: #f7f7f7;}
+
+/*模拟表格*/
+.category_main_con{position:relative;width: 699px;max-height: 360px;border-bottom:1px #ddd solid;}
+.category_main_con .search_box,.category_main_con .category_list_con{width:100%;max-height: 358px;background-color: #fff;overflow-x: hidden;overflow-y: auto;}
+.category_main_con .category_list_con{border-top: none;}
+.category_main_con .search_box{display: none;}
+.category_main_con .search_box ul{width: 100%;}
+.category_main_con .search_box ul li{height:35px;padding-left:10px;line-height: 35px;}
+.category_con{position: relative;}
+.category_con .category_father{height:35px;border-bottom: 1px #ddd solid;}
+.category_con .category_kids{display: none;}
+/*.category_con .cur{display: block;}*/
+.category_con .category_kids ul li{border-bottom: 1px #ddd solid;}
+.category_con .category_box .list_cell{display: block;}
+.category_con .category_box a i.icon{float: left;width:11px;height: 11px;margin: 10px 4px 0 0;border: 1px #ddd solid;}
+.category_con .category_box a i.plus{background-position: 1px -33px;}
+.category_con .category_box a i.minus{background-position: 2px 5px;}
+
+.category_con .category_box .category_cell{height: 34px;line-height: 34px;}
+.category_con .category_box .category_list{width: 80%;padding-left: 10px;border-right: 1px #ddd solid;}
+.category_con .category_box .category_btn{width: 18%;}
+.category_con .category_box .category_btn .clear_pop{left: 75%;}
+.category_con .category_box .category_btn .clear_pop .corner{margin-left: 19px;}
+.category_con .category_box .category_btn .detele_cell{text-align: center;color:#0066cc;}
+.category_con .category_box .category_btn .detele_cell:hover{color: #ff0000;}
+.category_con .category_kids ul li .show_cell{margin-left: 34px;}
+
+.location_con{height: 42px;line-height: 42px;padding-left: 5px;}
+.location_con a.location_btn{float: left;padding: 0 5px;color:#0066cc;}
+.location_con a.disable_btn{color: #999;cursor: default;}
+
+
+.category_add_con{display:none;width: 701px;margin-top:20px;border: 1px #ddd solid;}
+.category_add_con .category_add_list{height:200px;border-bottom: 1px #ddd solid;line-height: 34px;}
+.category_add_hd{height: 26px;padding: 15px 10px;line-height: 26px;border-bottom: 1px #ddd solid;}
+.category_add_hd .category_add_input{width:300px;height: 24px;padding:0 10px;border:1px #ddd solid;line-height: 24px;}
+.category_add_con .category_add_btn{display:inline-block;height:24px;padding: 0 15px;margin-right:10px;border: 1px #ddd solid;line-height:24px;color: #999;font-family: 'Microsoft YaHei';}
+.category_add_con .category_add_btn:hover{background-color: #f7f7f7;}
+.category_add_con .btn_add_box{padding: 10px 0px;text-align: center;}
+.category_add_con .sure_add_btn{border-color:#ff8f67;background-color: #ff8f67;color: #fff;}
+.category_add_con .sure_add_btn:hover{background-color: #FD7544;color: #fff;}
+.category_add_con .search_add_btn{background-color: #f7f7f7;}
+.category_add_con .search_add_btn:hover{background-color: #e7e7e7;}
+
+
+
+
+
+
+
+
+
+
+
+
+

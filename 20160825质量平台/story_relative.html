@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>story相关</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/dateShow.css">
+    <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="css/quality_platform.css">
+</head>
+<body>
+<!--[if lt IE 9]>
+<style type="text/css">
+    .search_con .items{width: 299px;}
+</style>
+<![endif]-->
+<div class="main_con">
+    <!--查询条件筛选 S-->
+    <div class="search_con clearfix">
+        <div class="search_btn_con fr">
+            <a href="javascript:void(0)" class="refer_btn">查询</a>
+            <a href="javascript:void(0)" class="reset_btn">重置</a>
+        </div>
+        <div class="condition_con clearfix">
+            <!--单选 S-->
+            <div class="items">
+                <label>二级部门</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <!-- treeStore -->
+                    <div id="treeStore" class="select_list tree_zone clearfix none">
+                        <p class="zone_tit clearfix">
+                            <input type="text" placeholder="搜索部门" class="search-band" />
+                            <i class="search-band-btn">搜索</i>
+                        </p>
+                        <ul class="ztree ztree_all" id="zone_treeStore"></ul>
+                        <div class="btn-box">
+                            <i class="yhdbk-button-01 tree-confirm">确定</i>
+                            <i class="yhdbk-button-03 tree-cancel">取消</i>
+                        </div>
+                    </div>
+                    <!--treeStore -->
+                </a>
+            </div>
+            <!--单选 E-->
+
+            <!--单选 S-->
+            <div class="items">
+                <label>三级部门</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <!-- treeStore -->
+                    <div id="treeStore" class="select_list tree_zone clearfix none">
+                        <p class="zone_tit clearfix">
+                            <input type="text" placeholder="搜索部门" class="search-band" />
+                            <i class="search-band-btn">搜索</i>
+                        </p>
+                        <ul class="ztree ztree_all" id="zone_treeStore"></ul>
+                        <div class="btn-box">
+                            <i class="yhdbk-button-01 tree-confirm">确定</i>
+                            <i class="yhdbk-button-03 tree-cancel">取消</i>
+                        </div>
+                    </div>
+                    <!--treeStore -->
+                </a>
+            </div>
+            <!--单选 E-->
+
+            <!--多选 S-->
+            <div class="items">
+                <label>domain</label>
+                <a href="javascript:void(0)" class="select_box">
+                    <div class="tips clearfix">
+                        <em class="txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <ul class="select_list">
+                        <li class="all_checked clearfix"><i class="icon"></i><em class="check_box">全部</em></li>
+                        <li class="check_con clearfix"><i class="icon"></i><em class="check_box">技术平台部</em></li>
+                        <li class="check_con clearfix"><i class="icon"></i><em class="check_box">财务部</em></li>
+                        <li class="check_con clearfix"><i class="icon"></i><em class="check_box">用户体验设计部</em></li>
+                    </ul>
+                </a>
+            </div>
+            <!--多选 E-->
+
+
+            <!--时间 S-->
+            <div class="items">
+                <label>项目完成时间</label>
+                <div class="selecDatePeriod fl">
+                    <div class="timeSelectBar clearfix">
+                        <input class="tselect-same startInput date12" type="text" readonly="readonly" value="2016-08-19">
+                        <input class="lineInput" type="text" readonly="" value="至">
+                        <input class="tselect-same endInput date12" type="text" readonly="readonly" value="2015-08-26">
+                        <i class="iconfont">&#xe604;</i>
+                    </div>
+                    <div class="none timeHideModel">
+                        <div class="dateTabBtn dateTabBtn1 clearfix" data-trigger="spcalendar">
+                            <a href="javascript:;" data-mode="month">按月</a>
+                            <a href="javascript:;" data-mode="week">按周</a>
+                            <a class="current" href="javascript:;" data-mode="date">按日</a>
+                        </div>
+                        <div class="detailDateWarp">
+                            <div class="detailDateCont"></div>
+                            <a class="sureClose" href="javascript:;">确定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--时间 E-->
+        </div>
+    </div>
+    <!--查询条件筛选 E-->
+</div>
+
+<!--表格 S-->
+<div class="table_con">
+    <div class="table_operation_con clearfix">
+        <a href="javascript:void(0)" class="export_btn fr"><i class="iconfont">&#xe601;</i>导出</a>
+    </div>
+
+    <div class="table_box clearfix">
+
+        <!--固定列 S-->
+        <div class="table_column_con fl">
+            <table cellpadding="0" cellspacing="0"  class="table_column">
+                <thead><tr></tr></thead>
+            </table>
+            <table cellpadding="0" cellspacing="0"  class="table_column_body">
+                <tbody></tbody>
+            </table>
+        </div>
+        <!--固定列 E-->
+
+        <!--不固定列 S-->
+        <div class="slider_table_box">
+            <div class="points_box">┆
+            </div>
+            <!--固定表头 S-->
+            <div class="table_head_con">
+                <table cellpadding="0" cellspacing="0"  class="table_head">
+                    <thead><tr></tr></thead>
+                </table>
+            </div>
+            <!--固定表头 E-->
+
+            <div class="table_body_con">
+                <!--表格-->
+                <table cellpadding="0" cellspacing="0" class="table_body">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <!--不固定列 E-->
+    </div>
+
+    <div class="page_num_con clearfix">
+        <div class="page_box total_page fl">
+            <i class="txt">条目总数：</i>
+            <em></em>
+            <i class="txt">条</i>
+        </div>
+        <div class="page_box each_page_num fl">
+            <div class="each_num fl">
+                <i class="txt">每页显示</i>
+                <a href="javascript:void(0)" class="select_con each_num_sel fl">
+                    <div class="clearfix">
+                        <em class="selected_con">20</em>
+                        <i class="icon page_down"></i>
+                    </div>
+                    <ul class="select_list_con num_list">
+                        <li>50</li>
+                        <li>100</li>
+                        <li>60</li>
+                        <li>70</li>
+                        <li>80</li>
+                        <li>10</li>
+                        <li>15</li>
+                        <li>20</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="total_num fl">
+                <i class="txt">共</i>
+                <em></em>
+                <i class="txt">页</i>
+            </div>
+        </div>
+        <div class="page_box cur_num_box fr">
+            <i class="txt">第</i>
+            <input value="" type="text" class="cur_num fl">
+            <i class="txt">页</i>
+        </div>
+        <div class="page_box page_turn fr">
+            <a href="javascript:void(0)" class="icon turn_btn fir_btn"></a>
+            <a href="javascript:void(0)" class="icon turn_btn prev_btn"></a>
+            <span class="page_num_box"></span>
+            <a href="javascript:void(0)" class="icon turn_btn next_btn"></a>
+            <a href="javascript:void(0)" class="icon turn_btn last_btn"></a>
+        </div>
+    </div>
+</div>
+<!--表格 E-->
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.ztree.all-3.5.min.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/datepickerCore.js"></script>
+<script src="js/datepickerUi.js"></script>
+<script src="js/quality_platform.js"></script>
+<script>
+    var _con = $('.tab_hd .tab_win',window.parent.document);//console.log(_con);
+    var _iframeBox = $('.iframe_con',window.parent.document);
+    $('.table_box').on('click','tbody tr td',function(){
+        var _index = $(this).index();
+        var _title = "story清单";
+        var _tabName = 'story_report';
+        if(_tabName!='null'&&_tabName!='undefined'&&_tabName){
+            _con.find('li').removeClass('cur');
+            if(_con.find('li').hasClass(_tabName)){//tab已经打开
+                _con.find("li[class='"+_tabName+"']").addClass('cur');
+                _iframeBox.find('.'+_tabName).show().siblings().hide();
+            }else{//tab未打开
+                var _tab = '<li class="story_report cur"><em>'+_title+'</em><a href="javascript:void(0)" class="icon x_mark"></a></li>';
+                _con.append(_tab);
+                var _iframe = '<iframe src="'+_tabName+'.html"  width="1800" height="900" scrolling="no" frameborder="0" id="'+_tabName+'" class="iframe_box '+_tabName+'" onload="getData()"></iframe>';
+                _iframeBox.append(_iframe);
+                parent.window.quality_platform.heightSet();
+                _iframeBox.find('.'+_tabName).show().siblings().hide();
+            }
+        }
+    });
+</script>
+</html>

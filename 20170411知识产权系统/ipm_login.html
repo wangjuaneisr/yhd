@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ipm_common.css">
+    <link rel="stylesheet" href="css/ipm_login.css">
+</head>
+<body class="ipm_login">
+    <!-- 头部 S-->
+    <div class="ipm_header clearfix">
+        <a href="javascript:;" class="ipm_logo_box">
+            <img src="images/logo.png" alt="" class="ipm_logo">
+        </a>
+              <span class="ipm_user">
+                   hello,
+                   <em>小美女222</em>
+                   <a href="javascript:;" class="exit_btn">退出</a>
+              </span>
+    </div>
+    <!-- 头部 E-->
+
+    <!--主体 S-->
+    <div class="main_container">
+        <div class="login_box">
+            <h3>请登录</h3>
+            <div class="info_box">
+                <div class="tab_box tab clearfix">
+                    <a href="javascript:;" class="login_tab border_tab on">1号店内部</a>
+                    <a href="javascript:;" class="login_tab">第三方检测公司</a>
+                </div>
+                <div class="login_info">
+                    <div class="ipm_items">
+                        <input class="item_input" placeholder="用户名">
+                        <i class="iconfont user_icon">&#xe642;</i>
+                    </div>
+                    <div class="ipm_items">
+                        <input class="item_input" type="password" placeholder="密码">
+                        <i class="iconfont user_icon">&#xe63f;</i>
+                    </div>
+                    <div class="tips_box clearfix">
+                        <p>用户名不存在，请重新输入</p>
+                        <a href="javascript:;" class="pw_tips">忘记密码？</a>
+                    </div>
+                    <a href="javascript:;" class="blue_gradient_btn login_btn">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主体 E-->
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/ipm_common.js"></script>
+<script>
+    $('.tab_box .login_tab').on('click',function(){
+        $(this).addClass('on').siblings('.login_tab').removeClass('on');
+    });
+</script>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>健康报告趋势图</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/dateShow.css">
+    <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="css/quality_platform.css">
+</head>
+<body>
+<!--[if lt IE 9]>
+<style type="text/css">
+    .search_con .items{width: 299px;}
+</style>
+<![endif]-->
+<!--内容-->
+<div class="main_con">
+    <!--查询条件筛选 S-->
+    <div class="search_con clearfix">
+        <div class="search_btn_con fr">
+            <a href="javascript:void(0)" class="refer_btn">查询</a>
+            <a href="javascript:void(0)" class="reset_btn">重置</a>
+        </div>
+        <div class="condition_con clearfix">
+            <!--时间 S-->
+            <div class="items">
+                <label>报告所属时间</label>
+                <div class="selecDatePeriod fl">
+                    <div class="timeSelectBar clearfix">
+                        <input class="tselect-same startInput date12" type="text" readonly="readonly" value="2016-08-19">
+                        <input class="lineInput" type="text" readonly="" value="至">
+                        <input class="tselect-same endInput date12" type="text" readonly="readonly" value="2015-08-26">
+                        <i class="iconfont">&#xe604;</i>
+                    </div>
+                    <div class="none timeHideModel">
+                        <div class="dateTabBtn dateTabBtn1 showDateTabBtn clearfix" data-trigger="spcalendar">
+                            <a href="javascript:;" data-mode="month">按月</a>
+                            <a href="javascript:;" data-mode="week">按周</a>
+                            <a class="current" href="javascript:;" data-mode="date">按日</a>
+                        </div>
+                        <div class="detailDateWarp">
+                            <div class="detailDateCont"></div>
+                            <a class="sureClose" href="javascript:;">确定</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--时间 E-->
+
+            <!--报告周期 S-->
+            <div class="items">
+                <label>报告周期</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">2016kw33 ~ 2016kw34</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <div class="period_con">
+                        <ul class="select_list" style="height: 200px;overflow-y: auto;">
+                            <li class="clearfix" data="33"><em>2016kw33</em></li>
+                            <li class="clearfix" data="34"><em>2016kw34</em></li>
+                            <li class="clearfix" data="35"><em>2016kw35</em></li>
+                            <li class="clearfix" data="36"><em>2016kw36</em></li>
+                            <li class="clearfix" data="37"><em>2016kw37</em></li>
+                            <li class="clearfix" data="38"><em>2016kw38</em></li>
+                            <li class="clearfix" data="39"><em>2016kw39</em></li>
+                            <li class="clearfix" data="40"><em>2016kw40</em></li>
+                            <li class="clearfix" data="41"><em>2016kw40</em></li>
+                            <li class="clearfix" data="42"><em>2016kw40</em></li>
+                            <li class="clearfix" data="43"><em>2016kw40</em></li>
+                            <li class="clearfix" data="44"><em>2016kw40</em></li>
+                            <li class="clearfix" data="45"><em>2016kw40</em></li>
+                            <li class="clearfix" data="46"><em>2016kw40</em></li>
+                            <li class="clearfix" data="47"><em>2016kw40</em></li>
+                            <li class="clearfix" data="48"><em>2016kw40</em></li>
+                            <li class="clearfix" data="49"><em>2016kw40</em></li>
+                            <li class="clearfix" data="50"><em>2016kw40</em></li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!--报告周期 E-->
+
+            <!--S-->
+            <div class="items">
+                <label>部门</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <!-- treeStore -->
+                    <div id="treeStore" class="select_list tree_zone clearfix none">
+                        <p class="zone_tit clearfix">
+                            <input type="text" placeholder="搜索部门" class="search-band" />
+                            <i class="search-band-btn">搜索</i>
+                        </p>
+                        <ul class="ztree ztree_all" id="zone_treeStore"></ul>
+                        <div class="btn-box">
+                            <i class="yhdbk-button-01 tree-confirm">确定</i>
+                            <i class="yhdbk-button-03 tree-cancel">取消</i>
+                        </div>
+                    </div>
+                    <!--treeStore -->
+                </a>
+            </div>
+            <!--E-->
+
+            <!--S-->
+            <div class="items">
+                <label>domain</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <!-- treeStore -->
+                    <div id="treeStore" class="select_list tree_zone clearfix none">
+                        <p class="zone_tit clearfix">
+                            <input type="text" placeholder="搜索部门" class="search-band" />
+                            <i class="search-band-btn">搜索</i>
+                        </p>
+                        <ul class="ztree ztree_all" id="zone_treeStore"></ul>
+                        <div class="btn-box">
+                            <i class="yhdbk-button-01 tree-confirm">确定</i>
+                            <i class="yhdbk-button-03 tree-cancel">取消</i>
+                        </div>
+                    </div>
+                    <!--treeStore -->
+                </a>
+            </div>
+            <!--E-->
+
+            <div class="items">
+                <label>查询维度</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <ul class="select_list_con select_list">
+                        <li class="clearfix"><em>全部</em></li>
+                        <li class="clearfix"><em>技术平台部</em></li>
+                        <li class="clearfix"><em>财务部</em></li>
+                        <li class="clearfix"><em>用户体验设计部</em></li>
+                    </ul>
+                </a>
+            </div>
+            <!--S-->
+            <div class="items">
+                <label>指标名称</label>
+                <a href="javascript:void(0)" class="select_con select_box">
+                    <div class="tips clearfix">
+                        <em class="selected_con txt">全部</em>
+                        <i class="icon down"></i>
+                    </div>
+                    <!-- treeStore -->
+                    <div id="treeStore" class="select_list tree_zone clearfix none">
+                        <p class="zone_tit clearfix">
+                            <input type="text" placeholder="搜索部门" class="search-band" />
+                            <i class="search-band-btn">搜索</i>
+                        </p>
+                        <ul class="ztree ztree_all" id="zone_treeStore"></ul>
+                        <div class="btn-box">
+                            <i class="yhdbk-button-01 tree-confirm">确定</i>
+                            <i class="yhdbk-button-03 tree-cancel">取消</i>
+                        </div>
+                    </div>
+                    <!--treeStore -->
+                </a>
+            </div>
+            <!--E-->
+
+        </div>
+    </div>
+    <!--查询条件筛选 E-->
+</div>
+
+<!--表格 S-->
+<div class="table_con">
+
+    <div class="table_box">
+        <div class="table_body_con"></div>
+    </div>
+
+
+</div>
+<!--表格 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.ztree.all-3.5.min.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/datepickerCore.js"></script>
+<script src="js/datepickerUi.js"></script>
+<script src="js/quality_platform.js"></script>
+</html>

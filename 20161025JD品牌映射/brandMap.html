@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌映射</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/brandMap.css">
+</head>
+<body>
+    <div class="brand_map_container wrap">
+        <!--面包屑 S-->
+        <div class="crumbs_box">
+            <label>当前位置：</label>
+            <a href="javascript：void(0)">商品管理</a>
+            <a href="javascript：void(0)">JD品牌映射</a>
+        </div>
+        <!--面包屑 E-->
+
+        <!--查询条件 S-->
+        <div class="search_condition_box">
+            <div class="condition_box clearfix">
+                <div class="item">
+                    <label class="form_name">JD品牌ID：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+                <div class="item">
+                    <label class="form_name">JD品牌名称：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+                <div class="item">
+                    <label class="form_name">是否映射：</label>
+                    <select class="select_box">
+                        <option>请选择</option>
+                        <option>是</option>
+                        <option>否</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label class="form_name">YHD品牌ID：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+                <div class="item">
+                    <label class="form_name">YHD品牌名称：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+            </div>
+
+            <div class="btn_box">
+                <a href="javascript:;" class="deep_blue">查询</a>
+                <a href="javascript:;">清空</a>
+            </div>
+        </div>
+        <!--查询条件 E-->
+
+        <!--表格 S-->
+        <div class="table_box">
+            <div class="table_handle clearfix">
+                <a href="javascript:;" class="check_results">excel导入</a>
+                <a href="javascript:;" class="blue_link export_results check_results">excel导出</a>
+            </div>
+            <div class="table_con">
+                <div class="fix_height_table">
+                    <table cellpadding="0" cellspacing="0" border="0" class="normal_table align_left" width="980">
+                        <thead>
+                        <tr>
+                            <th width="154">JD品牌ID</th>
+                            <th width="190">JD品牌名称</th>
+                            <th width="191">YHD品牌ID</th>
+                            <th width="253">YHD品牌名称</th>
+                            <th width="90">是否映射</th>
+                            <th width="102" class="align_right">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link map_brand">映射品牌</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定屏蔽吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="table_handle page_box clearfix">
+                <div class="page-model clearfix financial-record-page fr">
+                    <div class="yhdbk-page clearfix">
+                        <a href="javascript:;" class="page-prev"><s></s></a>
+                        <a href="javascript:;" class="page-cur">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;">6</a>
+                        <a href="javascript:;">7</a>
+                        <a href="javascript:;">8</a>
+                        <a href="javascript:;">...</a>
+                        <a href="javascript:;">100</a>
+                        <a href="javascript:;" class="page-next"><s></s></a>
+					<span class="page-num">
+						每页显示
+						<select name="" id="">
+                            <option value="">20</option>
+                            <option value="">30</option>
+                        </select>条
+					</span>
+					<span class="page_choose">
+						第<input type="text" class="ipt">页
+					</span>
+                        <a href="javascript:;" class="confirm">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--表格 E-->
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/brandMap.js"></script>
+<script>
+    //   清除
+    $('.has_tooltip').on('click','.check_handle',function(){
+        if ($(this).hasClass('gray_link')) {
+            return false;
+        }
+        $(this).siblings('.tooltip_box').show();
+        $(this).parents('tr').siblings('tr').find('.tooltip_box').hide();
+        $(this).siblings('.tooltip_box').find('.confirm').click(function(){
+            $(this).parents('.tooltip_box').hide();
+            $(this).parents('.tooltip_box').prev('.check_handle').addClass('gray_link');
+            $(this).parents('.has_tooltip').siblings('.has_tooltip').find('.check_handle').removeClass('gray_link');
+        });
+        $('.handle_td .cancle').click(function(){
+            $(this).parents('.tooltip_box').hide();
+        })
+    });
+
+    //
+    $('.handle_td').on('click','.map_brand',function(){
+        
+    });
+
+
+</script>
+</html>

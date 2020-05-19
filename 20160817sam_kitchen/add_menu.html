@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增菜谱</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/kitchen.css">
+</head>
+<body>
+<div class="kitchen_page menu_page wrap">
+    <!--面包屑 S-->
+    <div class="crumbs">
+        <em class="tit">当前位置：</em>
+        <a href="javascript:void(0)" class="cur_position">山姆厨房</a>
+    </div>
+    <!--面包屑 E-->
+
+    <!--新增菜谱 S-->
+    <div class="main_container clearfix">
+        <!--左边-->
+        <div class="menu_con">
+            <!--菜谱名称输入-->
+            <div class="menu_name">
+                <input type="text" class="menu_name_enter" placeholder="输入菜谱名称">
+            </div>
+            <p class="notice_con">请输入菜谱名称</p>
+
+            <!--添加菜谱图 S-->
+            <div class="menu_editor clearfix">
+                <!--添加图片文件-->
+                <div class="menu_img_con">
+                    <div class="tips" href="javascript:void(0)">
+                        <i class="icon add"></i>
+                        <p class="tit">添加列表页菜谱图</p>
+                        <p class="img_size">（建议尺寸：230X230）</p>
+                    </div>
+                    <input type="file" class="add_img">
+                </div>
+                <!--本文编辑器-->
+                <div class="editor_con">
+                    <div class="editor_head clearfix">
+                        <a href="javascript:void(0)" class="editor_family hover_select_con clearfix">
+                            <em class="select_txt">微软雅黑</em>
+                            <i class="icon down"></i>
+                            <ul class="hover_select">
+                                <li data="Microsoft YaHei" class="font_choice">微软雅黑</li>
+                                <li data="SimSum" class="font_choice">宋体</li>
+                                <li data="SimHei" class="font_choice">黑体</li>
+                                <li data="KaiTi" class="font_choice">楷体</li>
+                                <li data="FangSong" class="font_choice">仿宋</li>
+                                <li data="MingLiU" class="font_choice">细明体</li>
+                            </ul>
+                        </a>
+                        <a href="javascript:void(0)" class="editor_family editor_size hover_select_con clearfix">
+                            <em class="select_txt">14</em>
+                            <i class="icon down"></i>
+                            <ul class="hover_select">
+                                <li data-size="12px" class="font_choice">12</li>
+                                <li data-size="14px" class="font_choice">14</li>
+                                <li data-size="14px" class="font_choice">16</li>
+                                <li data-size="18px" class="font_choice">18</li>
+                                <li data-size="20px" class="font_choice">20</li>
+                                <li data-size="22px" class="font_choice">24</li>
+                                <li data-size="22px" class="font_choice">28</li>
+                            </ul>
+                        </a>
+                        <a href="javascript:void(0)" class="editor_family editor_weight clearfix">
+                            <em class="font_choice">B</em>
+                        </a>
+                    </div>
+
+                    <div class="editor_txt">
+                        <textarea name="intro" id="menu_intro" placeholder="输入菜谱简介"></textarea>
+                    </div>
+                </div>
+            </div>
+            <p class="notice_con">
+                <em class="fl">请添加列表页菜谱图</em>
+                <em class="fr">请输入菜谱简介</em>
+            </p>
+            <!--添加菜谱图 E-->
+
+            <!--添加菜谱封面 S-->
+            <div class="menu_img_con add_cover">
+                <div class="tips" href="javascript:void(0)">
+                    <i class="icon add"></i>
+                    <p class="tit">添加菜谱封面</p>
+                    <p class="img_size">（建议尺寸：725X220）</p>
+                </div>
+                <input type="file" class="add_img">
+            </div>
+            <p class="notice_con">请添加菜谱封面</p>
+            <!--添加菜谱封面 E-->
+
+            <!--菜谱选择项目 S-->
+            <div class="menu_items clearfix">
+                <!--难度-->
+                <div class="select_con items_con">
+                    <div class="clearfix">
+                        <em class="star">&#42;</em>
+                        <em class="tit">难度：</em>
+                        <a href="javascript:void(0)" class="select hover_select_con">
+                            <div class="select_box clearfix">
+                                <em class="select_val select_txt">请选择</em>
+                                <i class="icon down"></i>
+                            </div>
+                            <ul class="select_list hover_select">
+                                <li>难</li>
+                                <li>中</li>
+                                <li>易</li>
+                            </ul>
+                        </a>
+                    </div>
+                    <p class="notice_con">请选择难度</p>
+                </div>
+
+                <!--时间-->
+                <div class="select_con items_con">
+                    <div class="clearfix">
+                        <em class="star">&#42;</em>
+                        <em class="tit">时间：</em>
+                        <input class="select" type="text"/>
+                        <em>分钟</em>
+                    </div>
+                    <p class="notice_con">请选择时间</p>
+                </div>
+
+                <!--口味-->
+                <div class="select_con items_con">
+                    <div class="clearfix">
+                        <em class="star">&#42;</em>
+                        <em class="tit">口味：</em>
+                        <input class="select" type="text"/>
+                    </div>
+                    <p class="notice_con">请选择口味</p>
+                </div>
+            </div>
+            <!--菜谱选择项目 E-->
+
+            <!--菜谱用料 S-->
+            <div class="menu_material menu_material_con">
+                <!--头部-->
+                <div class="material_hd">
+                    <em class="big">菜谱用料</em>
+                    <em class="small">(必填)</em>
+                </div>
+
+                <!--表格-->
+                <div class="menu_box clearfix">
+                    <!--用料表格 左-->
+                    <table cellpadding="0" cellspacing="0" class="menu_tab material_table">
+                        <tbody>
+                            <tr class="dom">
+                                <td width="50%"><input type="text" class="quantity" placeholder="用料1"></td>
+                                <td width="50%"><input type="text" class="quantity" placeholder="用量1"></td>
+                            </tr>
+                            <tr class="dom">
+                                <td width="50%"><input type="text" class="quantity" placeholder="用料2"></td>
+                                <td width="50%"><input type="text" class="quantity" placeholder="用量2"></td>
+                            </tr>
+                            <tr class="dom">
+                                <td width="50%"><input type="text" class="quantity" placeholder="用料3"></td>
+                                <td width="50%"><input type="text" class="quantity" placeholder="用量3"></td>
+                            </tr>
+                            <tr class="dom">
+                                <td width="50%"><input type="text" class="quantity" placeholder="用料4"></td>
+                                <td width="50%"><input type="text" class="quantity" placeholder="用量5"></td>
+                            </tr>
+                            <tr class="dom">
+                                <td width="50%"><input type="text" class="quantity" placeholder="用料6"></td>
+                                <td width="50%"><input type="text" class="quantity" placeholder="用量6"></td>
+                            </tr>
+                            <tr class="dom">
+                                <td width="50%"><input type="text" class="quantity" placeholder="用料7"></td>
+                                <td width="50%"><input type="text" class="quantity" placeholder="用量7"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--操作 右-->
+                    <ul class="operation_con">
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="notice_con">请输入菜谱用料</p>
+                <!--新增按钮-->
+                <div class="add_material">
+                    <a href="javascript:;" class="add_btn add_material_btn">+新增菜谱用料</a>
+                </div>
+
+            </div>
+            <!--菜谱用料 E-->
+
+            <!--做菜步骤 S-->
+            <div class="menu_material menu_steps menu_material_con">
+                <!--头部-->
+                <div class="material_hd">
+                    <em class="big">做菜步骤</em>
+                    <em class="small">(必填)</em>
+                </div>
+
+                <!--步骤-->
+                <div class="menu_box step_con clearfix">
+                    <!--左侧信息-->
+                    <div class="menu_tab step_info">
+                        <div class="step_list clearfix dom">
+                            <p class="step_num"></p>
+                            <!--添加图片-->
+                            <div class="menu_img_con step_img">
+                                <div class="tips" href="javascript:void(0)">
+                                    <i class="icon add"></i>
+                                    <p class="tit">添加图片1</p>
+                                    <p class="img_size">（建议尺寸：185X147）</p>
+                                </div>
+                                <input type="file" class="add_img">
+                            </div>
+                            <!--步骤说明-->
+                            <div class="step_describe">
+                                <textarea name="step" id="step"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="step_list clearfix  dom">
+                            <p class="step_num"></p>
+                            <!--添加图片-->
+                            <div class="menu_img_con step_img">
+                                <div class="tips" href="javascript:void(0)">
+                                    <i class="icon add"></i>
+                                    <p class="tit">添加图片2</p>
+                                    <p class="img_size">（建议尺寸：185X147）</p>
+                                </div>
+                                <input type="file" class="add_img">
+                            </div>
+                            <!--步骤说明-->
+                            <div class="step_describe">
+                                <textarea name="step" id="step"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="step_list clearfix  dom">
+                            <p class="step_num"></p>
+                            <!--添加图片-->
+                            <div class="menu_img_con step_img">
+                                <div class="tips" href="javascript:void(0)">
+                                    <i class="icon add"></i>
+                                    <p class="tit">添加图片3</p>
+                                    <p class="img_size">（建议尺寸：185X147）</p>
+                                </div>
+                                <input type="file" class="add_img">
+                            </div>
+                            <!--步骤说明-->
+                            <div class="step_describe">
+                                <textarea name="step" id="step"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="step_list clearfix  dom">
+                            <p class="step_num"></p>
+                            <!--添加图片-->
+                            <div class="menu_img_con step_img">
+                                <div class="tips" href="javascript:void(0)">
+                                    <i class="icon add"></i>
+                                    <p class="tit">添加图片4</p>
+                                    <p class="img_size">（建议尺寸：185X147）</p>
+                                </div>
+                                <input type="file" class="add_img">
+                            </div>
+                            <!--步骤说明-->
+                            <div class="step_describe">
+                                <textarea name="step" id="step"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右侧操作-->
+                    <ul class="operation_con">
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="javascript:void(0)" class="operation up">上移</a>
+                            <a href="javascript:void(0)" class="operation down">下移</a>
+                            <a href="javascript:void(0)" class="operation delete">删除</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="notice_con">请输入菜谱用料</p>
+                <!--新增按钮-->
+                <div class="add_material">
+                    <a href="javascript:;" class="add_btn add_step_btn">+新增菜谱步骤</a>
+                </div>
+            </div>
+            <!--做菜步骤 E-->
+
+            <!--小贴士 S-->
+            <div class="menu_material">
+                <h3 class="tit">小贴士</h3>
+                <div class="menu_material_tip clearfix">
+                    <textarea class="menu_material_tip_textarea" placeholder="请输入附加说明"></textarea>
+                </div>
+            </div>
+            <!--小贴士 E-->
+            <!--选择分类 S-->
+            <div class="menu_material">
+                <h3 class="tit">选择分类<em>(必填)</em></h3>
+                <div class="menu_material_choose clearfix">
+                    <dl class="clearfix">
+                    </dl>
+                </div>
+                <div class="menu_material_classify clearfix">
+                    <dl class="clearfix mt">
+                        <dt>按食材：</dt>
+                        <dd data-num="1"><span>牛羊肉</span><sup></sup></dd>
+                        <dd data-num="2"><span>猪肉</span><sup></sup></dd>
+                        <dd data-num="3"><span>牛羊肉</span><sup></sup></dd>
+                        <dd data-num="4"><span>猪肉</span><sup></sup></dd>
+                        <dd data-num="5"><span>牛羊肉</span><sup></sup></dd>
+                        <dd class="menu_add"><em></em><span>新增分类</span></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>按食材：</dt>
+                        <dd data-num="7"><span>牛羊肉</span><sup></sup></dd>
+                        <dd data-num="8"><span>猪肉</span><sup></sup></dd>
+                        <dd data-num="9"><span>牛羊肉</span><sup></sup></dd>
+                        <dd data-num="10"><span>猪肉</span><sup></sup></dd>
+                        <dd class="menu_add"><em></em><span>新增分类</span></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>按食材：</dt>
+                        <dd data-num="12"><span>牛羊肉</span><sup></sup></dd>
+                        <dd data-num="13"><span>猪肉</span><sup></sup></dd>
+                        <dd data-num="14"><span>猪肉</span><sup></sup></dd>
+                        <dd data-num="15"><span>牛羊肉</span><sup></sup></dd>
+                        <dd data-num="16"><span>猪肉</span><sup></sup></dd>
+                        <dd data-num="17"><span>牛羊肉</span><sup></sup></dd>
+                        <dd class="menu_add"><em></em><span>新增分类</span></dd>
+                    </dl>
+                </div>
+                <p class="search_input_error">请选择分类</p>
+            </div>
+            <!--选择分类 E-->
+
+        </div>
+
+        <!--右边-->
+        <div class="relate_con menu_material menu_material_con">
+            <h3 class="relate_con_tit">相关商品</h3>
+            <!--新增 确定按钮-->
+            <div class="add_box">
+                <div class="relate_con_sear clearfix">
+                    <input type="text" placeholder="输入hostID添加商品,最多4个" class="search_input fl">
+                    <a class="search_btn add_btn add_pro_btn fl" href="javascript:;">确认</a>
+                </div>
+                <p class="notice_con">该商品不存在，请重新输入hostID</p>
+            </div>
+
+            <!--新增商品信息-->
+            <div class="pro_list_con clearfix">
+                <ul class="menu_tab">
+                    <!--<li class="pro dom">-->
+                        <!--<a href="javascript:void(0)" class="pro_img"><img src="http://fed.yhd.cn:9000/84X84" alt=""></a>-->
+                        <!--<div class="pro_info">-->
+                            <!--<p class="pro_name">澳洲奔富BIN407干红 精品750ml222</p>-->
+                            <!--<p class="pro_price">&yen;68.9</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+                <!--操作 右-->
+                <ul class="operation_con">
+                    <!--<li class="clearfix">-->
+                        <!--<a href="javascript:void(0)" class="operation up">上移</a>-->
+                        <!--<a href="javascript:void(0)" class="operation down">下移</a>-->
+                        <!--<a href="javascript:void(0)" class="operation delete">删除</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--新增菜谱 E-->
+
+
+    <!--按钮 S-->
+    <div class="kitchen_page_btn clearfix">
+        <a class="btn_blue publish_btn" href="javascript:;">发 布</a><a class="btn_blue ml" href="javascript:;">存草稿</a><a class="btn_white ml" href="javascript:;">取 消</a>
+    </div>
+    <!--按钮 E-->
+
+    <!--发布成功弹窗 S-->
+    <div class="Ag-common-dialog templet-open-box">
+        <div class="Acd-rel-dialog box-rim">
+            <div class="Acd-rel-body box-cont">
+                <div class="content_box clearfix">
+                    <i class="icon pop_icon"></i>
+                    <em class="pop_txt">发布成功！</em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--发布成功弹窗 E-->
+
+
+
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/kitchen.js"></script>
+</html>

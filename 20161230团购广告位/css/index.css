@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*
+ *Description :  团购广告位;
+ *Author : Wang Juan5;
+ *Date : 2016/12/30;
+**/
+.icon{
+    background: url("../images/icon.png");
+}
+.group_buy_ads_box .banner_box{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.group_buy_ads_box .banner_box .banner_pic_list .banner_img_box{
+    display: block;
+}
+.group_buy_ads_box .banner_box .banner_pic_list,.group_buy_ads_box .banner_box .banner_pic_list .banner_pic,.group_buy_ads_box .banner_box .banner_pic_list .banner_pic img.banner_img{
+    width: 1200px;
+    height: 300px;
+}
+
+.group_buy_ads_box .banner_box .banner_pic_list .banner_pic .limit_time_box{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 190px;
+    height: 30px;
+    padding-left: 30px;
+    background-position: 0 0;
+    color: #fff;
+    font: normal 14px/30px 'Century Gothic,Simsun';
+}
+.group_buy_ads_box .banner_box .top_pro_box{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 286px;
+    height: 250px;
+    padding: 10px;
+    background-color: #fff;
+
+}
+.banner_box .top_pro_box .brand_name{
+    display: block;
+    margin: 0px auto;
+
+}
+.banner_box .top_pro_box .brand_ads{
+    height: 34px;
+    color: #333;
+    font: normal 16px/34px 'Microsoft YaHei';
+    text-align: center;
+}
+.banner_box .top_pro_box .discount_box{
+    height: 40px;
+}
+.banner_box .top_pro_box .discount_box .discount{
+    color: #ff3c3c;
+    font: normal 12px/28px 'Simsun';
+}
+.banner_box .top_pro_box .discount_box .discount em{
+    font: normal 30px/40px 'Century Gothic';
+}
+.banner_box .top_pro_box .number_box{
+    color: #999;
+    font: normal 12px/40px 'Simsun';
+}
+.banner_box .top_pro_box .number_box em{
+    color: #666;
+    font-family: 'Arial';
+}
+.banner_box .top_pro_box .top_pro_list_box{
+    width: 286px;
+    padding: 10px 0;
+    border-top: 1px #ddd dashed;
+}
+.banner_box .top_pro_box .top_pro_list_box .top_pro_list{
+    width: 296px;
+    margin-right: -10px;
+}
+.banner_box .top_pro_list_box .top_link_box{
+    position: relative;
+    float: left;
+    width: 88px;
+    margin-right: 10px;
+}
+.top_pro_list_box .top_link_box .top_corner{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+.top_pro_list_box .top_link_box .top_corner.fir{
+    background-position: 0 -58px;
+}
+.top_pro_list_box .top_link_box .top_corner.sec{
+    background-position: -99px -58px;
+}
+.top_pro_list_box .top_link_box .top_corner.thi{
+    background-position: -200px -58px;
+}
+.top_pro_list_box .top_link_box .price_box{
+    text-align: center;
+}
+.top_pro_list_box .top_link_box .price_box .real_price{
+    color: #ff320e;
+    font:normal 14px/18px 'Gentury Gothic';
+}
+.top_pro_list_box .top_link_box .price_box del{
+    color: #b2b2b2;
+    font: 12px/16px 'Tahoma';
+}
+.top_pro_list_box .top_link_box .price_box em{
+    font:normal 12px 'Microsoft YaHei';
+}

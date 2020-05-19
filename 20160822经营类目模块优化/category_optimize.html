@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title>商家经营类目优化</title>
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/category_optimize.css">
+</head>
+<body>
+<!-- category_optimize S-->
+<div class="category_optimize wrap">
+     <!--模拟表格 E-->
+     <div class="category_table">
+          <!--头部搜索 S-->
+          <div class="category_hd clearfix">
+               <div class="search_con fl">
+                    <input type="text" class="search_input fl" placeholder="搜索消息">
+                    <i class="multiple fl">×</i>
+                    <a href="javascript:void(0)" class="search_btn fr">搜索</a>
+               </div>
+               <a href="javascript:void(0)" class="search_cancel_btn fl">取消搜索</a>
+               <div class="clear_con fr">
+                    <a href="javascript:void(0)" class="clear_btn delete_btn delete_all">一键清空</a>
+                    <a href="javascript:void(0)" class="clear_btn add_btn">+添加类目</a>
+                    <div class="clear_pop">
+                         <p>确定要清空类目吗？</p>
+                         <div class="btn_box clearfix">
+                              <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                              <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                         </div>
+                         <i class="corner corner_before"></i>
+                         <i class="corner corner_after"></i>
+                    </div>
+               </div>
+          </div>
+          <!--头部搜索 E-->
+
+          <!--收缩菜单 S-->
+          <div class="category_main_con">
+               <div class="search_box">
+                    <ul>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                         <li><a href="javscript:void(0)">电子&gt;二级类目&gt;三级类目</a></li>
+                    </ul>
+               </div>
+
+               <div class="category_list_con">
+                    <!--类目 行 S-->
+                    <div data="1" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>电子&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids cur">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="1" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>电子&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="1" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>电子&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="2" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>箱包&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="2" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>箱包&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="2" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>箱包&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="3" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>服装&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="3" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>服装&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="3" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>服装&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">一级类目&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="4" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>食品&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+
+                    <!--类目 行 S-->
+                    <div data="4" class="nav_con category_con">
+                         <!--父级类目 S-->
+                         <div class="category_box category_father clearfix">
+                              <div class="category_cell category_list fl">
+                                   <a href="javascript:void(0)" class="nav_txt list_cell"><i class="icon plus"></i>食品&gt;二级类目</a>
+                              </div>
+                              <!--删除按钮-->
+                              <div class="category_cell category_btn fr">
+                                   <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                   <div class="clear_pop">
+                                        <p>确定要删除该类目吗？</p>
+                                        <div class="btn_box clearfix">
+                                             <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                             <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                        </div>
+                                        <i class="corner corner_before"></i>
+                                        <i class="corner corner_after"></i>
+                                   </div>
+                              </div>
+                         </div>
+                         <!--父级类目 E-->
+
+                         <!--子级类目 S-->
+                         <div class="nav_con category_box category_kids">
+                              <ul>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                                   <li class="clearfix">
+                                        <div class="category_cell category_list fl">
+                                             <a href="javascript:void(0)" class="list_cell show_cell">食品&gt;二级类目&gt;三级类目</a>
+                                        </div>
+                                        <div class="category_cell category_btn fr">
+                                             <a href="javascript:void(0)" class="list_cell detele_cell delete_btn">删除</a>
+                                             <div class="clear_pop">
+                                                  <p>确定要删除该类目吗？</p>
+                                                  <div class="btn_box clearfix">
+                                                       <a href="javascript:void(0)" class="pop_btn sure_btn fl">确定</a>
+                                                       <a href="javascript:void(0)" class="pop_btn cancel_btn fr">取消</a>
+                                                  </div>
+                                                  <i class="corner corner_before"></i>
+                                                  <i class="corner corner_after"></i>
+                                             </div>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                         <!--子级类目 E-->
+                    </div>
+                    <!--类目 行 E-->
+               </div>
+
+               <!--定位操作 S-->
+               <div class="location_con clearfix">
+                    <a href="javascript:void(0)" class="location_btn pack_btn">收起二级类目</a>
+                    <a href="javascript:void(0)" class="location_btn move_btn prev_btn">定位至上个一级类目</a>
+                    <a href="javascript:void(0)" class="location_btn move_btn next_btn">定位至下个一级类目</a>
+               </div>
+               <!--定位操作 E-->
+          </div>
+          <!--收缩菜单 E-->
+     </div>
+     <!--模拟表格 E-->
+
+     <!--新增类目 S-->
+     <div class="category_add_con">
+          <div class="category_add_hd">
+               <input type="text" class="category_add_input">
+               <a href="javscript:void(0)" class="category_add_btn search_add_btn">搜索</a>
+          </div>
+          <ul class="category_add_list">
+
+          </ul>
+          <div class="btn_add_box">
+               <a href="javscript:void(0)" class="category_add_btn sure_add_btn">添加</a>
+               <a href="javscript:void(0)" class="category_add_btn cancel_add_btn">取消</a>
+          </div>
+     </div>
+     <!--新增类目 E-->
+
+</div>
+<!-- category_optimize E-->
+</body>
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/category_optimize.js"></script>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="customer_system">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>抢客平台</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/customer_compete.css">
+</head>
+<body class="customer_system_bd">
+<!--head S-->
+<div class="customer_hd clearfix">
+    <p class="system_name fl">抢客神器管理系统</p>
+    <div class="user_name fr">
+        <a href="javascript:void(0)" class="user_con">
+            <div class="user_img fl">
+                <img src="images/user_img.png" alt="">
+            </div>
+            <p class="welcome fl">hello,<em>boss</em></p>
+            <i class="iconfont fr">&#xe605;</i>
+        </a>
+        <div class="esc_con">
+            <a href="javascript:void(0)" class="esc"><i class="iconfont">&#xe60a;</i>退出</a>
+        </div>
+    </div>
+</div>
+<!--head E-->
+
+<!--container S-->
+<div class="customer_con clearfix">
+    <!--nav S-->
+    <div class="customer_nav fl">
+        <ul class="customer">
+            <li>
+                <a href="javascript:void(0)"><i class="iconfont">&#xe604;</i>数据模型配置</a>
+            </li>
+            <li class="cur">
+                <a href="javascript:void(0)"><i class="iconfont">&#xe602;</i>促销计划</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="iconfont">&#xe601;</i>触达管理</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="iconfont">&#xe603;</i>单品促销管理</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><i class="iconfont">&#xe600;</i>SKU管理</a>
+            </li>
+        </ul>
+    </div>
+    <!--nav E-->
+
+    <!--收起 S-->
+    <div class="slide_nav">
+        <a href="javascript:void(0)" class="slide_btn">
+            <i class="iconfont left_icon">&#xe606;</i>
+            <i class="iconfont right_icon">&#xe607;</i>
+        </a>
+    </div>
+    <!--收起 E-->
+
+
+    <!--content  S-->
+    <div class="content_con">
+        <!--抢客效果评估 S-->
+        <div class="content_box assess_box">
+            <div class="content_hd">
+                <h3>抢客效果评估</h3>
+            </div>
+            <!--查询 S-->
+            <div class="search_con clearfix">
+                <div class="items">
+                    <label>开始日期：</label>
+                    <div class="select_con clearfix">
+                        <input id="startDate" class="Wdate calendar fl" type="text" onFocus="var endDate=$dp.$('endDate');WdatePicker({onpicked:function(){endDate.focus();},maxDate:'#F{$dp.$D(\'endDate\')}'})"/>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <label>结束日期：</label>
+                    <div class="select_con clearfix">
+                        <input id="endDate" class="Wdate calendar fl" type="text" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startDate\')}'})"/>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <label>创始人：</label>
+                    <div class="select_con">
+                        <a href="javascript:void(0)" class="select_box clearfix">
+                            <em></em>
+                            <i class="iconfont">&#xe605;</i>
+                        </a>
+                        <div class="select_down_box">
+                            <ul>
+                                <li>樱桃小丸子</li>
+                                <li>蜡笔小新</li>
+                                <li>小明</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <label>模型名称：</label>
+                    <div class="select_con">
+                        <a href="javascript:void(0)" class="select_box clearfix">
+                            <em></em>
+                            <i class="iconfont">&#xe605;</i>
+                        </a>
+                        <div class="select_down_box">
+                            <ul>
+                                <li>樱桃小丸子</li>
+                                <li>蜡笔小新</li>
+                                <li>小明</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <label>品牌：</label>
+                    <div class="select_con">
+                        <a href="javascript:void(0)" class="select_box clearfix">
+                            <em></em>
+                            <i class="iconfont">&#xe605;</i>
+                        </a>
+                        <div class="select_down_box">
+                            <ul>
+                                <li>樱桃小丸子</li>
+                                <li>蜡笔小新</li>
+                                <li>小明</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <label>抢客活动：</label>
+                    <div class="select_con">
+                        <a href="javascript:void(0)" class="select_box clearfix">
+                            <em></em>
+                            <i class="iconfont">&#xe605;</i>
+                        </a>
+                        <div class="select_down_box">
+                            <ul>
+                                <li>樱桃小丸子</li>
+                                <li>蜡笔小新</li>
+                                <li>小明</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search_btn_con fl">
+                    <a href="javascript:void(0)" class="search_btn">查询</a>
+                </div>
+            </div>
+            <!--查询 E-->
+        </div>
+        <!--抢客效果评估 E-->
+
+        <!--活动总览 S-->
+        <div class="content_box">
+            <div class="content_hd">
+                <h3>活动总览</h3>
+            </div>
+
+            <div class="table_con">
+                <!--tab S-->
+                <div class="activity_pandect">
+                    <ul class="clearfix">
+                        <li class="cur">活动</li>
+                        <li>SKU</li>
+                    </ul>
+                </div>
+
+                <div class="table_btn_con clearfix">
+                    <a href="javascript:void(0)" class="operation_btn fl">单品促销<em class="ope_num">(7)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml">有效<em class="ope_num">(4)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml">无效<em class="ope_num">(3)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml">待审核<em class="ope_num">(5)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml disable_btn">创建失败<em class="ope_num">(0)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fr">+新建</a>
+                </div>
+                <!--tab E-->
+            </div>
+
+
+            <div class="table_con">
+                <!--tab S-->
+                <div class="activity_pandect">
+                    <ul class="clearfix">
+                        <li>活动</li>
+                        <li class="cur">SKU</li>
+                    </ul>
+                </div>
+
+                <div class="table_btn_con clearfix">
+                    <a href="javascript:void(0)" class="operation_btn fl">单品促销<em class="ope_num">(7)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml">有效<em class="ope_num">(4)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml">无效<em class="ope_num">(3)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml">待审核<em class="ope_num">(5)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fl ml disable_btn">创建失败<em class="ope_num">(0)</em></a>
+                    <a href="javascript:void(0)" class="operation_btn fr">+新建</a>
+                </div>
+                <!--tab E-->
+            </div>
+        </div>
+        <!--活动总览 E-->
+
+        <!--活动效率 S-->
+        <div class="content_box activity_efficiency">
+            <div class="content_hd">
+                <h3>活动效率</h3>
+            </div>
+            <div class="binary_tree_con">
+                <!--表格-->
+                <div class="table_con">
+                    <table class="table_box" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th colspan="3" class="tit">浏览用户集</th>
+                            </tr>
+                            <tr>
+                                <th>用户数</th>
+                                <th>购买用户数</th>
+                                <th>转化率</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>888888888888</td>
+                                <td>888888888888</td>
+                                <td>100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--箭头-->
+                    <div class="arrows_con">
+                        <div class="line_row"></div>
+                        <div class="arrows"></div>
+                    </div>
+                </div>
+
+                <div class="table_con">
+                    <table class="table_box" cellpadding="0" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th colspan="3" class="tit">浏览用户集</th>
+                        </tr>
+                        <tr>
+                            <th>用户数</th>
+                            <th>购买用户数</th>
+                            <th>转化率</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>888888888888</td>
+                            <td>888888888888</td>
+                            <td>100%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--箭头-->
+                    <div class="arrows_con">
+                        <div class="line_row line_row_half"></div>
+                        <div class="line_col">
+                            <div class="arrows arrows_left"></div>
+                            <div class="arrows arrows_right"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table_con clearfix">
+                    <div class="table_con_half">
+                        <table class="table_box table_box_left" cellpadding="0" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th colspan="3" class="tit">未匹配用户集</th>
+                            </tr>
+                            <tr>
+                                <th>用户数</th>
+                                <th>购买用户数</th>
+                                <th>转化率</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>888888888888</td>
+                                <td>888888888888</td>
+                                <td>100%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_con_half">
+                        <table class="table_box table_box_right" cellpadding="0" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th colspan="3" class="tit">匹配用户集</th>
+                            </tr>
+                            <tr>
+                                <th>用户数</th>
+                                <th>购买用户数</th>
+                                <th>转化率</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>888888888888</td>
+                                <td>888888888888</td>
+                                <td>100%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--箭头-->
+                        <div class="arrows_con">
+                            <div class="line_row"></div>
+                            <div class="line_col">
+                                <div class="arrows arrows_left"></div>
+                                <div class="arrows arrows_right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table_con clearfix table_bottom">
+                    <div class="table_con_half">
+                        <table class="table_box table_box_left" cellpadding="0" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th colspan="5" class="tit">未匹配用户集</th>
+                            </tr>
+                            <tr>
+                                <th>用户数</th>
+                                <th>购买用户数</th>
+                                <th>转化率</th>
+                                <th class="sku">购买匹配用户数</th>
+                                <th class="sku">SKU转化率</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>888888888888</td>
+                                <td>888888888888</td>
+                                <td>100%</td>
+                                <td>8888888</td>
+                                <td>100%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table_con_half">
+                        <table class="table_box table_box_right" cellpadding="0" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th colspan="5" class="tit">未匹配用户集</th>
+                            </tr>
+                            <tr>
+                                <th>用户数</th>
+                                <th>购买用户数</th>
+                                <th>转化率</th>
+                                <th class="sku">购买匹配用户数</th>
+                                <th class="sku">SKU转化率</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>888888888888</td>
+                                <td>888888888888</td>
+                                <td>100%</td>
+                                <td>8888888</td>
+                                <td>100%</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="funnel_con">
+                <div class="activity_pandect">
+                    <ul class="clearfix pandect">
+                        <li class="cur">全部</li>
+                        <li>短信</li>
+                        <li>APP</li>
+                        <li>抵用券</li>
+                        <li>微信手Q</li>
+                    </ul>
+                    <div class="funnel_box clearfix">
+                        <div class="legend_con">
+                            <a href="javascript:void(0)" class="legend" title="订单转化率=下单人数/用户数">成功率</a>
+                            <a href="javascript:void(0)" class="legend" title="打开率=下单人数/用户数">打开率</a>
+                            <a href="javascript:void(0)" class="legend" title="浏览率=下单人数/用户数">浏览率</a>
+                            <a href="javascript:void(0)" class="legend" title="浏览人数比=下单人数/用户数">浏览人数比</a>
+                            <a href="javascript:void(0)" class="legend" title="加车转换率=下单人数/用户数">加车转换率</a>
+                            <a href="javascript:void(0)" class="legend" title="订单转化率=下单人数/用户数">订单转化率</a>
+                        </div>
+                        <div class="funnel_main_con clearfix">
+                            <div class="funnel">
+                                <div class="items clearfix">
+                                    <ul class="items_left">
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 30%"></span><em class="data">0.3</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 20%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 50%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 70%"></span><em class="data">0.7</em></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="items_right">
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 30%"></span><em class="data">0.3</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 20%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 50%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 70%"></span><em class="data">0.7</em></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="example_con">
+                                    <div class="orange_con">
+                                        <input class="color_box" readonly/>
+                                        <label>未干预用户集</label>
+                                    </div>
+                                    <div class="orange_con green_con">
+                                        <input class="color_box" readonly/>
+                                        <label>干预用户集</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="funnel">
+                                <div class="items clearfix">
+                                    <ul class="items_left">
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 30%"></span><em class="data">0.3</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 20%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 50%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 70%"></span><em class="data">0.7</em></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="items_right">
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 30%"></span><em class="data">0.3</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 20%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 50%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 70%"></span><em class="data">0.7</em></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="example_con">
+                                    <div class="orange_con">
+                                        <input class="color_box" readonly/>
+                                        <label>未干预用户集</label>
+                                    </div>
+                                    <div class="orange_con green_con">
+                                        <input class="color_box" readonly/>
+                                        <label>干预用户集</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="funnel">
+                                <div class="items clearfix">
+                                    <ul class="items_left">
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 30%"></span><em class="data">0.3</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 20%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 50%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 70%"></span><em class="data">0.7</em></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="items_right">
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar"></span></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 30%"></span><em class="data">0.3</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 20%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 50%"></span><em class="data">0.2</em></a>
+                                        </li>
+                                        <li class="pro_bag">
+                                            <a href="javascript:void(0)"><span class="pro_bar" style="width: 70%"></span><em class="data">0.7</em></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="example_con">
+                                    <div class="orange_con">
+                                        <input class="color_box" readonly/>
+                                        <label>未干预用户集</label>
+                                    </div>
+                                    <div class="orange_con green_con">
+                                        <input class="color_box" readonly/>
+                                        <label>干预用户集</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--活动效率 E-->
+    </div>
+    <!--content  E-->
+
+</div>
+<!--container E-->
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="My97DatePicker/WdatePicker.js"></script>
+<script src="js/customer_compete.js"></script>
+</html>

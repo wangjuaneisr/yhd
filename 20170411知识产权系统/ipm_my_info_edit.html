@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title>知识产权保障系统-我的信息维护-编辑信息</title>
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/ipm_common.css">
+     <link rel="stylesheet" href="css/ipm_info_maintenance.css">
+</head>
+<body>
+     <!-- 头部 S-->
+     <div class="ipm_header clearfix">
+          <a href="javascript:;" class="ipm_logo_box">
+               <img src="images/logo.png" alt="" class="ipm_logo">
+          </a>
+          <span class="ipm_user">
+               hello,
+               <em>小美女222</em>
+               <a href="javascript:;" class="exit_btn">退出</a>
+          </span>
+     </div>
+     <!-- 头部 E-->
+
+     <!--主体 S-->
+     <div class="main_container clearfix">
+          <!--导航 S-->
+          <div class="ipm_nav">
+               <dl>
+                    <dt>
+                         <a href="javascript:;" class="nav highlight"><i class="iconfont font_icon">&#xe636;</i>案件管理<i class="iconfont drop_icon">&#xe638;</i></a>
+                    </dt>
+                    <dd><a href="javascript:;" class="nav">案件查询及处理</a></dd>
+                    <dd><a href="javascript:;" class="nav">新增案件</a></dd>
+               </dl>
+               <dl>
+                    <dt>
+                         <a href="javascript:;" class="nav"><i class="iconfont font_icon">&#xe643;</i>案件管理<i class="iconfont drop_icon">&#xe638;</i></a>
+                    </dt>
+                    <dd><a href="javascript:;" class="nav">案件查询及处理</a></dd>
+                    <dd><a href="javascript:;" class="nav">新增案件</a></dd>
+               </dl>
+               <dl>
+                    <dt>
+                         <a href="javascript:;" class="nav"><i class="iconfont font_icon">&#xe63b;</i>案件管理<i class="iconfont drop_icon">&#xe638;</i></a>
+                    </dt>
+                    <dd><a href="javascript:;" class="nav">案件查询及处理</a></dd>
+                    <dd><a href="javascript:;" class="nav">新增案件</a></dd>
+               </dl>
+          </div>
+          <!--导航 E-->
+
+          <!--页面右侧 S-->
+          <div class="ipm_container">
+               <!--面包屑导航 -->
+               <div class="crumbs clearfix">
+                    <a href="javascript:;" class="fir_nav">我的信息维护</a>
+               </div>
+
+               <!--页面内容 S-->
+               <div class="page_cont">
+                    <!--查询 S-->
+                    <div class="ipm_info_box clearfix">
+                         <div class="ipm_items id_name_item">
+                              <label>账号名称：</label>
+                              <div class="items_cont">
+                                   <span class="item_fixed_field">XX_</span>
+                                   <input type="text" class="item_input">
+                                   <span class="item_error_tips"><i class="iconfont">&#xe63e;</i>请输入账号名称</span>
+                              </div>
+                         </div>
+                         <div class="ipm_items">
+                              <label>员工姓名：</label>
+                              <div class="items_cont">
+                                   <input type="text" class="item_input">
+                                   <span class="item_error_tips"><i class="iconfont">&#xe63e;</i>请输入员工姓名</span>
+                              </div>
+                         </div>
+                         <div class="ipm_items">
+                              <label>手机号：</label>
+                              <div class="items_cont">
+                                   <input type="text" class="item_input">
+                                   <span class="item_error_tips"><i class="iconfont">&#xe63e;</i>请输入手机号</span>
+                              </div>
+                         </div>
+                         <div class="ipm_items">
+                              <label>邮箱：</label>
+                              <div class="items_cont">
+                                   <input type="text" class="item_input">
+                                   <span class="item_error_tips"><i class="iconfont">&#xe63e;</i>请输入邮箱</span>
+                              </div>
+                         </div>
+                         <div class="ipm_items">
+                              <label>密码：</label>
+                              <div class="items_cont">
+                                   <input type="password" id="b" class="item_input" onkeyup="document.getElementById('b').value=this.value.replace(/./g,'*');">
+                                   <span class="item_error_tips"><i class="iconfont">&#xe63e;</i>密码为6-20个字符</span>
+                              </div>
+                         </div>
+                         <div class="ipm_items">
+                              <label>确认密码：</label>
+                              <div class="items_cont">
+                                   <input type="password" class="item_input">
+                                   <span class="item_error_tips"><i class="iconfont">&#xe63e;</i>两次输入密码不一致</span>
+                              </div>
+                         </div>
+                    </div>
+                    <!--查询 E-->
+                    <div class="btn_box">
+                         <a href="javascript:;" class="blue_gradient_btn sure_amend">确认修改</a>
+                         <a href="javascript:;" class="light_blue_btn cancel_btn">取消</a>
+                    </div>
+               </div>
+               <!--页面内容 E-->
+          </div>
+          <!--页面右侧 E-->
+     </div>
+     <!--主体 E-->
+
+     <!-- 修改成功弹框-S -->
+     <div class="pop_common_dialog pop_keytips pop_amend_succeed">
+         <div class="pop_keytips_relbox">
+             <div class="pop_key_notice_txt">
+                 <p class="pop_tips_txt"><i class="iconfont icon_green">&#xe639;</i>修改成功</p>
+             </div>
+         </div>
+     </div>
+     <!-- 修改成功弹框-E -->
+
+</body>
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/dialog.js"></script>
+     <script src="js/ipm_common.js"></script>
+     <script type="text/javascript">
+          $(".sure_amend").click(function(){
+               $(this).PopupDialog({ //调用
+                    popupClass:'.pop_amend_succeed', //弹窗ClassName
+                    maskLayer:true, //是否遮罩
+                    delayClose:2//自动关闭时间
+               });
+          });
+     </script>
+</html>

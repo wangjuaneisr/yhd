@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/*
+ *Description :  知识产权系统-我的信息维护;
+ *Author : shiwen2;
+ *Date : 2017/04/13;
+**/
+
+.ipm_table_box .operate_box {
+    padding: 30px 0 15px 0;
+}
+.page_cont .ipm_info_box {
+	margin-top: 15px;
+    padding: 14px 44px;
+    border: 1px #f3f7fa solid;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.page_cont .ipm_info_box .ipm_items {
+    float: left;
+    width: 50%;
+    min-width: 300px;
+}
+.ipm_items .item_fixed_field{
+	float: left;
+	height: 30px;
+	margin-right: 10px;
+	color: #505e70;
+	font: 12px/30px Arial;
+}
+.id_name_item .item_input{
+	width: 146px;
+}
+.ipm_items label{
+	min-width: 72px;
+	text-align: left;
+}
+.ipm_items .items_cont{
+	float: left;
+}
+.items_cont .item_error_tips{
+	float: left;
+	height: 30px;
+	margin-left: 10px;
+	color: #ff6055;
+	font: 12px/30px 'Simsun';
+}
+.items_cont .item_error_tips .iconfont{
+	position: relative;
+	top: -1px;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+/* 按钮-S */
+.has_tooltip{
+    display: inline-block;
+    position: relative;
+}
+.btn_box {
+    padding: 30px 0;
+    text-align: center;
+}
+.btn_box a {
+    margin: 0 5px;
+}
+.blue_gradient_btn{
+    width: 118px;
+}
+
+/* 检测机构查询-S */
+.step_box .ipm_items{
+    float: left;
+    width: 50%;
+    min-width: 290px;
+    min-height: 34px;
+}
+.module_container {
+    padding: 10px 20px 12px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px #f3f7fa solid;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+.module_container .module_tit {
+    border-bottom: 1px #f0f3f8 solid;
+}
+.module_container .module_tit h3 {
+    float: left;
+    color: #7c838e;
+    font: 14px/36px 'Microsoft YaHei';
+}
+.module_container .step_box {
+    padding-top: 22px;
+}
+
+.items_cont input[type=radio]{
+    position: relative;
+    top: 9px;
+    float: left;
+    margin-right: 8px;
+}
+.items_cont label.radio_option{
+    float: left;
+    width: 32px;
+    height: 30px;
+    color: #505e70;
+    line-height: 30px;
+    text-align: left;
+    cursor: pointer;
+}
+/* 检测机构查询-E */
+
+/* 账号维护-S */
+.ipm_choose_box{
+    width: 284px;
+    border: 1px #d8e4ec solid;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #505e70;
+}
+.select_option_wrap{
+    padding: 12px 5px 12px 20px;
+    border-bottom: 1px #d4e1ea solid;
+}
+.select_option{
+    height: 258px;
+    overflow-y: auto;
+}
+.select_option dl input[type=checkbox]{
+    float: left;
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.select_option dl dt{
+    height: 28px;
+    line-height: 28px;
+}
+.select_option dl dd{
+    padding-left: 24px;
+}
+.select_option .select_option_items{
+    float: left;
+    height: 28px;
+    margin-right: 10px;
+    line-height: 28px;
+}
+.select_option .select_option_items label{
+    width: auto;
+    padding-right: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.selected_box_wrap{
+    padding: 12px 5px 12px 20px;
+    background-color: #f9fcfe;
+}
+.selected_tit{
+    height: 30px;
+    font: bold 12px/30px "simsun";
+}
+.selected_box{
+    height: 196px;
+    overflow-y: auto;
+}
+.selected_box dt{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.selected_box .selected_items{
+    float: left;
+    height: 32px;
+    margin: 10px 8px 10px 0;
+    padding: 0 20px;
+    border: 1px #d8e4ec solid;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    color: #505e70;
+    line-height: 32px;
+    cursor: pointer;
+}
+.selected_box .selected_items .iconfont{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 20px;
+    color: #5ac7f9;
+    font-size: 12px;
+}
+
+/* 新增子账号-E */

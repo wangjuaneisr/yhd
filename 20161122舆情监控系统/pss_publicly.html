@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>舆情处理</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body class="pss_home_page">
+<div class="pss_header clearfix">
+    <div class="system_name fl">
+        <h3>舆情系统</h3>
+    </div>
+    <div class="user_name_box fr">
+        <a href="javascript:;" class="user_name fl">王大锤</a>
+        <i class="icon drop_btn"></i>
+        <div class="user_exit_box clearfix">
+            <i class="icon exit fl"></i>退出登录
+            <i class="angle before"></i>
+            <i class="angle after"></i>
+        </div>
+    </div>
+</div>
+<div class="pss_container clearfix">
+    <div class="pss_nav_container">
+        <ul class="nav_box">
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">首页</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">舆情处理</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">数据统计</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">网站管理</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">预警设置</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">关键词管理</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">一级关键词</a>
+                    <a href="javascript:;" class="category_link">二级关键词</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+        </ul>
+    </div>
+    <div class="pss_main_container">
+        <div class="select_items_box clearfix">
+            <div class="items">
+                <label>来源网址：</label>
+                <a href="javascirpt:;" class="drop_select_box select_box clearfix">
+                    <input type="text" placeholder="请选择">
+                    <ul class="drop_select">
+                        <li>http://baidu.com</li>
+                        <li>http://baidu.com</li>
+                        <li>http://baidu.com//ddddd/sdsds/dfff.html</li>
+                    </ul>
+                    <i class="icon icon_down"></i>
+                </a>
+            </div>
+
+            <div class="items">
+                <label>时间：</label>
+                <a href="javascirpt:;" class="drop_select_box time_select_box clearfix">
+                    <input id="startDate" type="text" class="Wdate ipt2_left date7 WdateFmtErr WdateFmtErr" value="2016-03-01" timetype="multiple,day" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'#F{$dp.$D(\'endDate\')}'})">
+                    <input type="text" class="ipt2_center date7" value="-" readonly="readonly">
+                    <input id="endDate" type="text" class="Wdate ipt2_right date7" value="2016-03-30" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'startDate\')}'})">
+                </a>
+            </div>
+
+            <div class="items">
+                <label>状态：</label>
+                <a href="javascirpt:;" class="drop_select_box select_box clearfix">
+                    <input type="text" placeholder="全部">
+                    <ul class="drop_select">
+                        <li>门户网站</li>
+                        <li>购物网址</li>
+                    </ul>
+                    <i class="icon icon_down"></i>
+                </a>
+            </div>
+
+            <div class="items">
+                <label>关联投诉CASE：</label>
+                <a href="javascirpt:;" class="drop_select_box clearfix">
+                    <input type="text">
+                </a>
+            </div>
+
+            <div class="items">
+                <label>关键词：</label>
+                <a href="javascirpt:;" class="drop_select_box clearfix">
+                    <input type="text">
+                </a>
+            </div>
+
+            <div class="items">
+                <label>处理人：</label>
+                <a href="javascirpt:;" class="drop_select_box clearfix">
+                    <input type="text">
+                </a>
+            </div>
+        </div>
+        <div class="search_btn_box">
+            <a href="javascript:;" class="search_btn">搜&nbsp;索</a>
+            <div class="auto_get_box">
+                <input type="text" value="20" class="num">条
+                <a href="javascript:;" class="auto_get_btn">自动领取</a>
+            </div>
+        </div>
+        <div class="table_con">
+            <div class="table_box">
+                <!--表格操作-->
+                <div class="table_operate_box clearfix">
+                    <div class="table_operate fl">
+                        <a href="javascript:;" class="operate_btn distribute_btn">
+                            <i class="iconfont icon-fenpei"></i>分配
+                        </a>
+                        <a href="javascript:;" class="operate_btn relation_btn">
+                            <i class="iconfont icon-guanlian"></i>关联
+                        </a>
+                        <a href="javascript:;" class="operate_btn delete_btn">
+                            <i class="iconfont icon-delete"></i>删除
+                        </a>
+                        <a href="javascript:;" class="operate_btn export_btn">
+                            <i class="iconfont icon-daochu"></i>导出
+                        </a>
+                    </div>
+
+                    <div class="table_shift fr">
+                        <div class="shift_btn linked_btn fl">
+                            <label class="fl">显示已关联</label>
+                            <i class="icon export fl"></i>
+                        </div>
+                        <div class="shift_btn trigger_btn fl">
+                            <label class="fl">触发预警舆情</label>
+                            <i class="icon export fl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--表格内容-->
+                <div class="table_content_box clearfix">
+                    <div class="move_table_box fl">
+                        <table cellpadding="0" cellspacing="0" class="move_table">
+                            <thead>
+                                <tr>
+                                    <th width="30"><input type="checkbox" class="all_check"></th>
+                                    <th width="85">舆情预警</th>
+                                    <th width="85">创建时间</th>
+                                    <th width="85">网站类型</th>
+                                    <th width="75">来源网站</th>
+                                    <th width="125">主题</th>
+                                    <th width="125">URL</th>
+                                    <th width="135">内容</th>
+                                    <th width="100">转发
+                                    <th width="85">舆情预警</th>
+                                    <th width="85">创建时间</th>
+                                    <th width="85">网站类型</th>
+                                    <th width="75">来源网站</th>
+                                    <th width="125">主题</th>
+                                    <th width="125">URL</th>
+                                    <th width="135">内容</th>
+                                    <th width="100">转发</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的</p></td>
+                                    <td><p class="table_td">http://news.ifeng.</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="table_td"><input type="checkbox" class="check_box"></div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">10/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit cur">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                    <td><div class="table_td">触发1条预警</div></td>
+                                    <td><div class="table_td">01212121</div></td>
+                                    <td><div class="table_td">/26 14:22</div></td>
+                                    <td><div class="table_td">门户网站</div></td>
+                                    <td><p class="table_td">一号店在售的食糖被指二氧化硫超标</p></td>
+                                    <td><p class="table_td">http://news.ifeng.com/a/20161101/50184057_0.shtml</p></td>
+                                    <td>
+                                        <div class="content">
+                                            <p class="con table_td">微博内容截取，悬停展示200字内容列表内容热...</p>
+                                            <div class="tit">
+                                                <em>完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容完整内容</em>
+                                                <i class="angel before"></i>
+                                                <i class="angel after"></i>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><div class="table_td">10</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fixed_table_box fr">
+                        <table cellpadding="0" cellspacing="0" class="fixed_table" width="100%">
+                            <thead>
+                                <tr>
+                                    <th width="100%">操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:;" class="cancel_link">取消关联</a>
+                                        <a href="javascript:;" class="ignore_btn">忽略</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--翻页-->
+            <div class="table_page clearfix">
+                <div class="page_num fl">
+                    <div class="page_box fl total">
+                        <label>条目总数：</label>
+                        <em>12345</em>
+                    </div>
+                    <div class="page_box fl each_page">
+                        <label>每页显示</label>
+
+                        <div class="num_sel fl">
+                            <input type="text" value="30" class="num_enter">
+                            <i class="icon top"></i><i class="icon down"></i>
+                        </div>
+                        <label>共</label>
+                        <em class="total_num">25</em>
+                        <label>页</label>
+                    </div>
+                </div>
+                <div class="page_change fr">
+                    <div class="page_btn_box fl">
+                        <a href="javascript:;" class="page_btn first_btn icon"></a>
+                        <a href="javascript:;" class="page_btn prev_btn icon"></a>
+                        <a href="javascript:;" class="page_btn num_btn">1</a>
+                        <a href="javascript:;" class="page_btn num_btn">2</a>
+                        <a href="javascript:;" class="page_btn num_btn">3</a>
+                        <a href="javascript:;" class="page_btn num_btn">4</a>
+                        <a href="javascript:;" class="page_btn num_btn">5</a>
+                        <a href="javascript:;" class="page_btn num_btn cur">6</a>
+                        <a href="javascript:;" class="page_btn next_btn icon"></a>
+                        <a href="javascript:;" class="page_btn last_btn icon"></a>
+                    </div>
+                    <div class="page_enter_box fl">
+                        <div class="page_box">
+                            <label>第</label>
+                            <input class="page_enter fl" value="5" type="text">
+                            <label>页</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 关联成功 S-->
+<div class="status_back_pop link_status_back">
+    <a href="javascript:;" class="link_btn">关联成功</a>
+</div>
+<!-- 关联成功 E-->
+<!-- 关联成功 S-->
+<div class="status_back_pop success_get">
+    <a href="javascript:;" class="link_btn">成功领取</a>
+</div>
+<!-- 关联成功 E-->
+<!-- 关联成功 S-->
+<div class="status_back_pop success_distribute">
+    <a href="javascript:;" class="link_btn">已分配</a>
+</div>
+<!-- 关联成功 E-->
+
+
+<!-- 弹窗 分配任务 S-->
+<div class="distribution_task_pop">
+    <div class="Acd-rel-dialog box-rim">
+        <div class="Acd-rel-body box-cont">
+            <div class="box-cont-title">
+                分配任务
+            </div>
+            <a class="icon pop-close close_btn" href="javascript:;"></a>
+            <div class="content_con">
+                <div class="items clearfix">
+                    <label>舆情ID：</label>
+                    <div class="fl enter_box_top clearfix">
+                        <a href="javascript:;" class="delete"><em class="fl">1222321</em><i class="icon"></i></a>
+                        <em class="fl">,</em>
+                        <a href="javascript:;" class="false"><em class="fl">12223214</em><i class="icon"></i></a>
+                        <input type="text" class="fl enter_box_bot">
+                    </div>
+                </div>
+                <div class="items clearfix">
+                    <label>处理人：</label>
+                    <input type="text" class="fl user_name">
+                </div>
+                <div class="items btn_box">
+                    <a href="javascript:;" class="sure_btn pop-close">确认</a>
+                    <a href="javascript:;" class="cancel_btn pop-close">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗 分配任务 E-->
+
+<!-- 弹窗 忽略舆情 S-->
+<div class="Ag-common-dialog templet-open-box ingnore_pop">
+    <div class="Acd-rel-dialog box-rim">
+        <div class="Acd-rel-body box-cont">
+            <a class="icon pop-close close_btn" href="javascript:;"></a>
+            <div class="content_con">
+                <p style="margin: 10px;">确定忽略1234123，2345123，2条舆情吗</p>
+                <div class="items btn_box">
+                    <a href="javascript:;" class="sure_btn pop-close">确认</a>
+                    <a href="javascript:;" class="cancel_btn pop-close">忽略</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗 忽略舆情 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="My97DatePicker/WdatePicker.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/publicly_supervise_system.js"></script>
+</html>

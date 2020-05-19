@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*日期控件*/
+#CalendarBox{position:absolute;top:0;left:0;float:left; margin:0 auto;padding-top:35px;width:523px;border:1px solid #8BA6BF;background-color:#FFF;overflow:hidden;_zoom:1;z-index:1888;}
+.CalendarBox{display: inline-block;float:left;width:173px;margin:0 0 2px 1px;overflow:hidden;background:#fff  }
+.CalendarBox_date2 .calenderday{margin-top:-20px;}
+.CalendarBox_date3 .calenderday{margin-top:-20px;}
+.CalendarBox b{display:block;padding:4px 0;color:#005AAA;font-size:12px;text-align:center;line-height:14px;}
+.CalendarBox strong{display:block;height:32px;line-height:32px;color:#333;font-size:12px;text-align:center;}
+.CalendarBox table{ width:160px;margin:2px 1px 2px 1px;;border-collapse:collapse;color:#999;border:1px solid #9EC9EC;font-size:12px;text-align:center}.none{display:none}
+.CalendarBox th{background:#cce7ff;color:#333;font-weight:normal;}
+.CalendarBox .orange{color:#FF9900;font-weight:bold;}
+.CalendarBox th,.CalendarBox td{width:16px;height:16px;padding:3px 4px;line-height:16px;}
+.CalendarBox td{}.CalendarBox td.csTime{color:#06c; font-weight:bold;cursor:pointer}
+.CalendarBox_date2 td.csTime{color:#06c; font-weight:normal;cursor:pointer}
+.CalendarBox_date3 td.csTime{color:#06c; font-weight:normal;cursor:pointer}
+.CalendarBox td.dateHover,.CalendarBox td.dateSelect,.CalendarBox td.dateHave{color:#fff;font-weight:bold;}
+.CalendarBox td.dateHover,.CalendarBox td.dateSelect{background:#F90;}
+.CalendarBox td.dateHave{background:#c00}
+#CalendarBox .calendarTab,#CalendarBox .calendarNav{position:relative;z-index:0;width:100%;overflow:hidden;}
+#cSltNav{display:block;height:14px;padding:4px 0;color:#666;font-size:12px;line-height:14px;text-align:center}
+#CalendarBox .calendarTab{position:absolute;top:0;left:0;right:0;z-index:999;height:35px;background-color:#f0f0f0;overflow:hidden;color:#333; border:0;font-size:12px;_zoom:1}
+#CalendarBox .calendarTab .dwm{float:left;margin-left:6px; margin-top:6px;width:118px;height:20px;line-height:20px;background:url(../images/sprite.png) no-repeat 0 -270px; }
+#CalendarBox .calendarTab span,#CalendarBox .calendarTab b{display:inline;}
+#CalendarBox .calendarTab span{float:left;width:39px; text-align:center; cursor: pointer;}
+#CalendarBox .calendarTab .cur{color:#fff;background:url(../images/time.png) no-repeat 0 -240px;width:40px;height:35px;font-weight:bold;}
+#CalendarBox .calendarTab b{float:right;cursor:pointer}
+#CalendarBox .calendarTab b.confirm{background:url(../images/time.png) no-repeat -255px -75px;width:45px;height:25px;display:block; border:0;text-indent:-9999px;margin-top:6px;}
+#CalendarBox .calendarTab b.reset{background:url(../images/time.png) no-repeat -195px -75px;width:45px;height:25px;display:block;border:0;text-indent:-9999px;margin-top:6px;}
+#CalendarBox .calendarTab b.cancel{background:url(../images/time.png) no-repeat -255px -105px;width:45px;height:25px;display:block;border:0;text-indent:-9999px;margin-top:6px;}
+/*MonthSelect*/
+.calendarMonth{width:513px;margin-top:35px;  margin-left:5px; margin-bottom:5px;}
+.calendarMonth tr{border-left:1px solid #9EC9EC;border-top:1px solid #9EC9EC;}
+.calendarMonth th{width:60px;height:40px; line-height:40px;text-align:center; background-color:#CCE7FF;border-right:1px solid #9EC9EC;color:#333;border-bottom:1px solid #9EC9EC; font-size:12px;font-weight:bold;}
+.calendarMonth td{width:28px;height:40px; line-height:40px;border-right:1px solid #9EC9EC;border-bottom:1px solid #9EC9EC; text-align:center;}
+.calendarWeek{width:516px;margin-top:35px;  margin-left:3px; margin-bottom:5px;}
+.calendarWeek tr{border-left:1px solid #9EC9EC;border-top:1px solid #9EC9EC;}
+.calendarWeek th{width:56px;height:40px; line-height:40px;text-align:center; background-color:#CCE7FF;border-right:1px solid #9EC9EC;color:#333;border-bottom:1px solid #9EC9EC; font-size:12px;font-weight:bold;}
+.calendarWeek td{height:18px; line-height:18px;border-right:1px solid #9EC9EC;border-bottom:1px solid #9EC9EC; text-align:center;}
+#prevNav,#nextNav{position:absolute;z-index:1;float:left;text-indent:-9999px;cursor:pointer}
+#prevNav{display:block;left:0;background:url(../images/time.png) no-repeat -284px -135px;width:17px;height:17px;margin:6px 0 6px 4px;}
+#nextNav{display:block;right:0;background:url(../images/time.png) no-repeat -284px -161px;width:17px;height:17px;margin:6px 4px 6px 0;}
+.calendarMonth{width:auto;margin-top:10px;border-collapse:collapse;}
+.calendarWeek{display:block;float:none;width:auto;margin-top:10px;border-collapse:collapse;text-align:center}

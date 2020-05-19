@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>已结束</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/easyui.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/sale_audit.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+</head>
+<body>
+<div class="sale_audit_container">
+    <!--待审核活动 S-->
+    <div class="ready_audit_box clearfix">
+        <label class="fl">待审核活动：</label>
+        <em class="fl">10个</em>
+        <a href="javascript:;" class="week_list cur">
+            <p>Week51</p>
+            <p>(3个)</p>
+        </a>
+        <a href="javascript:;" class="week_list">
+            <p>Week52</p>
+            <p>(3个)</p>
+        </a>
+        <a href="javascript:;" class="week_list">
+            <p>Week53</p>
+            <p>(4个)</p>
+        </a>
+        <a href="javascript:;" class="setting fr">
+            <i class="sale_icons setting_icon fl"></i>
+            设置
+        </a>
+    </div>
+    <!--待审核活动 S-->
+
+    <!--更多周次活动 S-->
+    <div class="week_list_container">
+        <div class="week_fold_box clearfix">
+            <a href="javascript:;" class="fr week_fold_btn fold_btn">收起更多周次活动 <i class="fr sale_icons drop_icon"></i></a>
+            <a href="javascript:;" class="fr week_fold_btn show_btn">展开更多周次活动 <i class="fr sale_icons drop_icon"></i></a>
+        </div>
+        <div class="week_list_box" style="width: 100%">
+            <div class="week_list clearfix"></div>
+        </div>
+    </div>
+    <!--更多周次活动 E-->
+
+    <!--活动设置 S-->
+    <div class="activity_setting_box clearfix">
+        <div class="activity_setting activity_overview">
+            <div class="act_name">Week51 <em>01.20-01.26</em></div>
+            <p class="activity_num">3个活动</p>
+            <div class="activity_btn">
+                <a href="javascript:;" class="act_btn end_btn">已结束</a>
+            </div>
+        </div>
+        <div class="activity_setting activity_GMV clearfix">
+            <div class="progress_circle_wrap fl">
+                <canvas id="mycanvas2" width="92" height="92"></canvas>
+            </div>
+            <div class="data_box fl">
+                <p>目标GMV：<em>23,232</em></p>
+                <p>已达成GMV：<em>3,232</em></p>
+                <p>活动商品GMV较去年同期：<em>+20%</em></p>
+                <p>活动商品GMV较上月同期：：<em>-10%</em></p>
+            </div>
+        </div>
+        <div class="activity_setting activity_gross">
+            <div class="progress_circle_wrap fl">
+                <canvas id="mycanvas3" width="92" height="92"></canvas>
+            </div>
+            <div class="data_box fl">
+                <p>目标GMV：<em>23,232</em></p>
+                <p>已达成GMV：<em>3,232</em></p>
+                <p>毛利较去年同期：<em>+20%</em></p>
+                <p>毛利较上月同期：：<em>-10%</em></p>
+            </div>
+        </div>
+    </div>
+    <!--活动设置 E-->
+
+    <!--活动切换 S-->
+    <div class="activity_switch_box">
+        <!--tab切换-->
+        <div class="tab_switch_box">
+            <ul class="activity_tab_list clearfix">
+                <li class="cur">活动1</li>
+                <li>活动2</li>
+                <li>活动3</li>
+            </ul>
+        </div>
+        <!--搜索与导出等设置-->
+        <div class="activity_operation_box clearfix">
+            <div class="activity_operation_left fl">
+                <div class="activity_name_box fl">
+                    <label>活动名称：</label><em>本周特惠</em>
+                </div>
+                <div class="product_num fl">
+                    <label class="fl">活动状态：</label>
+                    <a class="blue_link num_distribute_box" href="javascript:;">人工审核通过
+                        <div class="num_distribute satisfaction_box">
+                            <ul class="satisfaction">
+                                <li class="recommend clearfix">
+                                    <label class="fl">推荐满意度：</label>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <em class="score">5分</em>
+                                    <textarea type="text" readonly value="" class="reason fr">这里展示原因描述，不可编辑</textarea>
+                                </li>
+                                <li class="clearfix">
+                                    <label class="fl">价格设置：</label>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <em class="score">5分</em>
+                                    <textarea type="text" readonly value="" class="reason fr">这里展示原因描述，不可编辑</textarea>
+                                </li>
+                                <li class="clearfix">
+                                    <label class="fl">商品选择：</label>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <em class="score">5分</em>
+                                    <textarea type="text" readonly value="" class="reason fr">这里展示原因描述，不可编辑</textarea>
+                                </li>
+                                <li class="clearfix">
+                                    <label class="fl">促销形式：</label>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <i class="sale_icons star_icon"></i>
+                                    <em class="score">5分</em>
+                                    <textarea type="text" readonly value="" class="reason fr">这里展示原因描述，不可编辑</textarea>
+                                </li>
+                            </ul>
+                            <i class="angle_sign top_angle"></i>
+                            <i class="angle_sign bottom_angle"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="activity_operation_right fr search_pro_code_box">
+                <select name="pro_code" id="operation_pro_code" class="fl">
+                    <option value="">商品码</option>
+                    <option value="1231233">1231233</option>
+                    <option value="1231233">1231233</option>
+                </select>
+                <div class="search_box fl">
+                    <input type="text" class="search fl">
+                    <a href="javascript:;" class="sale_icons search_icon fr"></a>
+                </div>
+                <a href="javascript:;" class="export_box fl">
+                    <i class="sale_icons export_icon"></i>
+                    <em class="export">导出</em>
+                </a>
+            </div>
+        </div>
+        <!--活动表格-->
+        <div class="table_box activity_table_box tabs-panels" data-options="fit:true">
+            <table class="easyui-datagrid" data-options="fitColumns:true" id="activity_table">
+                <thead>
+                <tr>
+                    <th data-options="field:'saleWay',width:50,align:'center'">销售形式</th>
+                    <th data-options="field:'proSupplier',width:50,align:'center'">供应商</th>
+                    <th data-options="field:'brand',width:50,align:'center'">品牌</th>
+                    <th data-options="field:'proCode',width:50,align:'center'">商品码</th>
+                    <th data-options="field:'price1',width:50,align:'center'">商品名</th>
+                    <th data-options="field:'price2',width:50,align:'center'">实际成交价</th>
+                    <th data-options="field:'price3',width:50,align:'center'">实际前台毛利</th>
+                    <th data-options="field:'price4',width:50,align:'center'">实际销量</th>
+                    <th data-options="field:'price5',width:30,align:'center'">供应商下品牌达成GMV</th>
+                    <th data-options="field:'price6',width:50,align:'center'">供应商达成GMV</th>
+                    <th data-options="field:'price7',width:50,align:'center'">供应商前台毛利率</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>SBY/经销</td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td>9012390</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td>40</td>
+                    <td>4%</td>
+                    <td>132</td>
+                    <td>123412</td>
+                    <td>3435</td>
+                    <td>2432</td>
+                    <td>2432</td>
+                </tr>
+                <tr>
+                    <td>SBY/经销</td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td>9012390</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td>40</td>
+                    <td>4%</td>
+                    <td>132</td>
+                    <td>123412</td>
+                    <td>3435</td>
+                    <td>2432</td>
+                    <td>2432</td>
+                </tr>
+                <tr>
+                    <td>SBY/经销</td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td>9012390</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td>40</td>
+                    <td>4%</td>
+                    <td>132</td>
+                    <td>123412</td>
+                    <td>3435</td>
+                    <td>2432</td>
+                    <td>2432</td>
+                </tr>
+                <tr>
+                    <td>SBY/经销</td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td><p class="td_ten">这里最多展示两行10个字</p></td>
+                    <td>9012390</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td>40</td>
+                    <td>4%</td>
+                    <td>132</td>
+                    <td>123412</td>
+                    <td>3435</td>
+                    <td>2432</td>
+                    <td>2432</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="easyui-panel">
+                <div class="easyui-pagination" data-options="total:114"></div>
+            </div>
+        </div>
+    </div>
+    <!--活动切换 E-->
+</div>
+</body>
+<script src="js/sale_audit.js"></script>
+<script>
+
+    circleGenerate("mycanvas2",46,75,"GMV达成率");
+    circleGenerate("mycanvas3",46,70,"毛利率达成率");
+
+    function circleGenerate(x,y,z,s){
+        var  width_canvas = 92,
+                height_canvas =92;
+        var _id = x,
+                _r = y,
+                i = z,
+                _title = s;
+        var canvas = document.getElementById(_id),
+                context =  canvas.getContext("2d");
+
+        canvas.width = width_canvas;
+        canvas.height = height_canvas;
+
+        context.beginPath();
+        context.arc(_r ,_r , _r ,0 , 2*Math.PI);
+        context.lineWidth = 1;
+        context.strokeStyle = "#ccc";
+        context.stroke();
+
+        context.beginPath();
+        context.arc(_r ,_r, _r  ,0*Math.PI,0.02*i*Math.PI );
+        context.lineWidth = 1;
+        context.strokeStyle = "#1da563";
+        context.stroke();
+
+        context.font="14px Tohama";
+        context.textAlign='center';//文本水平对齐方式
+        context.fillText(_title,_r,40); // 圆心百分数
+        context.fillText(i+"%" ,_r,70); // 圆心百分数
+        context.textBaseline='middle';//文本垂直方向，基线位置
+//        };
+    }
+
+</script>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>报告管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/dateShow.css">
+    <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="css/quality_platform.css">
+</head>
+<body>
+<!--[if lt IE 9]>
+<style type="text/css">
+    .search_con .items{width: 299px;}
+</style>
+<![endif]-->
+
+<div class="report_management_con">
+    <div class="main_con">
+        <!--查询条件筛选 S-->
+        <div class="search_con clearfix">
+            <div class="search_btn_con fr">
+                <a href="javascript:void(0)" class="refer_btn">查询</a>
+            </div>
+            <div class="condition_con clearfix">
+                <!--单选 S-->
+                <div class="items">
+                    <label>报告类型</label>
+                    <a href="javascript:void(0)" class="select_con select_box">
+                        <div class="tips clearfix">
+                            <em class="selected_con txt">全部</em>
+                            <i class="icon down"></i>
+                        </div>
+                        <ul class="select_list_con select_list">
+                            <li class="clearfix"><em>全部</em></li>
+                            <li class="clearfix"><em>健康度报告</em></li>
+                            <li class="clearfix"><em>总结报告</em></li>
+                        </ul>
+                    </a>
+                </div>
+                <!--单选 E-->
+
+                <!--时间 S-->
+                <div class="items">
+                    <label>报告所属时间</label>
+                    <div class="selecDatePeriod fl">
+                        <div class="timeSelectBar clearfix">
+                            <input class="tselect-same startInput date12" type="text" readonly="readonly" value="2016-08-19">
+                            <input class="lineInput" type="text" readonly="" value="至">
+                            <input class="tselect-same endInput date12" type="text" readonly="readonly" value="2015-08-26">
+                            <i class="iconfont">&#xe604;</i>
+                        </div>
+                        <div class="none timeHideModel">
+                            <div class="dateTabBtn dateTabBtn1 clearfix" data-trigger="spcalendar">
+                                <a href="javascript:;" data-mode="month">按月</a>
+                                <a href="javascript:;" data-mode="week">按周</a>
+                                <a class="current" href="javascript:;" data-mode="date">按日</a>
+                            </div>
+                            <div class="detailDateWarp">
+                                <div class="detailDateCont"></div>
+                                <a class="sureClose" href="javascript:;">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--时间 E-->
+            </div>
+        </div>
+        <!--查询条件筛选 E-->
+    </div>
+
+    <!--表格 S-->
+    <div class="table_con">
+        <div class="table_operation_con clearfix">
+            <a href="javascript:void(0)" class="newAdd_btn fr"><i class="icon add_icon"></i>新建报告</a>
+        </div>
+
+
+        <div class="report_table_con">
+            <table cellpadding="0" cellspacing="0"  class="report_manage_head" width="100%">
+                <thead>
+                <tr>
+                </tr>
+                </thead>
+            </table>
+            <div class="table_body_con">
+                <table width="100%" cellpadding="0" cellspacing="0" class="management_table_body">
+                    <thead>
+                    <tr>
+                        <!--<td width="7%">报告ID</td>-->
+                        <!--<td width="16%">报告名称</td>-->
+                        <!--<td width="8%">报告类型</td>-->
+                        <!--<td width="8%">报告状态</td>-->
+                        <!--<td width="16%">时间周期</td>-->
+                        <!--<td width="45%">操作</td>-->
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--日志记录 S-->
+<div class="log_record_con">
+    <div class="record_head">
+        <h3>日志记录</h3>
+        <i class="icon close"></i>
+    </div>
+    <div class="record_box">
+        <ul>
+            <li>
+                <label>版本ID：</label>
+                <em>0013</em>
+            </li>
+            <li>
+                <label>操作：</label>
+                <em>发布</em>
+            </li>
+            <li>
+                <label>操作人员：</label>
+                <em>wangdachui1</em>
+            </li>
+            <li>
+                <label>操作时间：</label>
+                <em>2016 10/09 15:27:18</em>
+            </li>
+            <li>
+                <label>备注：</label>
+                <em>重新发布</em>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>版本ID：</label>
+                <em>0013</em>
+            </li>
+            <li>
+                <label>操作：</label>
+                <em>发布</em>
+            </li>
+            <li>
+                <label>操作人员：</label>
+                <em>wangdachui1</em>
+            </li>
+            <li>
+                <label>操作时间：</label>
+                <em>2016 10/09 15:27:18</em>
+            </li>
+            <li>
+                <label>备注：</label>
+                <em>重新发布</em>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>版本ID：</label>
+                <em>0013</em>
+            </li>
+            <li>
+                <label>操作：</label>
+                <em>发布</em>
+            </li>
+            <li>
+                <label>操作人员：</label>
+                <em>wangdachui1</em>
+            </li>
+            <li>
+                <label>操作时间：</label>
+                <em>2016 10/09 15:27:18</em>
+            </li>
+            <li>
+                <label>备注：</label>
+                <em>重新发布</em>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--日志记录 E-->
+
+<!-- 弹窗 S-->
+<div class="Ag-common-dialog templet-open-box addNewReport">
+    <div class="Acd-rel-dialog box-rim">
+        <div class="Acd-rel-body box-cont">
+            <div class="pop_head">
+                <p>新建报告</p>
+                <i class="icon pop-close close"></i>
+            </div>
+            <div class="content_con">
+                <div class="search_con">
+                    <div class="condition_con">
+                        <!--单选 S-->
+                        <div class="items">
+                            <label>报告类型</label>
+                            <a href="javascript:void(0)" class="select_con select_box pop_select_con">
+                                <div class="tips clearfix">
+                                    <em class="selected_con txt">健康度报告</em>
+                                    <i class="icon down"></i>
+                                </div>
+                                <ul class="select_list_con select_list report_type">
+                                    <li class="clearfix"><em>健康度报告</em></li>
+                                    <li class="clearfix"><em>财务报告</em></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <!--单选 E-->
+                        <!--时间 S-->
+                        <div class="items">
+                            <label>报告所属时间</label>
+                            <div class="selecDatePeriod fl pop_select_con">
+                                <div class="timeSelectBar clearfix">
+                                    <input class="tselect-same startInput date14" type="text" readonly="readonly" value="2016-09-12">
+                                    <input class="lineInput" type="text" readonly="" value="至">
+                                    <input class="tselect-same endInput date14" type="text" readonly="readonly" value="2016-10-12">
+                                    <i class="iconfont">&#xe604;</i>
+                                </div>
+                                <div class="none timeHideModel">
+                                    <div class="dateTabBtn dateTabBtn3 clearfix" data-trigger="spcalendar">
+                                        <a href="javascript:;" data-mode="month">按月</a>
+                                        <a href="javascript:;" data-mode="week">按周</a>
+                                        <a class="current" href="javascript:;" data-mode="date">按日</a>
+                                    </div>
+                                    <div class="detailDateWarp">
+                                        <div class="detailDateCont"></div>
+                                        <a class="sureClose" href="javascript:;">确定</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--时间 E-->
+
+                        <!--报告名称 S-->
+                        <div class="items">
+                            <label>报告周期</label>
+                            <a href="javascript:void(0)" class="select_con select_box pop_select_con">
+                                <div class="tips clearfix">
+                                    <input type="text" class="items_input period_enter" placeholder='请按"WK+数字"格式填写，如WK35'>
+                                </div>
+                            </a>
+                        </div>
+                        <!--报告名称 E-->
+
+                        <!--报告名称 S-->
+                        <div class="items">
+                            <label>报告名称</label>
+                            <a href="javascript:void(0)" class="select_con select_box pop_select_con">
+                                <div class="tips clearfix">
+                                    <em class="selected_con txt report_name" style="color: #999;cursor: not-allowed;">健康度报告-2016-Q3-WK35(0908-0914)</em>
+                                </div>
+                            </a>
+                        </div>
+                        <!--报告名称 E-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn-box search_btn_con">
+                <a href="javascript:void(0)" class="sureClose pop-close">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/datepickerCore.js"></script>
+<script src="js/datepickerUi.js"></script>
+<script src="js/jquery.ztree.all-3.5.min.js"></script>
+<script src="js/quality_platform.js"></script>
+<script>
+    //弹窗
+    $('.table_operation_con').on('click','.newAdd_btn',function(){
+        $(this).PopupDialog({
+            popupClass:'.addNewReport',
+            maskLayer:true
+        });
+
+
+    });
+
+    //报告名称生成函数
+    generateName();
+    function generateName(){
+        var reportType='健康度报告',//默认报名类型
+                reportTimeStart,
+                reportTimeEnd,
+                reportPeriod='WK35',//默认WK值
+                reportName,
+                Qtime,
+                yearTime,
+                monthTime,
+                weekTime;
+        $('.addNewReport').on('click','.select_list li',function(){
+            reportType = $(this).find('em').text();// console.log(reportType);
+            reportTimeStart = $('.timeSelectBar .date14.startInput').val();//console.log(reportTimeStart);
+            reportTimeEnd = $('.timeSelectBar .date14.endInput').val();//console.log(reportTimeEnd);
+            timeSplit(reportTimeStart,reportTimeEnd);
+        });
+
+        $('.timeSelectBar').on('click','.date14',function(){
+            $('body').on('click',function(){
+                reportTimeStart = $('.timeSelectBar .date14.startInput').val();//console.log(reportTimeStart);
+                reportTimeEnd = $('.timeSelectBar .date14.endInput').val();//console.log(reportTimeEnd);
+                timeSplit(reportTimeStart,reportTimeEnd);
+            });
+
+        });
+
+        $('body').on('keyup','.period_enter',function(){
+            reportPeriod = $(this).val();//console.log(reportPeriod);
+            timeSplit(reportTimeStart,reportTimeEnd);
+        });
+
+        function timeSplit(start,end){//console.log(start);
+            var sArr = start.split('-');
+            var eArr = end.split('-');
+            yearTime = eArr[0];
+            monthTime = '('+sArr[1]+sArr[2]+'-'+eArr[1]+eArr[2]+')';//console.log(monthTime);
+            weekTime = reportPeriod + monthTime;
+            if(eArr[1]<4){
+                Qtime='Q'+1;
+            }else if(eArr[1]>3&&eArr[1]<7){
+                Qtime='Q'+2;
+            }else if(eArr[1]>6&&eArr[1]<10){
+                Qtime='Q'+3;
+            }else if(eArr[1]>9){
+                Qtime='Q'+4;
+            }
+            generateNameFun();
+        }
+
+        function generateNameFun(){
+            var arr = [reportType,yearTime,Qtime,weekTime];
+            reportName =arr.join('-');
+            $('.report_name').text(reportName);//console.log(reportName);
+        }
+    }
+
+    var head = {columns : [
+        {
+            title : '报告ID',
+            field : 'reportId',
+            width : '7%',
+            hidden : false
+        },
+        {
+            title : '报告名称',
+            field : 'reportName',
+            width : '16%',
+            hidden : false
+        }, {
+            title : '报告类型',
+            field : 'reportType',
+            width : '8%',
+            hidden : false
+        }, {
+            title : '报告状态',
+            field : 'typeName',
+            width : '8%',
+            hidden : false
+        }, {
+            title : '时间周期',
+            field : 'reportPeriod',
+            width : '16%',
+            hidden : false
+        }, {
+            title : '操作',
+            field : 'reportStatus',
+            width : '45%',
+            hidden : false
+        }
+
+    ]}
+    var data = {"row":[
+        {
+            "typeId":"1",
+            "reportId":"2016011",
+            "reportName":"健康度报告-2016-Q2-wk34",
+            "reportType":"健康度报告",
+            "typeName":"未生成",
+            "reportStatus":"none_generate",
+            "reportPeriod":"2016/06/09-2016/02/09"
+        },{
+            "typeId":"2",
+            "reportId":"2016012",
+            "reportName":"健康度报告-2016-Q3-wk35",
+            "reportType":"健康度报告",
+            "typeName":"生成中",
+            "reportStatus":"generating",
+            "reportPeriod":"2016/07/09-2016/03/09"
+        },{
+            "typeId":"3",
+            "reportId":"2016012",
+            "reportName":"健康度报告-2016-Q4-wk36",
+            "typeName":"生成失败",
+            "reportType":"健康度报告",
+            "reportStatus":"generate_fail",
+            "reportPeriod":"2016/08/09-2016/04/09"
+        },{
+            "typeId":"4",
+            "reportId":"2016012",
+            "reportName":"健康度报告-2016-Q4-wk36",
+            "typeName":"待发布",
+            "reportType":"健康度报告",
+            "reportStatus":"ready_public",
+            "reportPeriod":"2016/08/09-2016/04/09"
+        },{
+            "typeId":"5",
+            "reportId":"2016012",
+            "reportName":"健康度报告-2016-Q4-wk36",
+            "typeName":"锁定",
+            "reportType":"健康度报告",
+            "reportStatus":"locked",
+            "reportPeriod":"2016/08/09-2016/04/09"
+        }
+        ,{
+            "typeId":"6",
+            "reportId":"2016012",
+            "reportName":"健康度报告-2016-Q4-wk36",
+            "typeName":"已修改",
+            "reportType":"健康度报告",
+            "reportStatus":"fixed",
+            "reportPeriod":"2016/08/09-2016/04/09"
+        }
+        ,{
+            "typeId":"7",
+            "reportId":"2016012",
+            "reportName":"健康度报告-2016-Q4-wk36",
+            "typeName":"已发布",
+            "reportType":"健康度报告",
+            "reportStatus":"published",
+            "reportPeriod":"2016/08/09-2016/04/09"
+        }
+    ]}
+    var hd = $('.report_manage_head thead tr');
+    var hdReal = $('.management_table_body thead tr');
+    var obj = $('.management_table_body tbody');
+    var len = head.columns.length;
+    var len1 = data.row.length;
+    var headTd = '<td></td>';
+    var _tr = '<tr></tr>';
+    hd.empty();
+    for(var i=0;i<len;i++){
+        var _td = '<td width="'+head.columns[i].width+'">'+head.columns[i].title+'</td>';
+        hd.append(_td);
+        hdReal.append(_td);
+    }
+
+    var _width = [];
+    $('.report_manage_head td').each(function(k){
+        _width.push($(this).width());//console.log(a);
+    });
+    $('.management_table_body').outerWidth(_width);
+    hdReal.empty();
+    obj.empty();
+    for(var j=0;j<len1;j++){
+        obj.append(_tr);
+        var curTr = obj.find('tr').eq(j);
+        for(var i=0;i<len;i++){
+            var _field = head.columns[i].field;
+            var _byTd;
+            if(_field!='reportStatus'){
+                _byTd = '<td><div style="width: '+_width[i]+'px;">'+data.row[j][_field]+'</div></td>';
+            }else{
+                _byTd = '<td class="operation_td"><a class="operation_btn" href="javascript:void(0)">查看</a>'+
+                '<div style="width: '+_width[i]+'px;">'+
+                '<a class="operation_btn" href="javascript:void(0)">锁定</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">释放</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">编辑</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">撤销编辑</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">删除</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">发布</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">撤销发布</a>'+
+                '<a class="operation_btn" href="javascript:void(0)">查看日志</a></div></td>';
+
+            }
+            curTr.append(_byTd);
+        }
+        judgeStatus(data.row[j].reportStatus,j);
+    }
+
+    function judgeStatus(status,j){
+        var _obj = $('.management_table_body tbody tr');
+            switch(status){
+                case "none_generate":
+                    for(var i=0;i<9;i++){
+                       if(!(i==5||i==8)){
+                           _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                       }
+                    };//console.log('00');
+                    break;
+                case "generating"://console.log(j);
+                    for(var i=0;i<9;i++){
+                        if(!(i==8)){
+                            _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                        }
+                    };//
+                    break;
+                case "generate_fail"://console.log(j);
+                    for(var i=0;i<9;i++){
+                        if(!(i==5||i==8)){
+                            _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                        }
+                    };//console.log('00');
+                    break;
+                case "ready_public":
+                    for(var i=0;i<9;i++){
+                        if(i==2||i==3||i==7){
+                            _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                        }
+                    }
+                    break;
+                case "locked":
+                    for(var i=0;i<9;i++){
+                        if(!(i==0||i==8)){
+                            _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                        }
+                    }
+                    break;
+                case "fixed":
+                    for(var i=0;i<9;i++){
+                        if(i==1||i==5||i==6||i==7){
+                            _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                        }
+                    }
+                    break;
+                case "published":
+                    for(var i=0;i<9;i++){
+                        if(!(i==1||i==7||i==8)){
+                            _obj.eq(j).find('.operation_td a').eq(i).addClass('disable_btn');
+                        }
+                    }
+                    break;
+                default:break;
+
+            }
+    }
+
+</script>
+</html>

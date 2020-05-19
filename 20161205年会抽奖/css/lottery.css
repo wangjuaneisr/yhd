@@ -1,0 +1,394 @@
+*{margin:0;padding:0;}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #c8153a url('../images/bg.jpg') no-repeat top center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    }
+.clearfix:after{display:block;content:".";height:0;visibility:hidden;clear:both;font-size:0;line-height:0;}
+.clearfix{*zoom:1;}
+#container {font: normal 14px 'Microsoft YaHei';}
+#container .wrap1200{position:relative;margin:0 auto;padding-top:70px;}
+ul {scrollbar-arrow-color:#e17c44; scrollbar-face-color:#e99741; scrollbar-darkshadow-color:#e17c44; scrollbar-highlight-color:#e17c44; scrollbar-3dlight-color:#e17c44; scrollbar-shadow-color:#e17c44; scrollbar-track-color:#e17c44;}
+.lottery_container{
+    position: relative;
+    width: 1140px;
+    margin: 20px auto;
+}
+.luck_box{
+    width: 380px;
+    height: 80px;
+    margin: 0 auto;
+    background: url("../images/luck.png");
+}
+.txt_center{
+    position:absolute;
+    bottom:0;
+    right: 0;
+    width:350px;
+}
+#list_prize {float:left;display:inline-block;height: 30px;border: 0;line-height:30px;}
+#list_prize a.select,#list_prize .drop_box{
+    position: relative;
+    display: block;
+    width: 100px;
+    padding: 0 25px 0 15px;
+    border: 2px #af0001 solid;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    outline: none;
+    background-color:#fff;
+    color: #af0001;
+    font: normal 20px/30px 'Microsoft YaHei';
+
+}
+#list_prize a.select .rotate_img{
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+}
+#list_prize.selected a .rotate_img{
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+#list_prize a.select .rotate_img{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    background: url("../images/drop.jpg") no-repeat;
+    background-position: 3px 0px;
+}
+#list_prize .drop_box{
+    position: absolute;
+    display: none;
+    width: 140px;
+    padding: 0;
+    margin-top: -2px;
+    cursor: pointer;
+    z-index: 3;
+}
+#list_prize .drop_box li{
+    padding-left: 15px;
+}
+#list_prize .drop_box li:hover{
+    background-color: #f4e3e3;
+}
+#list_prize.selected .drop_box{
+    display: block;
+}
+.txt_center .thoughtbot {
+    float:right;
+    width: 130px;
+    height:40px;
+    margin-left: 30px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #af0001;
+    color: #fffcd3;
+    font: normal 22px/40px 'Microsoft YaHei';
+    text-align: center;
+}
+.txt_center .thoughtbot:hover{
+    background-color: #c41213;
+}
+.txt_center .thoughtbot.stop{}
+#prize_name {position:absolute;left:50%;top:151px;margin-left:-475px;width:1140px;height:20px;font-size:20px; color: #fff; font-family: 'Microsoft YaHei';text-align: center;}
+.all_name{
+    position: relative;
+    margin: 0px auto;
+    width: 1140px;
+    height: 640px;
+    background: url("../images/glass.png") no-repeat;
+    background-size:100% 100%;
+    z-index:2;
+    overflow: hidden;
+}
+.all_name_bg{position: absolute;top:0;left: 0;width: 1140px;height: 640px;}
+.all_con{
+    /*position: absolute;*/
+    /*top: 20px;*/
+    /*left: 0;*/
+    /*width: 1140px;*/
+    /*height:640px;*/
+
+}
+.list_person_box{float: left;width:170px;height:640px;margin:0px 0 0 5px;}
+.list_person_title{width: 170px;height: 70px;line-height:40px;font-family:"Microsoft YaHei";font-size:28px;font-weight:bold;color: #efdd04;text-shadow:3px 0 3px #020b07;text-align: center;}
+#count_person {width: 170px; height: 20px; color: #fff; text-align: center;}
+#list_person {width:170px;list-style: none; padding: 0; overflow-x: hidden; overflow-y: auto; color: #fff;}
+#list_person li{font-family: 'Microsoft YaHei';font-size: 20px;font-weight: bold;color: #af0001;text-align: center;}
+.list_result_box{float: right;margin:0px 5px 0 0;width:220px;height:640px;}
+.list_result_title{
+    color: #000;
+    font: normal 22px/40px 'Microsoft YaHei';
+    text-align: center;
+}
+.prized_name{
+    padding: 20px 0;
+    text-align: center;
+}
+#list_result {
+    width:210px;
+    max-height: 280px;
+    list-style: none;
+    margin:0;
+    padding: 0 5px;
+    color: #fff;}
+#list_result li em{
+    color: #000;
+    font: normal 14px/36px 'Microsoft YaHei';
+}
+#list_result li.caption {color: #ff0; padding: 5px; margin: 2px 0; font-weight: bold;}
+#list_result li span {font-size: 14px; color: #ff9;}
+.selected_box{
+    position:relative;
+    /*float:left;*/
+    /*width:680px;*/
+    height:610px;
+    margin: 20px 0;
+    /*border-right: 2px #efb9a5 solid;*/
+    z-index:2;
+}
+.selected_box h3{
+    color: #af0001;
+    font: bold 35px/38px 'Microsoft YaHei';
+    text-align: center;
+}
+.selected_box .prize_box{
+    color: #af0001;
+    font: normal 24px/50px 'Microsoft YaHei';
+    text-align: center;
+}
+.lottery_show{
+    display: none;
+}
+.selected_person_box{
+    width: 1140px;
+    height: 480px;
+    overflow: hidden;
+}
+#selected_person {
+    width: 1120px;
+    height: 440px;
+    outline: none;
+}
+#selected_person .selected_person_list{
+    width: 1060px;
+    padding: 0 35px 0 45px;
+    margin-right: -20px;
+}
+#selected_person li{
+    position: relative;
+    float: left;
+    width: 518px;
+    height: 82px;
+    margin: 10px 10px 0 0;
+    border: 1px dashed #fffbd2;
+    background-color: #a0382d;
+    color: #fffbd2;
+    font: normal 20px/48px 'Microsoft YaHei';
+    text-align: center;
+}
+#selected_person li .domain_box,#selected_person li .name_prize{
+    padding-left: 10px;
+    text-align: left;
+}
+#selected_person li .domain_box em{
+    line-height: 34px;
+}
+#selected_person li .name_prize em.name,#selected_person li .name_prize em{
+    line-height: 40px;
+    font-size: 30px;
+}
+#selected_person li em{
+    color: #fffcd3;
+    font: normal 20px 'Microsoft YaHei';
+}
+#selected_person li em.name{
+    font-size: 18px;
+    font-weight: bold;
+}
+#selected_person li .close_img{
+    display: none;
+    position: absolute;
+    width: 518px;
+    height: 82px;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    right: 0;
+    color: #fffcd3;
+    font:normal 40px/82px 'Microsoft YaHei';
+    text-align: center;
+}
+
+#selected_person  li.stopped:hover{
+    border: 1px solid #c45d55;
+
+}
+#selected_person li.stopped:hover .close_img{
+    display: block;
+}
+.center_bg{
+    position:absolute;
+    top:100px;
+    left:50%;
+    margin-left:-199px;
+    width:398px;
+    height: 398px;
+    background: url("../images/rotate.png") no-repeat;
+}
+.center_bg.start{
+    -webkit-animation:spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    -ms-animation:spin 10s linear infinite;
+    -o-animation:spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+}
+@-webkit-keyframes spin {
+    from{-webkit--transform:rotate(360deg);}
+    to{  -webkit--transform:rotate(0deg);}
+}
+@-moz-keyframes spin {
+    from{-moz-transform:rotate(360deg);}
+    to{-moz-transform:rotate(0deg);  }
+}
+@-ms-keyframes spin {
+    from  {-ms-transform:rotate(360deg);}
+    to{  -ms-transform:rotate(0deg);  }
+}
+@-o-keyframes spin {
+    from{  -o-transform:rotate(360deg);}
+    to{  -o-transform:rotate(0deg);  }
+}
+@keyframes spin {
+    from{transform:rotate(-360deg);  }
+    to{transform:rotate(0deg);  }
+}
+/*--- @通用遮罩层 ----*/
+.popup-iframe{position:absolute;left:0;top:0;z-index:800;width:100%;background-color:#000;filter:alpha(opacity=70);opacity:0.3;}
+.Ag-maskLayer {position: absolute;left: 0;top: 0;z-index: 810;width: 100%; height:100%;background-color: #000;filter: alpha(opacity=70);opacity: 0.6;}
+
+/*--- @通用弹窗模块样式 ----*/
+/*--- @通用弹窗模块样式 ----*/
+.Ag-common-dialog{position:absolute; z-index:999; width:80%; left:50%;border:5px solid #ccc; border-color:rgba(0 ,0 ,0 ,.2);background-color: #fff;border-radius: 4px;}
+.Acd-rel-dialog{ position:relative;background:#fff;}
+.Acd-rel-head{ height:45px; padding:0px 20px;  line-height:45px; background-color:#ededed; font-family:"microsoft yahei"; font-size:14px; color:#333; border-bottom:1px solid #e6e6e6;}
+.Acd-rel-body{ padding:20px; background-color:#fff;}
+.dialog-main-close{ display: block;  position: absolute;width:24px;height:23px;right:-32px;top:0px; background-image:url(../images/dialogclose.gif); background-size:24px auto; background-position:0px 0px;-moz-transition:-moz-transform 0.5s ease 0s;transition:transform 0.5s ease 0s;}
+.dialog-main-close:hover{ background-position:0px 0px;-o-transform:rotate(180deg);transform:rotate(180deg);}
+.delay-dispear{display: none; width:222px;height:92px;border:1px solid #e6e6e6;background-color:#fff;text-align: center;}
+.delay-dispear p{margin-top:32px;}
+.delay-dispear h3{position: relative; margin-top:40px;font-size: 14px;font-weight: normal;color: #666;}
+.templet-open-box{display: none;width:290px;}
+.Ag-common-dialog .close{position:absolute;top:6px;right:10px;width: 20px;height: 24px;background-position: 4px -280px;cursor: pointer;}
+.Ag-common-dialog .box-cont-title{color: #333;font: normal 16px/18px 'Microsoft YaHei'; text-align: center;}
+.Ag-common-dialog .content_con{color: #333;font-weight: bold;text-align: center;}
+.Ag-common-dialog .content_con .btn_box{margin: 15px auto;}
+.Ag-common-dialog .content_con p{height:50px;font: normal 14px/50px 'Microsoft YaHei';}
+.Ag-common-dialog .content_con .btn_box a{
+    display: inline-block;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+    background-color: #af0001;
+    color: #fff;
+    font: normal 14px/24px 'Microsoft YaHei';
+}
+/*//]]>*/
+/* jscrollpane 自定义滚动条-S */
+.jspContainer{
+    overflow: hidden;
+    position: relative;
+}
+.jspPane{
+    position: absolute;
+}
+.jspVerticalBar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+}
+.jspHorizontalBar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+}
+.jspCap{
+    display: none;
+}
+.jspHorizontalBar .jspCap{
+    float: left;
+}
+.jspTrack{
+    position: relative;
+}
+.jspDrag{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    width: 6px;
+    height: 70px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #f1caa2;
+    cursor: pointer;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag{
+    float: left;
+    height: 100%;
+}
+.jspHorizontalBar .jspDrag{
+    display: none;
+}
+.jspArrow{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.jspArrow.jspDisabled{
+    cursor: default;
+    background: #80808d;
+}
+.jspVerticalBar .jspArrow{
+    height: 16px;
+}
+.jspHorizontalBar .jspArrow{
+    width: 16px;
+    float: left;
+    height: 100%;
+}
+.jspContainer,
+.jspVerticalBar .jspArrow:focus{
+    outline: none;
+}
+.jspCorner{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+/* jscrollpane 自定义滚动条-E */

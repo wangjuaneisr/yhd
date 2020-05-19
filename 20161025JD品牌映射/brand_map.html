@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌映射</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/brandMap.css">
+</head>
+<body>
+    <div class="brand_map_container wrap">
+        <!--面包屑 S-->
+        <div class="crumbs_box clearfix">
+            <label class="fl">当前位置：</label>
+            <div class="crumbs fl">
+                <a href="javascript:void(0)">商品管理</a>
+                &gt;&gt;
+                <a href="javascript:void(0)">JD品牌映射</a>
+            </div>
+
+        </div>
+        <!--面包屑 E-->
+
+        <!--查询条件 S-->
+        <div class="search_condition_box">
+            <div class="condition_box clearfix">
+                <div class="item">
+                    <label class="form_name">JD品牌ID：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+                <div class="item">
+                    <label class="form_name">JD品牌名称：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+                <div class="item">
+                    <label class="form_name">是否映射：</label>
+                    <select class="select_box">
+                        <option>请选择</option>
+                        <option>是</option>
+                        <option>否</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label class="form_name">YHD品牌ID：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+                <div class="item">
+                    <label class="form_name">YHD品牌名称：</label>
+                    <input type="text" class="ipt txt_ipt">
+                </div>
+            </div>
+
+            <div class="btn_box">
+                <a href="javascript:;" class="deep_blue">查询</a>
+                <a href="javascript:;">清空</a>
+            </div>
+        </div>
+        <!--查询条件 E-->
+
+        <!--表格 S-->
+        <div class="table_box">
+            <div class="table_handle clearfix">
+                <a href="javascript:;" class="check_results  import_btn">excel导入</a>
+                <a href="javascript:;" class="export_results check_results export_btn">excel导出</a>
+            </div>
+            <div class="table_con">
+                <div class="fix_height_table">
+                    <table cellpadding="0" cellspacing="0" border="0" class="normal_table align_left" width="980">
+                        <thead>
+                        <tr>
+                            <th width="154">JD品牌ID</th>
+                            <th width="190">JD品牌名称</th>
+                            <th width="191">YHD品牌ID</th>
+                            <th width="253">YHD品牌名称</th>
+                            <th width="90">是否映射</th>
+                            <th width="102" class="align_right">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.44445L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.55555L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.666665L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.777775L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="blue_link map_brand">映射品牌</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.888885L王致和桶装精制料酒1.888885L王致和桶装精制料酒1.888885L王致和桶装精制料酒1.888885L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.99975L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.888L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒1.75L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒22222L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒9999L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒222222L</a>
+                                </p>
+                            </td>
+                            <td>44646489</td>
+                            <td>
+                                <p class="long_txt">
+                                    <a href="#" class="blue_link">王致和桶装精制料酒333333L</a>
+                                </p>
+                            </td>
+                            <td>是</td>
+                            <td class="align_right handle_td pr20">
+                                <a href="javascript:;" class="editor_btn blue_link">编辑</a>
+                                <div class="has_tooltip">
+                                    <a href="javascript:;" class="blue_link check_handle">清除</a>
+                                    <div class="tooltip_box none">
+                                        <s class="above"></s><s class="under"></s>
+                                        <p class="tip">确定清除吗？</p>
+                                        <div class="btns_box"><a href="javascript:;" class="confirm">确定</a><a href="javascript:;" class="cancle">取消</a></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="table_handle page_box clearfix">
+                <div class="page-model clearfix financial-record-page fr">
+                    <div class="yhdbk-page clearfix">
+                        <a href="javascript:;" class="page-prev"><s></s></a>
+                        <a href="javascript:;" class="page-cur">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                        <a href="javascript:;">4</a>
+                        <a href="javascript:;">5</a>
+                        <a href="javascript:;">6</a>
+                        <a href="javascript:;">7</a>
+                        <a href="javascript:;">8</a>
+                        <a href="javascript:;">...</a>
+                        <a href="javascript:;">100</a>
+                        <a href="javascript:;" class="page-next"><s></s></a>
+                    <span class="page-num">
+                        每页显示
+                        <select name="" id="">
+                            <option value="">20</option>
+                            <option value="">30</option>
+                        </select>条
+                    </span>
+                    <span class="page_choose">
+                        第<input type="text" class="ipt">页
+                    </span>
+                        <a href="javascript:;" class="confirm">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--表格 E-->
+    </div>
+<!--映射关系弹窗 S-->
+<div class="Ag_common_dialog brank_map_pop">
+    <div class="Acd_rel_dialog">
+        <a class="pop_close dialog_main_close" href="javascript:;"></a>
+        <div class="Acd_rel_head"><h3>映射品牌</h3></div>
+        <div class="Acd_rel_body brank_map_body">
+            <div class="pop_items clearfix">
+                <label class="form_name">JD品牌ID：</label>
+                <div class="form_cont">
+                    <p class="cont_text">1111</p>
+                </div>
+            </div>
+            <div class="pop_items clearfix">
+                <label class="form_name">JD品牌名称：</label>
+                <div class="form_cont">
+                    <p class="cont_text">味全</p>
+                </div>
+            </div>
+            <div class="pop_items clearfix">
+                <label class="form_name">YHD品牌：</label>
+                <div class="form_cont">
+                    <input type="text" class="yhd_brand">
+                </div>
+            </div>
+            <div class="popup_btn_box">
+                <a class="com_btn pop_close confirm_add" href="javascript:;">确认</a>
+                <a href="javascript:;" class="com_btn gray pop_close">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--映射关系弹窗 S-->
+<!--编辑弹窗 E-->
+    <div class="Ag_common_dialog brand_editor_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>映射品牌</h3></div>
+            <div class="Acd_rel_body brank_map_body">
+                <div class="pop_items clearfix">
+                    <label class="form_name">JD品牌ID：</label>
+                    <div class="form_cont">
+                        <p class="cont_text">1111</p>
+                    </div>
+                </div>
+                <div class="pop_items clearfix">
+                    <label class="form_name">JD品牌名称：</label>
+                    <div class="form_cont">
+                        <p class="cont_text">味全</p>
+                    </div>
+                </div>
+                <div class="pop_items clearfix">
+                    <label class="form_name">YHD品牌：</label>
+                    <div class="form_cont">
+                        <input type="text" class="yhd_brand">
+                    </div>
+                </div>
+                <div class="popup_btn_box">
+                    <a class="com_btn pop_close confirm_add" href="javascript:;">确认</a>
+                    <a href="javascript:;" class="com_btn gray pop_close">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--编辑弹窗 E-->
+
+<!--导入相关弹窗  S-->
+    <!--导入弹窗 S-->
+    <div class="Ag_common_dialog import_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导入</h3></div>
+            <div class="Acd_rel_body ">
+                <p class="tips">注意：导入的字段以ID为准。如果已经映射会做更新操作，没有映射会新建映射关系。</p>
+                <div class="pop_items clearfix">
+                    <label class="form_name">导入文件：</label>
+                    <div class="form_cont">
+                        <div class="file_upload fl">
+                            <input type="file">
+                        </div>
+                        <a href="javascript:;" class="blue_link upload_template">下载模板</a>
+                        <a href="javascript:;" class="blue_link check_record">查看导入日志</a>
+                    </div>
+                </div>
+                <div class="popup_btn_box">
+                    <a class="com_btn pop_close import_btn" href="javascript:;">导入</a>
+                    <a href="javascript:;" class="com_btn gray pop_close">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导入弹窗 E-->
+    <!--正在导入 S-->
+    <div class="Ag_common_dialog importing_pop">
+            <div class="Acd_rel_dialog">
+                <a class="pop_close dialog_main_close" href="javascript:;"></a>
+                <div class="Acd_rel_head"><h3>导入</h3></div>
+                <div class="Acd_rel_body ">
+                <div class="importing_box">
+                    <img src="images/uploading.gif" alt="">
+                    <span>正在导入，请稍等……</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!--正在导入 E-->
+    <!--导入成功 S-->
+    <div class="Ag_common_dialog success_import_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导入</h3></div>
+            <div class="Acd_rel_body ">
+                <div class="importing_box">
+                    <i class="icon-tips icon-yes"></i>
+                    <span>导入成功</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导入成功 E-->
+    <!--导入失败状态 S-->
+    <div class="Ag_common_dialog fail_import_status">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导入失败状态</h3></div>
+            <div class="Acd_rel_body ">
+                <p class="tips">抱歉，这里展示出错原因<em>XXXXXXXXXX</em>展示出错原因</p>
+                <div class="popup_btn_box">
+                    <a class="com_btn pop_close check_record_btn" href="javascript:;">查看导入日志</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导入失败状态 E-->
+    <!--部分导入成功状态 S-->
+    <div class="Ag_common_dialog success_import_status">
+        <div class="Acd_rel_dialog">
+            <div class="Acd_rel_head"><h3>导入部分失败状态</h3></div>
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_body ">
+                <p class="tips">导入成功<em>XXXX</em>条，导入失败<em>XXXX</em>条</p>
+                <div class="popup_btn_box">
+                    <a class="com_btn pop_close check_record_btn" href="javascript:;">查看导入日志</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--部分导入成功状态 E-->
+<!--导入相关弹窗  E-->
+
+<!--导出相关弹窗 S-->
+    <!--导出弹窗 S-->
+    <div class="Ag_common_dialog export_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导出</h3></div>
+            <div class="Acd_rel_body export_pop_body">
+                <p class="tips">共 <em class="total_num">XXXXX</em>条数据，一次最多导出 <em class="max_num">XXXX</em>条，请分批导出</p>
+                <div class="pop_items clearfix">
+                    <ul class="export_box">
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1-1000条</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1000-2000条</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出2000-3000条</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导出弹窗 E-->
+    <!--正在导出弹窗 S-->
+    <div class="Ag_common_dialog exporting_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导入</h3></div>
+            <div class="Acd_rel_body export_pop_body">
+                <p class="tips">共 <em class="total_num">XXXXX</em>条数据，一次最多导出 <em class="max_num">XXXX</em>条，请分批导出</p>
+                <div class="pop_items clearfix">
+                    <ul class="export_box">
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1-1000条</a>
+                            <span><img src="images/uploading.gif" alt=""><em>正在导出</em></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1000-2000条</a>
+                            <span><img src="images/uploading.gif" alt=""><em>正在导出</em></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出2000-3000条</a>
+                            <span><img src="images/uploading.gif" alt=""><em>正在导出</em></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--正在导出弹窗 E-->
+    <!--导出成功弹窗 S-->
+    <div class="Ag_common_dialog export_success_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导入</h3></div>
+            <div class="Acd_rel_body export_pop_body">
+                <p class="tips">共 <em class="total_num">XXXXX</em>条数据，一次最多导出 <em class="max_num">XXXX</em>条，请分批导出</p>
+                <div class="pop_items clearfix">
+                    <ul class="export_box">
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1-1000条</a>
+                            <span><img src="images/success.png" alt=""><em>正在导出</em></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1000-2000条</a>
+                            <span><img src="images/success.png" alt=""><em>正在导出</em></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出2000-3000条</a>
+                            <span><img src="images/success.png" alt=""><em>正在导出</em></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导出成功弹窗 E-->
+    <!--导出失败弹窗 S-->
+    <div class="Ag_common_dialog export_warn_pop">
+        <div class="Acd_rel_dialog">
+            <a class="pop_close dialog_main_close" href="javascript:;"></a>
+            <div class="Acd_rel_head"><h3>导出</h3></div>
+            <div class="Acd_rel_body export_pop_body">
+                <p class="tips">共 <em class="total_num">XXXXX</em>条数据，一次最多导出 <em class="max_num">XXXX</em>条，请分批导出</p>
+                <div class="pop_items clearfix">
+                    <ul class="export_box">
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1-1000条</a>
+                            <span><img src="images/warn.png" alt=""><em>导出失败</em></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出1000-2000条</a>
+                            <span><img src="images/warn.png" alt=""><em>导出失败</em></span>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="export_num_btn">导出2000-3000条</a>
+                            <span><img src="images/warn.png" alt=""><em>导出失败</em></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导出失败弹窗 E-->
+<!--导出相关弹窗 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/brandMap.js"></script>
+</html>

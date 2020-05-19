@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>舆情监控登录页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pss_bg">
+    <div class="pss_login_page">
+        <div class="pss_login_box">
+            <!--标题-->
+            <div class="pss_title">
+                <h3>舆情监控</h3>
+            </div>
+            <!--账号-->
+            <div class="items_box">
+                <input type="text" class="enter_input account" placeholder="账号">
+            </div>
+
+            <!--密码-->
+            <div class="items_box">
+                <input type="password" class="enter_input password" placeholder="密码">
+            </div>
+
+            <!--验证码-->
+            <div class="code_box clearfix none">
+                <input type="text" class="enter_code" placeholder="请输入验证码">
+                <a class="verify_code_box fr" onclick="jsLoginValidatCode.passport_refresh_valid_code();return false;" href="#">
+                    <img id="valid_code_pic" name="valid_code_pic" src="https://captcha.yhd.com/public/getjpg.do?sig=KVfvOPojWcG73OYeobJBfOmdHNlNTqLW5xmydP4Sx4l82GlB">
+                    <i tabindex="-1" class="btn_change">换一张</i>
+                </a>
+            </div>
+
+            <!--提示-->
+            <div class="enter_tip_box clearfix">
+                <div class="tip_box fl">
+                    <i class="icon warning fl"></i>
+                    <p class="fl warning_tips">您的密码有误！</p>
+                </div>
+                <div class="tip_box auto_login fr">
+                    <i class="icon check_box fl"></i>
+                    <p class="fl free_password">本机免登陆</p>
+                </div>
+            </div>
+
+            <!--登录按钮-->
+            <div class="btn_box">
+                <a href="javascript:;" class="login_btn">登录</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/publicly_supervise_system.js"></script>
+</html>

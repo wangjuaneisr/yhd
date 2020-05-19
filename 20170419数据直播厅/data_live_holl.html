@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" id="content">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>数据直播厅</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/data_live_holl.css">
+</head>
+<body>
+    <!--星星 流星  背景S-->
+    <div class="space">
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star pink"></div>
+            <div class="star blue"></div>
+            <div class="star yellow"></div>
+            <div class="blink"></div>
+            <div class="stay"></div>
+            <div class="stay stay1"></div>
+            <div class="stay stay2"></div>
+            <div class="stay stay3"></div>
+            <div class="stay stay4"></div>
+            <div class="stay stay5"></div>
+            <div class="stay stay6"></div>
+            <div class="stay stay7"></div>
+            <div class="stay stay8 "></div>
+            <div class="stay stay9"></div>
+        </div>
+    </div>
+    <!--星星 流星  背景E-->
+
+    <!--页面内容 S-->
+    <div class="data_live_hall">
+        <!--头部-->
+        <div class="dlh_header clearfix">
+            <div class="dlh_header_l dlh_border_box">
+                <div class="head_logo_box">
+                    <img src="images/logo_txt.png" alt="">
+                </div>
+                <div class="header_time_box">
+                    <em class="date_year">2017/5/10</em>
+                    <em class="hour_second">17:12:45</em>
+                </div>
+                <div class="header_shop_box">
+                    <img src="images/shop_logo.png" alt="">
+                    <em>百草味旗舰店</em>
+                </div>
+                <div class="angel_box">
+
+                </div>
+            </div>
+            <div class="decoration_btn_box">
+                <a href="screen_decoration.html" class="decoration_btn"><em><i class="iconfont">&#xe644;</i>大屏装修</em></a>
+                <a href="javascript:;" class="decoration_btn highlight full_screen_btn" id="full_screen_btn"><em><i class="iconfont">&#xe63d;</i>进入全屏</em></a>
+                <a href="javascript:;" class="decoration_btn highlight full_screen_btn" id="quit_screen_btn"><em><i class="iconfont">&#xe646;</i>退出全屏</em></a>
+            </div>
+        </div>
+
+        <!--固定部分-->
+        <div class="dlh_fixed_container clearfix">
+            <div class="dlh_module_box today_sale">
+                <div class="module_tit">
+                    <span class="tit clearfix">
+                        <i class="fl icon ts_icon"></i>
+                        <em class="fl">今日成交金额（&yen;）</em>
+                    </span>
+                </div>
+                <div class="module_graph">
+                    <div class="turnover">
+                        <p>3,242,244</p>
+                        <div class="turnover_per">
+                            <i class="icon phone_icon"></i>
+                            <em>80%</em>
+                        </div>
+                    </div>
+                    <div class="complete_box clearfix">
+                        <div class="process_box">
+                            <div class="bg_bar_box">
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <span class="bg_bar"></span>
+                                <div class="process_bar_box">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_box">
+                            <label>已完成：</label>
+                            <span class="cb_data"><em>38</em>%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="module_data clearfix">
+                    <div class="data yesterday_data">
+                        <div class="num clearfix">
+                            <em>4,354,244.45</em>
+                        </div>
+                        <div class="en clearfix">
+                            <em>昨日成交金额（&yen;）</em>
+                        </div>
+                    </div>
+                    <div class="data today_data">
+                        <div class="num clearfix">
+                            <em>4,354,244.45</em>
+                        </div>
+                        <div class="en clearfix">
+                            <em>目标成交金额（&yen;）</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dlh_module_box new_slide_con">
+                <div class="slider_con">
+                    <ul>
+                        <li><img src="images/map.png" alt=""></li>
+                        <li><img src="images/lineChart.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--非固定部分-->
+        <div class="dlh_unfixed_container  clearfix">
+            <div class="dlh_module_box data_over_box">
+                <div class="container clearfix">
+                    <div class="module_tit dlh_border_box clearfix">
+                        <i class="icon tit_icon"></i>
+                        <h3>店铺数据概览</h3>
+                        <div class="angel_box"></div>
+                    </div>
+                    <div class="module_data clearfix">
+                        <div class="data">
+                            <p class="num">1,235,234.34</p>
+                            <div class="en clearfix">
+                                <span class="en_label fl">
+                                    <i class="cir fl"></i>
+                                    <em class="fl">访客数</em>
+                                </span>
+                                <span class="per fl">
+                                    <i class="icon fl"></i>
+                                    <em class="fl">80%</em>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            <p class="num">4,235,234.34</p>
+                            <div class="en clearfix">
+                                <span class="en_label fl">
+                                    <i class="cir fl"></i>
+                                    <em class="fl">浏览量</em>
+                                </span>
+                                <span class="per fl">
+                                    <i class="icon fl"></i>
+                                    <em class="fl">80%</em>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <p class="num">535,234.34</p>
+                            <div class="en clearfix">
+                                <span class="en_label fl">
+                                    <i class="cir fl"></i>
+                                    <em class="fl">成交订单</em>
+                                </span>
+                                <span class="per fl">
+                                    <i class="icon fl"></i>
+                                    <em class="fl">80%</em>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="data">
+                            <p class="num">23%</p>
+                            <div class="en clearfix">
+                                <span class="en_label fl">
+                                    <i class="cir fl"></i>
+                                    <em class="fl">成交转化率</em>
+                                </span>
+                                <span class="per fl">
+                                    <i class="icon fl"></i>
+                                    <em class="fl">80%</em>
+                                </span>
+                                <span class="per fl">
+                                    <i class="icon compute fl"></i>
+                                    <em class="fl">80%</em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dlh_module_box">
+                <div class="clearfix conSlider">
+                    <ul>
+                        <li>
+                            <div class="container clearfix">
+                                <div class="module_tit dlh_border_box  clearfix">
+                                    <i class="icon tit_icon"></i>
+                                    <h3>店铺商品榜</h3>
+                                    <div class="angel_box"></div>
+                                </div>
+                                <div class="module_data">
+                                    <dl class="rank_list no_border_list  clearfix">
+                                        <dt>访客数</dt>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg rank fir">1</i>
+                                            <h4>年货大礼包1920g年货大礼包1920g</h4>
+                                            <span>¥<em>3,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg rank sec">2</i>
+                                            <h4>纸皮核桃3带盒装袋装</h4>
+                                            <span>¥<em>2,324,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg rank thi">3</i>
+                                            <h4>年货大礼包1920g</h4>
+                                            <span>¥<em>3,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg ">4</i>
+                                            <h4>年货大礼包1920g</h4>
+                                            <span>¥<em>3,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg ">5</i>
+                                            <h4>年货大礼包1920g</h4>
+                                            <span>¥<em>3,345</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container clearfix">
+                                <div class="module_tit dlh_border_box  clearfix">
+                                    <i class="icon tit_icon"></i>
+                                    <h3>店铺商品榜</h3>
+                                    <div class="angel_box"></div>
+                                </div>
+                                <div class="module_data">
+                                    <dl class="rank_list no_border_list  clearfix">
+                                        <dt>浏览量</dt>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg rank fir">1</i>
+                                            <h4>年货大礼包1920g年货大礼包1920g</h4>
+                                            <span><em>3,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg rank sec">2</i>
+                                            <h4>纸皮核桃3带盒装袋装</h4>
+                                            <span><em>2,324,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg rank thi">3</i>
+                                            <h4>年货大礼包1920g</h4>
+                                            <span><em>3,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg ">4</i>
+                                            <h4>年货大礼包1920g</h4>
+                                            <span><em>3,345</em></span>
+                                        </dd>
+                                        <dd class="bg_dd">
+                                            <i class="r_bg ">5</i>
+                                            <h4>年货大礼包1920g</h4>
+                                            <span><em>3,345</em></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dlh_module_box dynamic_circle_box">
+                <div class="container clearfix">
+                    <div class="module_tit dlh_border_box  clearfix">
+                        <i class="icon tit_icon"></i>
+                        <h3>访客流量渠道榜</h3>
+                        <div class="angel_box"></div>
+                    </div>
+                    <div class="module_data dynamic_circle" >
+                        <div class="circle circle_fir" data-class="1" style="display: table">
+                            <div class="txt">
+                                <p>1号商城首页</p>
+                                <p class="per_t">40%</p>
+                            </div>
+                        </div>
+                        <div class="circle circle_sec" data-class="2">
+                            <div class="txt">
+                                <p>1号钱包</p>
+                                <p class="per_t">20%</p>
+                            </div>
+                        </div>
+                        <div class="circle circle_thi" data-class="3">
+                            <div class="txt">
+                                <p>1号商城首页</p>
+                                <p class="per_t">20%</p>
+                            </div>
+                        </div>
+                        <div class="circle circle_four" data-class="4">
+                            <div class="txt">
+                                <p>1号店首页</p>
+                                <p class="per_t">10%</p>
+                            </div>
+                        </div>
+                        <div class="circle circle_five" data-class="5">
+                            <div class="txt">
+                                <p>1号社区</p>
+                                <p class="per_t">10%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面内容 E-->
+
+    <!--特效浮层 S-->
+    <iframe src="saleroom_break.html" frameborder="0" class="saleroom_break"></iframe>
+    <!--特效浮层 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/yhdSlider.js"></script>
+<script src="js/data_live_holl.js"></script>
+<script>
+    pageName.processBar(38);
+    var swit = new Switchable({
+        container:".new_slide_con",
+        content:".slider_con ul",
+        effect:"fade",
+        interval:10000,
+        autoPlay:true
+    });
+    var conSlider = new Switchable({
+        container:".conSlider",
+        content:" ul",
+        effect:"fade",
+        interval:5000,
+        autoPlay:true
+    });
+    //全屏功能
+    var btn = document.getElementById('full_screen_btn'),
+            quite = document.getElementById('quit_screen_btn'),
+            content = document.getElementById('content');
+    if(quite){
+        quite.style.display="none";
+    }
+    btn.onclick = function(){
+        fullScreen(content);
+        btn.style.display="none";
+        if(quite){
+            quite.style.display="block";
+        }
+    }
+    quite.onclick = function(){
+        exitFullScreen();
+        btn.style.display="block";
+        if(quite){
+            quite.style.display="none";
+        }
+    }
+    function fullScreen(el) {
+        var rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen,
+                wscript;
+
+        if(typeof rfs != "undefined" && rfs) {
+            rfs.call(el);
+            return;
+        }
+
+        if(typeof window.ActiveXObject != "undefined") {
+            wscript = new ActiveXObject("WScript.Shell");
+            if(wscript) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+    }
+    function exitFullScreen(el) {
+        var el= document,
+                cfs = el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen,
+                wscript;
+
+        if (typeof cfs != "undefined" && cfs) {
+            cfs.call(el);
+            return;
+        }
+
+        if (typeof window.ActiveXObject != "undefined") {
+            wscript = new ActiveXObject("WScript.Shell");
+            if (wscript != null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+    }
+    var _turnover = 0;
+    var timer = setInterval(function(){
+        _turnover+=100000;
+        if(_turnover>400000){
+            clearInterval(timer);
+            $('.saleroom_break').animate({
+                "opacity":'1'
+            },1000);
+            var timer2 = setTimeout(function(){
+                $('.saleroom_break').fadeOut(1000);
+            },5000);
+        }
+    },100);
+</script>
+</html>

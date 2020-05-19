@@ -1,0 +1,466 @@
+
+/*
+*案件查询及处理
+ */
+/*搜索条件部分*/
+.page_container .Wdate{
+    border: none;
+    width: 80px;
+    height: 28px;
+    outline: none;
+    background: #fff url(../images/datePicker.gif) no-repeat right;
+}
+.page_container .ipm_search_box .btn_box{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.ipm_search_box .btn_box a{
+    margin-right: 20px;
+}
+
+/*表格上方操作容器*/
+.ipm_table_box .operate_box{
+    padding: 30px 0 15px 0;
+}
+.ipm_table_box .operate_box .operate_btn{
+    float: left;
+}
+
+/*新增案件*/
+.module_container{
+    padding: 10px 20px 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+.module_container .module_tit{
+    border-bottom: 1px #f0f3f8 solid;
+}
+.module_container .module_tit h3{
+    float: left;
+    color: #7c838e;
+    font: 14px/36px 'Microsoft YaHei';
+}
+.module_container .module_tit .error_tips{
+    float: left;
+    margin-left: 18px;
+    color: #ff6055;
+    font: 12px/34px 'Simsun';
+}
+.module_container .module_tit .error_tips i{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.module_container .step_box{
+    position: relative;
+    padding: 20px 20px 0;
+    text-align: center;
+    z-index: 1;
+}
+.module_container .add_step_box{
+    min-height: 94px;
+}
+.module_container .step_box a.operate_btn{
+   position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -61px;
+    margin-top: -17px;
+    background-color: #f9fcfe;
+}
+.module_container .demand_box{
+    position: relative;
+    margin-top: 20px;
+    border: 1px #f0f3f8  solid;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.demand_box .demand_tit{
+    height: 56px;
+    padding: 0 20px;
+    background-color: #f9fcfe;
+    border-bottom: 1px #f0f3f8 solid;
+}
+.demand_box .demand_tit h4{
+    float: left;
+    margin-right: 20px;
+    color: #7c838e;
+    font:normal 12px/56px 'Simsun';
+}
+.demand_box .demand_tit h4.bold_tit{
+    font-weight: bold;
+}
+.demand_box .demand_tit .ipm_items{
+    float: left;
+}
+.demand_box .demand_tit .ipm_items label{
+    width: auto;
+    color: #7c838e;
+    font: 12px/40px Arial,Simsun;
+}
+.demand_box .demand_tit .ipm_items span.brand_name{
+    color: #505e70;
+    font: 12px/40px Arial,Simsun;
+}
+.demand_box .demand_tit .ipm_items .item_input{
+    top: 5px;
+    background-color: #fff;
+}
+.demand_box .demand_tit .blue_btn{
+    float: right;
+    padding: 0 5px;
+    font: 12px/56px 'Simsun';
+}
+.demand_box .demand_tit .blue_btn:hover{
+    text-decoration: underline;
+}
+.demand_box .shade_box{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .6;
+}
+.module_container .demand_box .step_box textarea.tips{
+    width: 100%;
+    border: none;
+    height: 94px;
+    outline: none;
+    color: #505e70;
+    font: 12px/20px 'Simsun';
+    resize: none;
+}
+.submit_btn_box{
+    margin-top: 30px;
+    text-align: center;
+}
+.submit_btn_box .blue_gradient_btn,.submit_btn_box .light_blue_btn{
+    margin-right: 10px;
+}
+
+
+
+.pop_common_dialog .ipm_search_box{
+    padding-top: 10px;
+    text-align: center;
+}
+.pop_common_dialog .ipm_items{
+    float: left;
+    width: 50%;
+    min-height: 34px;
+}
+.pop_common_dialog  .btn_box{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+/*选商家*/
+.pop_add_merchant .ipm_items{
+    float: none;
+    display: inline-block;
+    width: auto;
+}
+.pop_add_merchant .ipm_search_box{
+    padding: 30px 0 0px;
+}
+.pop_add_merchant .ipm_items label{
+    width: auto;
+}
+/*选商品*/
+.pop_add_product{
+    width: 630px;
+}
+.border_table_box{
+    margin: 0 20px;
+    border: 1px #e9eef5 solid;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+.border_table{
+    width: 100%;
+}
+.border_table tr{
+    height: 44px;
+}
+.border_table tr td{
+    height: 44px;
+    padding: 0 10px;
+    border-bottom: 1px #f6f9fb solid;
+    color: #505e70;
+    font: 12px/20px Arial,Simsun;
+}
+.border_table tr td p.tips{
+    max-height: 44px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.border_table tr td p.pro_name{
+    max-width: 170px;
+    max-height: 44px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.border_table thead tr{
+    background-color: #f9fcfe;
+}
+.border_table thead tr th{
+    padding: 0 10px;
+    border-bottom: 1px #f6f9fb solid;
+    color:#8998ad;
+    font: 12px/44px 'Microsoft YaHei';
+}
+.pop_btn_box{
+    margin: 20px auto;
+}
+.pop_common_dialog  .page_turn_box{
+   float: none;
+    padding-top: 10px;
+}
+.pop_common_dialog .ipm_items .item_input .selected_box .selected{
+    color: #8998ad;
+}
+
+/*新增案件后*/
+.module_container .step_box .merchant_info{
+    float: left;
+    width: 33.33%;
+    min-width: 300px;
+    height: 46px;
+    font: 12px/23px 'simsun';
+}
+.module_container .step_box .merchant_info label{
+    float: left;
+    min-width: 60px;
+    color: #7c838e;
+}
+.module_container .step_box .merchant_info label.merchant_name_height{
+    height: 34px;
+    line-height: 34px;
+}
+.module_container .step_box .merchant_info p{
+    float: left;
+    max-width: 230px;
+    height: 46px;
+    padding-right: 10px;
+    overflow: hidden;
+    color: #505e70;
+    font-family: Arial,Simsun;
+    text-align: left;
+}
+.product_table_box{
+    margin: 20px 0;
+    border: 1px #e9eef5 solid;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+.product_table_box .table_body{
+    max-height: 180px;
+    overflow: auto;
+}
+.product_table_box .border_table tr td p.pro_name{
+    max-width: 300px;
+    padding-right: 10px;
+}
+.product_table_box thead tr th:last-child{
+    padding-right: 6px;
+}
+
+.product_table_box .table_body::-webkit-scrollbar{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 6px;
+    height: 20px;
+    margin-right: 4px;
+}
+.product_table_box .table_body::-webkit-scrollbar-track{
+    width: 20px;
+    background-color: #eef3f7;
+}
+.product_table_box .table_body::-webkit-scrollbar-thumb{
+    background:#d4e1ea;
+    border-radius:4px;
+}
+.product_table_box .border_table tr td a{
+    display: inline-block;
+}
+/*新增案件*/
+.added_box{
+    display: none;
+}
+.added_step_box .added_box{
+    display: block;
+}
+.added_step_box .operate_btn{
+    display: none;
+}
+.added_step_box .shade_box{
+    display: block;
+}
+.ipm_QA_container .added_box{
+    display: block;
+}
+
+/*保存 提交 弹窗*/
+.pop_save_succeed,
+.pop_submit_succeed
+{
+    width: 220px;
+    height: 100px;
+}
+.pop_save_succeed .pop_common_box,
+.pop_submit_succeed .pop_common_box
+{
+    margin: 0 auto;
+    border: none;
+}
+.pop_save_succeed .pop_common_box .pop_cont,
+.pop_submit_succeed .pop_common_box .pop_cont{
+    margin-top: 38px;
+    color: #505e70;
+    font: 12px/22px 'Simsun';
+    text-align: center;
+}
+.pop_submit_succeed .pop_common_box .pop_cont{
+    margin-top: 28px;
+}
+.pop_save_succeed .pop_common_box .pop_cont i,
+.pop_submit_succeed .pop_common_box .pop_cont i{
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    color: #6adb7c;
+}
+.pop_submit_succeed .pop_common_box p{
+    color: #737f8e;
+    font: 12px 'Simsun';
+    text-align: center;
+}
+
+
+/*待质检*/
+.step_box .ipm_items{
+    position: relative;
+    float: left;
+    width: 33.33%;
+    min-width: 300px;
+    min-height: 34px;
+}
+.step_box .ipm_items .input_box{
+    float: left;
+    position: relative;
+}
+.step_box .ipm_items .input_box .item_input{
+    width: 160px;
+    padding-right: 30px;
+}
+.step_box .ipm_items .input_box em.unit{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #8998ad;
+    font: 12px 'Simsun';
+}
+.detect_result .ipm_items{
+    float: none;
+    width: 100%;
+    min-height: 34px;
+}
+.add_file_btn{
+    display: block;
+    width: 120px;
+    height: 32px;
+    background-color: #f9fcfe;
+    border:  1px #5ac7f9 dashed;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    color: #5ac7f9;
+    font: 12px/32px 'Simsun';
+}
+.add_file_btn i{
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    line-height: 19px;
+    transition: transform .2s ease .0s;
+}
+.add_file_btn:hover i{
+    transform: scale(1.2);
+}
+.add_file_btn em{
+    vertical-align: middle;
+}
+.step_box .file_box{
+    float: left;
+    margin: 15px 0;
+}
+.merchant_info_long .file_box{
+    margin: 0;
+}
+
+.detect_result .enter_area{
+    width: 480px;
+    height: 130px;
+    padding: 10px;
+    border: 1px #d8e4ec solid;
+    outline: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    background-color: #f9fcfe;
+    color: #505e70;
+    font: 12px/24px 'Simsun';
+    text-align: left;
+    resize: none;
+}
+
+/*案件完成*/
+.module_container .demand_tit em{
+    float: left;
+    height: 56px;
+    margin-left: -16px;
+    color: #505e70;
+    font: 12px/56px 'Simsun';
+}
+.module_container .demand_tit .error_tips{
+    color: #ff6055;
+}
+.module_container .step_box .merchant_info_long{
+    width: 100%;
+}
+
+/*处罚结果*/
+.module_container .demand_tit em input{
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+.module_container .demand_tit em label{
+    margin-right: 10px;
+}
+.step_box .ipm_items .choice_box{
+    float: left;
+    height: 30px;
+    line-height:34px;
+}
+.step_box .ipm_items .choice_box input{
+    position: relative;
+    top: 2px;
+    margin: 0 4px;
+}
+.step_box .ipm_items .choice_box label{
+    margin-right: 20px;
+}

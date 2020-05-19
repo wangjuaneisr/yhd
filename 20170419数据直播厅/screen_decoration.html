@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>大屏装修</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/data_live_holl.css">
+    <link rel="stylesheet" href="css/screen_decoration.css">
+</head>
+<body>
+    <!--页面内容 S-->
+    <div class="data_live_hall clearfix">
+        <!--头部-->
+        <div class="dlh_header clearfix">
+            <div class="dlh_header_l dlh_border_box">
+                <a class="head_logo_box" href="data_live_holl.html">
+                    <img src="images/logo_txt.png" alt="">
+                </a>
+                <div class="header_time_box">
+                    <em>大屏装修</em>
+                </div>
+                <div class="angel_box"></div>
+            </div>
+            <div class="decoration_btn_box">
+                <a href="data_live_holl.html" class="decoration_btn highlight enter_live_btn" id="enter_live_btn"><em><i class="iconfont">&#xe645;</i>进入直播厅</em></a>
+            </div>
+        </div>
+
+        <!--达标特效设置部分-->
+        <div class="decoration_box">
+            <div class="decoration_list">
+                <div class="tab_box clearfix">
+                    <div class="tab">
+                        <a href="javascript:;" class="tab_btn">达标特效</a>
+                    </div>
+                </div>
+                <div class="change_box">
+                    <div class="change_con effect_box">
+                        <div class="effect_status clearfix">
+                            <label>特效状态：</label>
+                            <label for="open"><input type="radio" id="open" name="effect" checked class="shift_btn">开启</label>
+                            <label for="close"><input type="radio" id="close" name="effect" class="shift_btn">关闭</label>
+                        </div>
+                        <div class="effect_open">
+                            <div class="effect_hover clearfix">
+                                <div class="effect_tip">
+                                    <p>指标突破设定数值时，展示动效</p>
+                                    <p>若为空值或0则不展示动效</p>
+                                </div>
+                                <a href="javascript:;" class="example_btn">示例
+                                    <img src="images/hover.png" alt="" class="example_hover">
+                                </a>
+                            </div>
+                            <div class="current_turnover">
+                                <p class="turnover" id="curCoreIndex">当前核心指标：成交金额</p>
+                                <div class="turnover_set">
+                                    <div class="turnover_time clearfix">
+                                        <label for="fir">第一次突破值：</label><input type="text" id="fir">
+                                    </div>
+                                    <div class="turnover_time clearfix">
+                                        <label for="sec">第二次突破值：</label><input type="text" id="sec">
+                                    </div>
+                                    <div class="turnover_time clearfix">
+                                        <label for="thi">第三次突破值：</label><input type="text" id="thi">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <a href="javascript:;" class="confirm_btn">确定</a>
+                    <a href="javascript:;" class="cancel_btn">取消</a>
+                </div>
+            </div>
+        </div>
+
+        <!--右侧组件设置部分-->
+        <div class="screen_decoration">
+
+            <!--固定部分-->
+            <div class="dlh_fixed_container clearfix">
+                <div class="dlh_module_box today_sale">
+                    <div class="module_tit">
+                        <span class="tit clearfix">
+                            <i class="fl icon ts_icon"></i>
+                            <em class="fl" id="indexName">成交金额（&yen;）</em>
+                            <a href="javascript:;" class="setting_btn index_set">指标设置</a>
+                        </span>
+                    </div>
+                    <div class="module_graph">
+                        <div class="turnover">
+                            <p>1,000,000</p>
+                            <div class="turnover_per">
+                                <i class="icon phone_icon"></i>
+                                <em>80%</em>
+                            </div>
+                        </div>
+                        <div class="complete_box clearfix">
+                            <div class="process_box">
+                                <div class="bg_bar_box">
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <span class="bg_bar"></span>
+                                    <div class="process_bar_box">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_box">
+                                <label>已完成：</label>
+                                <span class="cb_data"><em>38</em>%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module_data clearfix">
+                        <div class="data yesterday_data">
+                            <div class="num clearfix">
+                                <em>1,000,000.00</em>
+                            </div>
+                            <div class="en clearfix">
+                                <em>昨日成交金额（&yen;）</em>
+                            </div>
+                        </div>
+                        <div class="data today_data">
+                            <div class="num clearfix">
+                                <em>1,000,000.00</em>
+                            </div>
+                            <div class="en clearfix">
+                                <em>目标成交金额（&yen;）</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dlh_module_box">
+                    <img src="images/lineChart.png" alt="">
+                </div>
+            </div>
+
+            <!--非固定部分-->
+            <div class="dlh_unfixed_container  clearfix">
+                <div class="dlh_module_box">
+                    <div class="container imgContainer" data-class="6">
+                        <div class="sImg" data-class="6">
+                            <img src="images/s_pic_06.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                            <div class="setting_btn_box fr">
+                                <a href="javascript:;" class="setting_btn shop_index_set">指标设置</a>
+                                <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dlh_module_box">
+                    <div class="container imgContainer" data-class="3">
+                        <div class="sImg" data-class="3">
+                            <img src="images/s_pic_03.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                            <div class="setting_btn_box fr">
+                                <a href="javascript:;" class="setting_btn change_industry_set">行业设置</a>
+                                <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dlh_module_box dlh_module_box_end">
+                    <div class="container imgContainer" data-class="7">
+                        <div class="sImg" data-class="7">
+                            <img src="images/s_pic_07.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                            <div class="setting_btn_box fr">
+                                <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="none_box none">
+                    <div class="sImg" data-class="1">
+                        <img src="images/s_pic_01.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                        <div class="setting_btn_box fr">
+                            <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                        </div>
+                    </div>
+                    <div class="sImg" data-class="2">
+                        <img src="images/s_pic_02.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                        <div class="setting_btn_box fr">
+                            <a href="javascript:;" class="setting_btn change_industry_set">行业设置</a>
+                            <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                        </div>
+                    </div>
+                    <div class="sImg" data-class="5">
+                        <img src="images/s_pic_05.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                        <div class="setting_btn_box fr">
+                            <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                        </div>
+                    </div>
+                    <div class="sImg" data-class="4">
+                        <img src="images/s_pic_04.png" alt="" class="ui-state-default" title="可拖动互换位置">
+                        <div class="setting_btn_box fr">
+                            <a href="javascript:;" class="setting_btn change_ele_btn">更换组件</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--页面内容 E-->
+
+    <!--确定弹窗 S-->
+    <div class="pop_common_dialog save_dialog">
+        <div class="pop_common_box">
+            <a href="javascript:;" class="icon close_icon pop_close"></a>
+            <div class="pop_tit pop_confirm">
+                <p>您有装修内容未保存</p>
+                <p>确定要离开？</p>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="confirm_btn pop_close">确定</a>
+                <a href="javascript:;" class="cancel_btn pop_close">取消</a>
+            </div>
+        </div>
+    </div>
+    <!--确定弹窗 E-->
+
+    <!--装修完成提醒弹窗 S-->
+    <div class="pop_common_dialog decoration_dialog">
+        <div class="pop_common_box">
+            <a href="javascript:;" class="icon close_icon pop_close"></a>
+            <div class="pop_tit pop_confirm">
+                <p>装修完成</p>
+                <p>请刷新数据大屏，查看最新内容</p>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="confirm_btn pop_close">前往大屏</a>
+                <a href="javascript:;" class="cancel_btn pop_close">继续装修</a>
+            </div>
+        </div>
+    </div>
+    <!--装修完成提醒弹窗 E-->
+
+    <!--店铺数据展示指标 S-->
+    <div class="pop_common_dialog sample_dialog shop_index_dialog">
+        <div class="pop_common_box">
+            <a href="javascript:;" class="icon close_icon pop_close"></a>
+            <div class="pop_tit">
+                <p>店铺数据展示指标</p>
+            </div>
+            <div class="content_box">
+                <div class="items clearfix">
+                    <label class="fl">流量相关：</label>
+                    <div class="items_box fl">
+                        <div class="check_con checked_con"><i class="icon check_box"></i>访客数</div>
+                        <div  class="check_con"><i class="icon check_box"></i>浏览量</div>
+                    </div>
+                </div>
+                <div class="items clearfix">
+                    <label class="fl">销量相关：</label>
+                    <div class="items_box fl">
+                        <div class="check_con"><i class="icon check_box"></i>下单买家</div>
+                        <div class="check_con"><i class="icon check_box"></i>下单订单</div>
+                        <div class="check_con"><i class="icon check_box"></i>下单件数</div>
+                        <div class="check_con"><i class="icon check_box"></i>下单金额</div>
+                        <div class="check_con"><i class="icon check_box"></i>成交买家</div>
+                        <div class="check_con"><i class="icon check_box"></i>成交订单</div>
+                        <div class="check_con"><i class="icon check_box"></i>成交件数</div>
+                        <div class="check_con"><i class="icon check_box"></i>成交金额</div>
+                        <div class="check_con"><i class="icon check_box"></i>成交订单金额</div>
+                    </div>
+                </div>
+                <div class="items clearfix">
+                    <label class="fl">流量相关：</label>
+                    <div class="items_box fl">
+                        <div class="check_con"><i class="icon check_box"></i>访客数</div>
+                        <div class="check_con"><i class="icon check_box"></i>浏览量</div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="confirm_btn pop_close">确定</a>
+                <a href="javascript:;" class="cancel_btn pop_close">取消</a>
+                <p class="tips">已选择<em class="cho_index">1</em>个指标，还可以选择<em class="lev_index">3</em>个指标</p>
+            </div>
+        </div>
+    </div>
+    <!--店铺数据展示指标 E-->
+
+    <!--选择更换组件 S-->
+    <div class="pop_common_dialog sample_dialog change_ele_dialog">
+        <div class="pop_common_box">
+            <a href="javascript:;" class="icon close_icon pop_close"></a>
+            <div class="pop_tit">
+                <p>选择更换组件</p>
+            </div>
+            <div class="content_box">
+                <ul class="clearfix">
+                    <li class="pop_close"><img src="" alt="" data-class=""></li>
+                    <li class="pop_close"><img src="" alt="" data-class=""></li>
+                    <li class="pop_close"><img src="" alt="" data-class=""></li>
+                    <li class="pop_close"><img src="" alt="" data-class=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--选择更换组件 shop_index_setE-->
+
+    <!--行业设置 S-->
+    <div class="pop_common_dialog sample_dialog change_industry_dialog">
+        <div class="pop_common_box">
+            <a href="javascript:;" class="icon close_icon pop_close"></a>
+            <div class="pop_tit">
+                <p>行业选择</p>
+            </div>
+            <div class="content_box code_index_set">
+                <!--<div class="item clearfix">-->
+                    <!--<label class="i_tit">展示行业：</label>-->
+                    <!--<div class="items_box simulation_select">-->
+                        <!--<i class="icon"></i>-->
+                        <!--<p class="choice choice_industry">食品</p>-->
+                        <!--<ul class="s_ul">-->
+                            <!--<li>食品</li>-->
+                            <!--<li>服装</li>-->
+                            <!--<li>化妆品</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="Acategories">
+                    <label class="i_tit">展示行业：</label>
+                    <div class="items_box Acate-express-con">
+                        <input readonly="" class="Acate-express" type="text" value="选择行业">
+                        <i class="icon drop_icon"></i>
+                        <div class="hidden-goodslist" style="display: none;">
+                            <ul class="user-list-tree">
+                                <li class="Li-list-item">
+                                    <a class="classMa" href="javascript:;">一级list(只有一级)</a>
+                                </li><!-- // li end -->
+                                <li class="Li-list-item">
+                                    <a class="classMa classMa-icon" href="javascript:;">一级list</a>
+                                    <ul class="second-ul">
+                                        <li class="mb-list-item">
+                                            <a class="classMb classMb-icon" href="javascript:;">a二级list</a>
+                                            <ul class="third-ul">
+                                                <li class="mc-list-item">
+                                                    <a class="classMc classMc-icon" href="javascript:;">三级list1</a>
+                                                    <ul class="forth-ul">
+                                                        <li class="md-list-item"><a class="classMd" href="javascript:;">四级list1</a></li>
+                                                        <li class="md-list-item"><a class="classMd" href="javascript:;">四级list2</a></li>
+                                                        <li class="md-list-item"><a class="classMd" href="javascript:;">四级list3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list2</a></li>
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list3</a></li>
+                                                <li class="mc-list-item">
+                                                    <a class="classMc classMc-icon" href="javascript:;">三级list4</a>
+                                                    <ul class="forth-ul">
+                                                        <li class="md-list-item"><a class="classMd" href="javascript:;">四级list1</a></li>
+                                                        <li class="md-list-item"><a class="classMd" href="javascript:;">四级list2</a></li>
+                                                        <li class="md-list-item"><a class="classMd" href="javascript:;">四级list3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-list-item">
+                                            <a class="classMb" href="javascript:;">a二级list</a>
+                                        </li>
+                                    </ul>
+                                </li><!-- // li end -->
+                                <li class="Li-list-item">
+                                    <a class="classMa classMa-icon" href="javascript:;">一级list</a>
+                                    <ul class="second-ul">
+                                        <li class="mb-list-item">
+                                            <a class="classMb classMb-icon" href="javascript:;">a二级list</a>
+                                            <ul class="third-ul">
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list</a></li>
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list</a></li>
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list</a></li>
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-list-item">
+                                            <a class="classMb classMb-icon" href="javascript:;">a二级list</a>
+                                            <ul class="third-ul">
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list</a></li>
+                                                <li class="mc-list-item"><a class="classMc" href="javascript:;">三级list</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li><!-- // li end -->
+                                <li class="Li-list-item">
+                                    <a class="classMa classMa-icon" href="javascript:;">一级list</a>
+                                    <ul class="second-ul">
+                                        <li class="mb-list-item">
+                                            <a class="classMb" href="javascript:;">a二级list</a>
+                                        </li>
+                                        <li class="mb-list-item">
+                                            <a class="classMb" href="javascript:;">a二级list</a>
+                                        </li>
+
+                                    </ul>
+                                </li><!-- // li end -->
+                                <li class="Li-list-item">
+                                    <a class="classMa classMa-icon" href="javascript:;">一级list</a>
+                                    <ul class="second-ul">
+                                        <li class="mb-list-item">
+                                            <a class="classMb" href="javascript:;">a二级list</a>
+                                        </li>
+                                        <li class="mb-list-item">
+                                            <a class="classMb" href="javascript:;">a二级list</a>
+                                        </li>
+
+                                    </ul>
+                                </li><!-- // li end -->
+                            </ul>
+
+                        </div><!-- hidden-goodslist ending -->
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="confirm_btn pop_close">确定</a>
+                <a href="javascript:;" class="cancel_btn pop_close">取消</a>
+            </div>
+        </div>
+    </div>
+    <!--行业设置 shop_index_setE-->
+
+    <!--指标设置 S-->
+    <div class="pop_common_dialog sample_dialog code_index_dialog">
+        <div class="pop_common_box">
+            <a href="javascript:;" class="icon close_icon pop_close"></a>
+            <div class="pop_tit">
+                <p>核心指标设置</p>
+            </div>
+            <div class="content_box">
+                <div class="code_index_set">
+                    <div class="item clearfix">
+                        <label class="i_tit">展示指标：</label>
+                        <div class="items_box simulation_select">
+                            <i class="icon drop_icon"></i>
+                            <p class="choice choice_money">成交金额</p>
+                            <ul class="s_ul">
+                                <li>成交金额（&yen;）</li>
+                                <li>下单买家</li>
+                                <li>下单订单</li>
+                                <li>下单金额（&yen;）</li>
+                                <li>成交买家</li>
+                                <li>成交订单</li>
+                                <li>成交件数</li>
+                                <li>成交金额（&yen;）</li>
+                                <li>成交订单金额（&yen;）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <label class="i_tit">今日目标完成度：</label>
+                        <div class="items_box today_completeness">
+                            <label for="show" class="i_show"><input type="radio" name="show" id="show" checked>显示</label>
+                            <label for="hide" class="i_show"><input type="radio" name="show" id="hide">不显示</label>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <label class="i_tit">目标成交金额：</label>
+                        <div class="items_box">
+                            <input type="text" value="123456" class="i_input" placeholder="" id="aimVolume">
+                        </div>
+                    </div>
+                    <p class="item_tip">默认展示近期指标均值</p>
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="javascript:;" class="confirm_btn pop_close">确定</a>
+                <a href="javascript:;" class="cancel_btn pop_close">取消</a>
+            </div>
+        </div>
+    </div>
+    <!--指标设置 -->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/data_live_holl.js"></script>
+<script src="js/jquery-ui.js"></script>
+<!--<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+<script src="js/yhdSlider.js"></script>
+<script src="js/dialog.js"></script>
+<script src="js/draggable.js"></script>
+<script src="js/screenDecoration.js"></script>
+</html>

@@ -1,0 +1,204 @@
+.ipm_login{
+    overflow: hidden;
+}
+.ipm_login .ipm_header{
+    box-shadow: 0px 0px 10px #81b7e2;
+}
+.ipm_login .main_container{
+    background-color: #c9e4f3;
+}
+.ipm_login .main_container .login_box{
+    position: fixed;
+    left: 50%;
+    top: 150px;
+    margin-left: -200px;
+    width: 320px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow:5px 5px 20px rgba(82,160,201,.5), 0px 0px 200px  #e7e7e7;
+}
+.ipm_login .main_container .login_box h3{
+    margin-bottom: 24px;
+    color: #505e70;
+    font: 20px/36px 'Microsoft YaHei';
+    text-align: center;
+}
+.info_box .tab_box{
+    height: 33px;
+    border-bottom: 1px #e1e1e1 solid;
+}
+.info_box .tab_box .login_tab{
+    position: relative;
+    float: left;
+    width: 159px;
+    height: 18px;
+    padding-bottom: 14px;
+    font: 14px/18px 'Simsun';
+    text-align: center;
+}
+.info_box .tab_box .border_tab:before{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    margin-top: -9px;
+    background-color: #e5e5e5;
+}
+.info_box .tab_box .on{
+    border-bottom: 3px #5ac7f9 solid;
+    color: #5ac7f9;
+    font-weight: bold;
+}
+.info_box .tab_box .login_tab:hover{
+    color: #5ac7f9;
+    font-weight: bold;
+}
+.info_box .tab_box .on:after{
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 4px #5ac7f9 solid;
+    border-color: #5ac7f9 #fff #fff #fff;
+}
+
+.login_info{
+    padding-top: 30px;
+    text-align: center;
+}
+.login_info .ipm_items{
+    position: relative;
+}
+.login_info .ipm_items .item_input{
+    float: none;
+    display: block;
+    width: 270px;
+    height: 40px;
+    padding-left: 40px;
+    color: #505e70;
+    font: 12px/40px 'Simsun';
+}
+.login_info .ipm_items .user_icon{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width:40px;
+    height: 40px;
+    color: #8998ad;
+    line-height: 40px;
+    text-align: center;
+}
+.login_info .tips_box p{
+    float: left;
+    padding-left: 18px;
+    color: #ff6055;
+}
+.login_info .pw_tips{
+    float: right;
+    color: #8998ad;
+    font: 12px/18px 'Simsun';
+}
+.login_info .pw_tips:hover{
+    color: #505e70;
+}
+.login_info .blue_gradient_btn{
+    width: 170px;
+    margin: 30px 0 10px;
+}
+.ipm_check .login_info .ipm_items .item_input{
+    width: 300px;
+    padding-left: 10px;
+}
+.ipm_check .ipm_items .selected_box{
+    padding: 6px 0;
+}
+.ipm_check .ipm_items .on .selected_box{
+    position: relative;
+    border-bottom: 1px #d8e4ec solid;
+    z-index: 11;
+}
+.ipm_check .ipm_items .item_input .check_label{
+    float: left;
+    width: 70px;
+    text-align: right;
+    color: #8998ad;
+    font: 12px/28px 'Simsun';
+    text-align: justify;
+    text-align-last: justify;
+}
+.ipm_check .login_info .ipm_items .enter_items{
+    width: 300px;
+    height: 28px;
+    padding: 6px 10px;
+}
+.ipm_check .ipm_items input.ipm_text{
+    font: 12px/28px Arail,Simsun;
+}
+.ipm_check .ipm_items .enter_items input{
+    float: left;
+    width: 170px;
+    height: 28px;
+    padding:0 20px 0 10px;
+    border: none;
+    background-color: #f9fcfe;
+    outline: none;
+    color: #505e70;
+    line-height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.ipm_check .ipm_items .cur input{
+    background-color: #fff;
+}
+.ipm_check .ipm_items .item_input .selected_box .selected{
+    width: 170px;
+    border: none;
+}
+.ipm_check .ipm_items .item_input .selected_box .iconfont{
+    top: 12px;
+    line-height: 16px;
+}
+.ipm_check .ipm_items .item_input .drop_box{
+    top: 37px;
+    width: 320px;
+}
+.ipm_check .login_info .ipm_items .check_code{
+    position: relative;
+    float: left;
+    width: 110px;
+    height: 28px;
+    padding-left: 10px;
+    border: none;
+    border-right: 1px #e5e5e5 solid;
+    outline: none;
+}
+.ipm_check .login_info{
+    padding-top: 0;
+}
+.ipm_check .login_info .ipm_items .get_code{
+    float: right;
+    width: 72px;
+    padding-right: 10px;
+    line-height: 28px;
+    text-align: right;
+    color: #27b8fb;
+}
+.ipm_check .login_info .ipm_items .get_code:hover{
+    color: #0394d7;
+}
+.ipm_check .login_info .ipm_items .count_down{
+    display: none;
+    float: left;
+    padding-left: 10px;
+    color: #ccc;
+    line-height: 28px;
+    text-align: right;
+}

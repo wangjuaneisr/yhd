@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>backend:无线大促</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="My97DatePicker/skin/WdatePicker.css"/>
+    <link rel="stylesheet" type="text/css" href="css/yhdbk.css">
+    <link href="css/wireless.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- table S-->
+    <div class="table-header">
+        <table width="100%" cellspacing="0" cellpadding="0" class="tab01  tabtopborder">
+            <thead>
+                <tr>
+                    <th width="7%">序号</th>
+                    <th width="16%">活动ID</th>
+                    <th width="17%">活动名称</th>
+                    <th width="14%">开始时间</th>
+                    <th width="14%">结束时间</th>
+                    <th width="10%">状态</th>
+                    <th width="22%">操作</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="clearfix table-tbody">
+        <table width="100%" cellspacing="0" cellpadding="0" class="tab01  tabtopborder">
+            <tbody>
+                <tr>
+                    <td width="7%">1</td>
+                    <td width="16%">3435454</td>
+                    <td width="17%">周年庆来啦，买买买</td>
+                    <td width="14%">2016.07.15</td>
+                    <td width="14%">2016.07.18</td>
+                    <td width="10%" class="status-td">
+                        <span class="templet-status"><em class="tem-btn close-tem">前台关闭</em><em class="tem-btn open-tem">前台开启</em></span>
+                        <span class="decrotion-status"><em class="dec-btn open-dec">(装修开启)</em><em class="dec-btn close-dec">(装修关闭)</em></span>
+                    </td>
+                    <td  width="22%">
+                        <a href="#" class="templet-btn start-templet">开启前台</a>
+                        <a href="#" class="templet-btn stop-templet">关闭前台</a>
+                        <a href="#" class="decrotion-btn start-decrotion">开启装修</a>
+                        <a href="#" class="decrotion-btn close-decrotion">关闭装修</a>
+                        <a href="#" class="edit">编辑模板</a>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>2</td>
+                    <td>3435454</td>
+                    <td>端午节来了，买买买</td>
+                    <td>2016.07.15</td>
+                    <td>2016.07.18</td>
+                    <td class="status-td">
+                        <span class="templet-status"><em class="tem-btn close-tem">前台关闭</em><em class="tem-btn open-tem">前台开启</em></span>
+                        <span class="decrotion-status"><em class="dec-btn open-dec">(装修开启)</em><em class="dec-btn close-dec">(装修关闭)</em></span>
+                    </td>
+                    <td>
+                        <a href="#" class="templet-btn start-templet">开启前台</a>
+                        <a href="#" class="templet-btn stop-templet">关闭前台</a>
+                        <a href="#" class="decrotion-btn start-decrotion">开启装修</a>
+                        <a href="#" class="decrotion-btn close-decrotion">关闭装修</a>
+                        <a href="#" class="edit">编辑模板</a>
+                    </td>
+                </tr>  
+               <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <a href="#" class="new-templet-btn">新建模板</a>
+                    </td>
+                </tr>                      
+            </tbody>
+        </table>
+    </div>  
+    <!-- table E-->
+   
+    <!--弹窗-模板编辑1 S -->
+    <div class="Ag-common-dialog new-templet new-templet-box">
+       <div class="Acd-rel-dialog box-rim">
+          <div class="Acd-rel-body box-cont">
+             <div class="box-cont-title clearfix">
+                <b class="fl">新建模板</b>
+                <a href="javascript:;" class="close pop-close fr"></a>
+             </div>
+             <div class="step-box clearfix">
+                <label class="pop-lable">1、请选择促销活动：</label>
+                <div class="step-cont table-box">
+                    <div class="table-header">
+                        <table cellspacing="0" cellpadding="0" class="tab01  tabtopborder">
+                            <thead>
+                            <tr>
+                                <th width="110">操作</th>
+                                <th width="220">活动ID</th>
+                                <th width="300">活动名称</th>
+                            </tr>
+                        </thead>
+                        </table>
+                    </div>
+                    <div class="table-tbody">
+                        <table cellspacing="0" cellpadding="0" class="tab01  tabtopborder">
+                            <tbody>
+                                <tr>
+                                    <td width="110"><input type="radio" name="templet-radio"/></td>
+                                    <td width="220">0123456789</td>
+                                    <td width="300"><p class="activty-name">端午节来了，买买买端午节来了，买买买端午节来了，买买买端午节来了，买买买端午节来了，买买买端午节来了，买买买端午节来了，买买买端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="templet-radio"/></td>
+                                    <td>0123456789</td>
+                                    <td><p class="activty-name">端午节来了，买买买</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+             </div>
+             <div class="box-cont-text">
+                <div class="border-xu">
+                    <em class="tips">请慎重选择促销活动，提交后不能再改！</em>
+                    <button class="btnOpen pop-close new-templet-next-btn ml yhdbk-button-01" href="javascript:void(0);">下一步</button>
+                    <button class="btnPause pop-close ml yhdbk-button-03" href="javascript:void(0);">取消</button>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!--弹窗-模板编辑1 E-->
+   
+    <!--弹窗-模板编辑2.3.4 S-->
+    <div class="Ag-common-dialog templet-edit templet-edit-box">
+       <div class="Acd-rel-dialog box-rim">
+          <div class="Acd-rel-body box-cont">
+             <div class="box-cont-title clearfix">
+                <b class="fl">模板编辑</b>
+                <a href="javascript:;" class="close pop-close fr"></a>
+             </div>
+             <div class="step-box clearfix">
+                <label class="pop-lable">2、设置商家装修时间：</label>
+                 <div class="step-cont date-box">
+                    <p class="fr clearfix">
+                        <input id="d4311" type="text" class="Wdate ipt2_left" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',maxDate:'#F{$dp.$D(\'d4312\')}'})"/>
+                        <input type="text" class="ipt2_center date7" value="至" readonly="readonly">
+                        <input id="d4312" type="text" class="Wdate ipt2_right" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm',minDate:'#F{$dp.$D(\'d4311\')}'})">
+                    </p>
+                 </div>
+             </div>
+             <div class="step-box clearfix">
+                <label class="pop-lable">3、请上传活动tab图片：</label>
+                <div class="step-cont pic-upload-step">
+                    <div class="pic-upload-box clearfix">
+                        <a type="text" href="javascript:void(0);" class="upload-pic">
+                            <img src="http://dummyimage.com/80X80"/>
+                        </a>
+                        <a class="fl upload-pic-btn" href="javascript:void(0);">选择图片<input type="file"/></a>   
+                    </div>
+                    <dl class="upload-tips-box">
+                        <dt>格式要求：</dt>
+                        <dd>1.大小不超过<em>10M</em></dd>
+                        <dd>2.尺寸<em>n*y</em></dd>
+                        <dd>3.格式支持<em>JPG</em></dd>
+                    </dl>
+                </div>
+             </div>
+            <div class="step-box clearfix">
+                <label class="pop-lable">4、请上传活动商品角标<em>（必填）</em>：</label>
+                <div class="step-cont pic-upload-step">
+                    <div class="pic-upload-box clearfix">
+                        <a type="text" href="javascript:void(0);" class="upload-pic">
+                            <img src="http://dummyimage.com/80X80"/>
+                        </a>
+                        <a class="fl upload-pic-btn" href="javascript:void(0);">选择图片<input type="file"/></a>
+                    </div>
+                    <dl class="upload-tips-box">
+                        <dt>格式要求：</dt>
+                        <dd>1.大小不超过<em>10M</em></dd>
+                        <dd>2.尺寸<em>n*y</em></dd>
+                        <dd>3.格式支持<em>JPG</em></dd>
+                    </dl>
+                </div>
+            </div>
+             <div class="box-cont-text">
+                <div class="border-xu">
+                    <button class="btnOpen pop-close templet-edit-prev-btn ml yhdbk-button-01" href="javascript:void(0);">上一步</button>
+                    <button class="btnOpen pop-close templet-edit-next-btn ml yhdbk-button-01" href="javascript:void(0);">下一步</button>
+                    <button class="btnPause pop-close ml yhdbk-button-03" href="javascript:void(0);">取消</button>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!--弹窗-模板编辑2.3.4 E-->
+   
+    <!--弹窗-模板编辑5.6.7 S-->
+    <div class="Ag-common-dialog templet-edit-end-box templet-edit-end">
+       <div class="Acd-rel-dialog box-rim">
+          <div class="Acd-rel-body box-cont">
+             <div class="box-cont-title clearfix">
+                <b class="fl">模板编辑</b>
+                <a href="javascript:;" class="close pop-close fr"></a>
+             </div>
+             <div class="step-box clearfix">
+                <label class="pop-lable">5、请上传活动页默认广告：</label>
+                <div class="step-cont pic-upload-step">
+                    <div class="pic-upload-box clearfix">
+                        <!-- <input type="file" href="javascript:void(0);" class="upload-pic real_ipt"/>
+                        <input type="text" href="javascript:void(0);" class="upload-pic show-ipt"/>
+                        <a href="javascript:;" class="fl upload-pic-btn">选择图片</a> -->
+                        <a type="text" href="javascript:void(0);" class="upload-pic">
+                            <img src="http://dummyimage.com/80X80"/>
+                        </a>
+                        <a class="fl upload-pic-btn" href="javascript:void(0);">选择图片<input type="file"/></a>
+                    </div>
+                    <dl class="upload-tips-box">
+                        <dt>格式要求：</dt>
+                        <dd>1.大小不超过<em>10M</em></dd>
+                        <dd>2.尺寸<em>n*y</em></dd>
+                        <dd>3.格式支持<em>JPG</em></dd>
+                    </dl>
+                </div>
+                 <div class="pic-link">
+                    请填写图片链接：<input type="text" class="pic-link-txt" />
+                </div>
+             </div>
+            <div class="step-box clearfix">
+                <label class="pop-lable">6、请上传底部导航图片：</label>
+                <div class="step-cont pic-upload-step">
+                    <div class="pic-upload-box clearfix">
+                        <a type="text" href="javascript:void(0);" class="upload-pic">
+                            <img src="http://dummyimage.com/80X80"/>
+                        </a>
+                        <a class="fl upload-pic-btn" href="javascript:void(0);">选择图片<input type="file"/></a>
+                    </div>
+                    <dl class="upload-tips-box">
+                        <dt>格式要求：</dt>
+                        <dd>1.大小不超过<em>10M</em></dd>
+                        <dd>2.尺寸<em>n*y</em></dd>
+                        <dd>3.格式支持<em>JPG</em></dd>
+                    </dl>
+                </div>
+                <div class="pic-link">
+                    请填写图片链接：<input type="text" class="pic-link-txt" />
+                </div>
+            </div>
+             <div class="box-cont-text">
+                <div class="border-xu">
+                    <button class="btnOpen pop-close templet-edit-end-prev-btn ml yhdbk-button-01" href="javascript:void(0);">上一步</button>
+                    <button class="btnOpen pop-close submit-btn ml yhdbk-button-01" href="javascript:void(0);">提交</button>
+                    <button class="btnPause pop-close ml yhdbk-button-03" href="javascript:void(0);">取消</button>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!--弹窗-模板编辑5.6.7 E-->
+
+    <!-- 开启活动提醒 S-->
+    <div class="Ag-common-dialog templet-open-box">
+       <div class="Acd-rel-dialog box-rim">
+          <div class="Acd-rel-body box-cont">
+             <div class="box-cont-title clearfix">
+                <b class="fl">提示</b>
+                <a href="javascript:;" class="close pop-close fr"></a>
+             </div>
+             <div class="step-box clearfix">
+                <p class="templet-open-tips">很抱歉，系统仅支持同时开启一个前台！</p>
+             </div>
+             <div class="box-cont-text">
+                <div class="border-xu">
+                    <a class="btnOpen pop-close" href="javascript:void(0);">好的</a>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <!-- 开启活动提醒 E-->
+</body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/popupbox.js"></script>
+<script type="text/javascript">
+    //开启前台
+    $("body").on("click",".templet-btn",function(){
+        var flag = $(this).parents("tr").siblings().hasClass("opened-templet");
+        if(flag==true){//若已经开启其他前台
+            $(this).PopupDialog({
+                popupClass:'.templet-open-box',
+                maskLayer:true
+            }); 
+        }else{//若没有开启前台
+            //若点击的是 关闭前台 则移除高亮 否则加高亮
+            $(this).hasClass("stop-templet")?$(this).parents("tr").removeClass("opened-templet"):$(this).parents("tr").addClass("opened-templet");
+            $(this).hide().siblings(".templet-btn").show();
+            var thatStatus = $(this).parents("td").siblings(".status-td").find(".tem-btn:visible")
+            thatStatus.hide().siblings().show();
+        }
+
+
+    });
+
+    //开启/关闭装修
+    $("body").on("click",".decrotion-btn",function(){
+        $(this).hide().siblings(".decrotion-btn").show();//装修 按钮切换
+        var that = $(this).parents("td").siblings(".status-td").find(".dec-btn:visible");
+        that.hide().siblings().show();//状态变化
+    });
+
+     // 弹框1-新建模板
+    $(".new-templet-btn").on("click",function(){
+        $(this).PopupDialog({
+            popupClass:'.new-templet-box',
+            maskLayer:true
+        });
+    }); 
+    $("body").on("click",".new-templet-next-btn",function(){ //下一步
+        $(".templet-edit-prev-btn").show();
+        $(this).PopupDialog({
+            popupClass:'.templet-edit-box',
+            maskLayer:true
+        });
+    }); 
+
+    // 弹框2-模板编辑   
+    $("body").on("click",".templet-edit-prev-btn",function(){//上一步
+        $(this).PopupDialog({
+            popupClass:'.new-templet-box',
+            maskLayer:true
+        });
+    });
+    $("body").on("click",".templet-edit-next-btn",function(){ //下一步
+        $(this).PopupDialog({
+            popupClass:'.templet-edit-end-box',
+            maskLayer:true
+        });
+    });
+
+    // 弹框3-模板编辑
+    $("body").on("click",".templet-edit-end-prev-btn",function(){//上一步
+        $(this).PopupDialog({
+            popupClass:'.templet-edit-box',
+            maskLayer:true
+        });
+         // $(".templet-edit-prev-btn").show();
+    });
+
+    // 弹框-编辑模板进入弹窗2
+    $("body").on("click","table tr td .edit",function(){
+        $(".templet-edit-prev-btn").hide();
+        $(this).PopupDialog({
+            popupClass:'.templet-edit-box',
+            maskLayer:true
+        });     
+    }); 
+</script>
+</html>

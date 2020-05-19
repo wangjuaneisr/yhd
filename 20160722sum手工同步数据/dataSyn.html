@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>sum手工同步数据</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/dataSyn.css">
+
+</head>
+<body>
+    <div class="data_syn_box">
+        <div class="wrap form_box">
+            <div class="items_box clearfix">
+                <lable class="pro_name">商&nbsp;&nbsp;品：</lable>
+                <input type="text" class="file_path" placeholder="请选择需同步的host文件" readonly>
+                <div class="btn_box">
+                    <a href="javascript:void(0)" class="blue_btn">选择</a>
+                    <input type="file" class="file_btn">
+                </div>
+            </div>
+            <div class="items_box clearfix">
+                <lable class="pro_name">库&nbsp;&nbsp;存：</lable>
+                <input type="text" class="file_path" placeholder="请选择需同步的host文件" readonly>
+                <div class="btn_box">
+                    <a href="javascript:void(0)" class="blue_btn">选择</a>
+                    <input type="file" class="file_btn">
+                </div>
+            </div>
+            <div class="items_box clearfix">
+                <lable class="pro_name">价&nbsp;&nbsp;格：</lable>
+                <input type="text" class="file_path" placeholder="请选择需同步的host文件" readonly>
+                <div class="btn_box">
+                    <a href="javascript:void(0)" class="blue_btn">选择</a>
+                    <input type="file" class="file_btn">
+                </div>
+            </div>
+            <div class="items_box clearfix">
+                <lable class="pro_name">商品状态：</lable>
+                <input type="text" class="file_path" placeholder="请选择需同步的host文件" readonly>
+                <div class="btn_box">
+                    <a href="javascript:void(0)" class="blue_btn">选择</a>
+                    <input type="file" class="file_btn">
+                </div>
+            </div>
+            <div class="items_box clearfix">
+                <a href="javascript:void(0)" class="gray_btn start_syn">开始同步</a>
+            </div>
+        </div>
+        <!-- 弹窗 正在同步S-->
+        <div class="Ag-common-dialog pop-batch-delay syn_pop_box">
+            <div class="Acd-rel-dialog">
+                <a href="javascript:" class="dialog-main-close pop-close"></a>
+                <div class="Acd-rel-body">
+                    <div class="bk-sales-md search-box new-discount clearfix">
+                        <img src="images/load.gif" class="success_pic">
+                        <div class="success_tips">
+                            <p>正在同步</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗 正在同步E-->
+
+        <!-- 弹窗 同步成功S-->
+        <div class="Ag-common-dialog pop-batch-delay success_box">
+            <div class="Acd-rel-dialog">
+                <a href="javascript:" class="dialog-main-close pop-close"></a>
+                <div class="Acd-rel-body">
+                    <div class="bk-sales-md search-box new-discount clearfix">
+                        <img src="images/success.png" class="success_pic">
+                        <div class="success_tips">
+                            <p>同步成功</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗 同步成功E-->
+    </div>
+</body>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/popwin.js"></script>
+    <script type="text/javascript" src="js/dataSyn.js"></script>
+</html>

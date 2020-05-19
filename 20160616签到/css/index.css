@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*
+ *Description :  ;
+ *Author : Wang Juan;
+ *Date : 2016;
+**/
+/*日历部分样式 S*/
+.calender_box{width: 740px;padding:28px 110px;background-color: #595959;}
+.calender_box .calender{float: left;width: 460px;padding: 10px 20px;background-color: #ebae0b;font-family: 'Microsoft YaHei';font-weight: bold;}
+.calender_box .calender_header{height: 40px;line-height: 40px;color: #7c4306;font-size: 14px;}
+.calender_box .calender_header .month{font-size: 24px;}
+.calender_box .calender_table{width: 460px;background-color: #fff;font-size: 14px;border-radius: 6px;padding-bottom: 8px;padding-top: 4px;}
+.calender_box .calender_table tr th{height: 18px;line-height: 18px;color: #999;font-family: 'Microsoft YaHei';}
+.calender_box .calender_table tr td{position: relative;width: 50px;height: 30px;padding-left: 10px;padding-right: 10px;}
+.calender_box .calender_table tr .other_month{color: #c3c3c3;}
+/*已签到日期样式*/
+.calender_box .calender_table tr .sign_day{background-color: #fbeecb;color: #e5bc4e;font-family: 'Gentury Gothic';font-size: 14px;font-weight: bold;}
+.calender_box .calender_table tr td em{display: none;position: absolute;top: 7px;right: 10px;font-size: 12px;font-weight: bold;font-family: 'Microsoft YaHei';}
+.calender_box .calender_table tr .sign_day em{display: block;color: #7c4306;filter:alpha(opacity=24);opacity:0.24;}
+/*未签到日期样式*/
+.calender_box .calender_table tr .no_sign_day{background-color: #efeded;color: #999;font-size: 14px;}
+/*今天 样式*/
+.calender_box .calender_table .today{background-color: #fde6e5; color: #ff5c41;}
+.calender_box .calender_table .today .cur{display: block;color: #f72d24;filter:alpha(opacity=40);opacity:0.4;}
+.calender_box .calender_table .sign_day .cur{display: none;}/*点击签到 今天样式隐藏*/
+/*日历部分样式 E*/
+
+/*签到部分样式 S*/
+.sign_box{float: left;width: 190px;padding: 27px 0px 27px 50px;}
+.sign_box .sign_day{width: 120px;height: 140px;background-color: #505050;color: #fff;}
+.sign_box .sign_day p{height: 60px;line-height: 60px; font-size: 16px;font-family: 'Microsoft YaHei';text-align: center;}
+.sign_box .day{height: 70px;padding: 0 14px 10px 14px;line-height: 70px;text-align: center;font-size: 18px;font-family: 'Microsoft YaHei';}
+.sign_box .day em{float: left;width: 38px;text-align: center;}
+.sign_box .day .time{float: left;display: inline-block;width: 54px;height: 70px;background: url("../images/2.png"); color: #333;font-size: 48px;font-family: 'Century Gothic';}
+.sign_box .sign_btn_box{margin-top: 30px;text-align: center;}
+.sign_box .sign{ display: inline-block;width: 158px;height: 46px;line-height: 46px;color: #2b2b2b;font-size: 18px;font-family: 'Microsoft YaHei';text-align: center;}
+.sign_box .sign_btn{background: url("../images/sign.png");}
+.sign_box .signed_btn,.sign_box  .sign_suc_btn{background: url("../images/signed.png");/*cursor: default;*/}/*已签到按钮样式*/
+/*签到部分样式 E*/
+
+
+
+/*--- @通用弹窗模块 S----*/
+/*--- @通用遮罩层 ----*/
+.popup-iframe{position:absolute;left:0;top:0;z-index:800;width:100%;background-color:#000;filter:alpha(opacity=70);opacity:0.3;}
+.Ag-maskLayer {position: absolute;left: 0;top: 0;z-index: 810;width: 100%; height:100%;background-color: #000;filter: alpha(opacity=70);opacity: 0.6;}
+
+.Ag-common-dialog{position:absolute; z-index:999; width:80%; left:50%;border:5px solid #ccc; border-color:rgba(0 ,0 ,0 ,.2);/*_border-color:#ccc;*/}
+.Acd-rel-dialog{ position:relative;background:#fff;}
+.Acd-rel-head{ height:45px; padding:0px 20px;  line-height:45px; background-color:#ededed; font-family:"microsoft yahei"; font-size:14px; color:#333; border-bottom:1px solid #e6e6e6;}
+.Acd-rel-body{ padding:20px; background-color:#fff;}
+.dialog-main-close{ display: block;  position: absolute;width:24px;height:23px;right:24px;top:0px; background-image:url(../images/close-icon.gif); background-size:24px auto; background-position:0px 0px;-moz-transition:-moz-transform 0.5s ease 0s;transition:transform 0.5s ease 0s;}
+.dialog-main-close:hover{ background-position:0px 0px;-o-transform:rotate(180deg);transform:rotate(180deg);}
+.delay-dispear{display: none; width:222px;height:92px;border:1px solid #e6e6e6;background-color:#fff;text-align: center;}
+.delay-dispear p{margin-top:32px;}
+.delay-dispear h3{position: relative; margin-top:40px;font-size: 14px;font-weight: normal;color: #666;}
+.delay-dispear h3 i{display: block; position: absolute; top: -10px; left: 30px; _left:-40px; width: 40px; height: 31px; background: url(../images/sprite.png) no-repeat right -225px;}
+/*弹窗公共部分title 以及各按钮样式*/
+.box-rim .box-cont .box-cont-text{padding: 0 9px;}
+.box-rim .box-cont .box-cont-text textarea{width: 320px; height: 104px; margin:13px auto; padding: 4px; overflow:hidden; overflow-y:auto; outline:none; resize:none; text-align:left; line-height: 14px;}
+.box-cont-title{height: 40px;line-height: 40px;color: #333;font-size: 14px;font-family: 'Microsoft YaHei';}
+.box-cont-title span{display:inline-block; color:#333;font-size:14px; font-weight:bold;}
+.box-cont-title a{display:inline-block; width:14px; height:14px; margin-top: 8px; background:url(../images/sprit2.png) no-repeat -60px 0;}
+.box-cont-text .border-xu{width: 100%;padding: 30px 0;text-align: center;}
+.box-cont-text .border-xu .tips{display: block;line-height: 20px;padding-bottom: 15px;color: #FF0000;}
+/*--- @通用弹窗模块 E----*/
+
+/*弹窗*/
+.signed_pop,.sign_day_pop{display: none;width: 400px;}
+.signed_tips{height: 24px;line-height: 24px;padding-bottom: 40px;color: #333;font-weight: bold;text-align: center;font-size: 16px;font-family: 'Microsoft YaHei';}

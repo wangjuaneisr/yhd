@@ -1,0 +1,21 @@
+
+/**
+ * Created by zhangqian7 on 2016/8/5.
+ */
+
+/*dateinput*/
+.selecDatePeriod{position:relative; width: 234px; height:28px; border:1px solid #ccc; }
+.timeSelectBar{ height:28px;}
+.timeSelectBar input{ float:left; font-family:'Tahoma' ; font-size:14px; color:#666; border:none;}
+.timeSelectBar input.tselect-same{ height:14px; line-height:14px; padding:6px 0px 6px 10px;}
+.timeSelectBar input.startInput{ width:80px;}
+.timeSelectBar input.lineInput{ width:14px; height:28px; line-height:28px; padding:0 5px; color:#999; border:none;}
+.timeSelectBar input.endInput{ width:zzz0px;  padding:6px 0px 6px ; background:url(../images/ca_icon_date.jpg)  94px 8px no-repeat;}
+
+.timeHideModel{ position:absolute; left:-275px; top:28px; z-index:333; width:508px; background:#fafafa; border:1px solid #ccc;}
+.dateTabBtn{ height:28px; border-bottom:1px solid #8dd6f7; padding-left:40px;}
+.dateTabBtn a{  float:left; display:inline-block;color:#999; height:28px; padding:0px 25px; line-height:28px; font-size:12px; margin-top:-1px; border-bottom:1px solid #8dd6f7; border-top:1px solid #ccc; background-color:#efefef;  }
+.dateTabBtn a.current , .flowSource .sTitle .dateTabBtn a.current{ border:1px solid #8dd6f7;border-bottom:1px solid #d5edf9; background-color:#d5edf9; color:#666; }
+.detailDateWarp , .detailDateCont{ position:static; text-align: center;}
+.detailDateWarp .sureClose{ display:inline-block; height:22px; line-height:22px; padding:0px 18px; background-color:#f99a34; color:#fff; font-size:12px; margin:10px auto; border-radius:2px;}
+.detailDateWarp .sureClose:hover{ background-color:#ec8210;}

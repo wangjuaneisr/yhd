@@ -1,0 +1,11 @@
+<view class="lottery">
+    <view class="coupon-618">
+      <view class="rule">活动规则></view>
+    </view>
+  <view class="txt">活动时间：2018/6/6——2018/6/18</view>
+  <view class="txt">活动期间，门店每买1单增加1次摇奖机会</view>
+  <view class="remain-chance">剩余 <span>1</span> 次机会</view>
+  <view class="main-pic {{ifIpx ? 'ipx' : ''}}"></view>
+  <view class="go-lottery"></view>
+  <view class="my-gift"></view>
+</view>

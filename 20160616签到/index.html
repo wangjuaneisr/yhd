@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title></title>
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+		<div class="calender_box wrap clearfix">
+			<div class="calender">
+				<div class="calender_header">
+					2016年<em class="month">7</em>月
+				</div>
+				<!-- 日历 -->
+				<table class="calender_table" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>一</th>
+						<th>二</th>
+						<th>三</th>
+						<th>四</th>
+						<th>五</th>
+						<th>六</th>
+						<th>七</th>
+					</tr>
+					<tr>
+						<td class="other_month">28</td>
+						<td class="other_month">29</td>
+						<td class="other_month">30</td>
+						<td class="other_month">31</td>
+						<td class="sign_day">1<em>签</em></td>
+						<td class="no_sign_day">2<em>签</em></td>
+						<td class="no_sign_day">3<em>签</em></td>
+					</tr>
+					<tr>
+						<td class="no_sign_day">4<em>签</em></td>
+						<td class="no_sign_day">5<em>签</em></td>
+						<td class="today">6<em class="cur">今天</em><em>签</em></td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+					</tr>
+					<tr>
+						<td class="other_month">1</td>
+						<td class="other_month">2</td>
+						<td class="other_month">3</td>
+						<td class="other_month">4</td>
+						<td class="other_month">5</td>
+						<td class="other_month">6</td>
+						<td class="other_month">7</td>
+					</tr>
+				</table>
+			</div>
+			<div class="sign_box">
+				<div class="sign_day wrap">
+					<p>您本月已签到</p>
+					<div class="day clearfix">
+						<i class="time">2</i>
+						<em>天</em>
+					</div>
+				</div>
+				<div class="sign_btn_box">
+					<a href="javascript:void(0)" class="sign sign_btn">今日签到</a>
+					<a href="javascript:void(0)" class="sign signed_btn">已签到</a>
+					<a href="javascript:void(0)" class="sign sign_suc_btn">签到成功</a>
+				</div>
+			</div>
+		</div>
+
+		 <!-- 弹窗:已签到 S-->
+		<div class="Ag-common-dialog pop-batch-delay signed_pop">
+	        <div class="Acd-rel-dialog">
+	            <a href="javascript:" class="dialog-main-close pop-close"></a>
+	            <div class="Acd-rel-body">
+	            	<!-- 标题 -->
+	                <div class="box-cont-title clearfix">
+		                <!-- <b class="fl">模板编辑</b> -->
+		                <a href="javascript:;" class="close pop-close fr"></a>
+		            </div>
+		            <!-- 内容 -->
+		            <div class="signed_btn_box clearfix">
+		               <a href="javascript:void(0)">您今天已签过到！</a>
+		            </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 弹窗：已签到 E-->
+
+	     <!-- 弹窗：签到天数 S-->
+		<div class="Ag-common-dialog pop-batch-delay sign_day_pop">
+	        <div class="Acd-rel-dialog">
+	            <a href="javascript:" class="dialog-main-close pop-close"></a>
+	            <div class="Acd-rel-body">
+	            	<!-- 标题 -->
+	                <div class="box-cont-title clearfix">
+		                <!-- <b class="fl">模板编辑</b> -->
+		                <a href="javascript:;" class="close pop-close fr"></a>
+		            </div>
+		            <!-- 内容 -->
+		            <div class="signed_tips clearfix">
+		               您已签到满X天，获得超级吃货勋章一枚！
+		            </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- 弹窗：签到天数 E-->
+
+</body>
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/popwin.js"></script>
+     <script type="text/javascript">
+ 	 	/*点击日历*/
+ 	 	$('.sign_btn_box .signed_btn').hide();
+ 	 	$('.sign_btn_box .sign_suc_btn').hide();
+ 	 	// 检测今天是否已签到
+ 	 	if($('.today').hasClass('sign_day')){
+ 	 		//已签到
+ 	 		$('.sign_btn').hide().siblings('.signed_btn').show();
+ 	 	}else{
+ 	 		//未签到
+ 	 		 $('body').on('click','.sign_btn',function(){
+            // $(this).PopupDialog({
+            //     popupClass:'.signed_pop',
+            //     maskLayer:true,
+            //     delayClose:3
+            // });
+	        	// if($('.today').hasClass('sign_day')){
+	        	// 	$(this).hide().siblings('.signed_btn').show();
+	        	// }else{
+	        		$(this).hide().siblings('.sign_suc_btn').show();
+	        		$('.today').addClass('sign_day');
+	        	// }
+       		});
+ 	 	}
+       
+
+        // $("body").on('click','.signed_btn',function(){
+        // 	$(this).PopupDialog({
+        // 		popupClass:'.sign_day_pop',
+        // 		maskLayer:true,
+        // 		delayClose:3
+        // 	});
+        // });
+     </script>
+</html>

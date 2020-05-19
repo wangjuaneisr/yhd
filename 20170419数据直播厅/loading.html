@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>loading</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/data_live_holl.css">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+<div class="loading_box">
+    <div class="loading">
+        <img src="images/loading.gif" alt="">
+    </div>
+    <div class="process_bar_box clearfix">
+        <div class="process_bar">
+            <div class="mask_bar"></div>
+        </div>
+        <div class="process">0%</div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    var i=0;
+    var timer = setInterval(function(){
+        i<100?i++:stopFun();
+        $('.process').text(i+'%');
+        var _w = (100-i)+'%';
+        $('.mask_bar').css("width",_w);
+    },100);
+    function stopFun(){
+        clearInterval(timer);
+       $('.loading_box').addClass('hide');
+    }
+</script>
+</html>

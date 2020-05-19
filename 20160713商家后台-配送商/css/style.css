@@ -1,0 +1,23 @@
+/*
+*description:;
+*author:;
+*date:;
+*update:
+*/
+
+/*global-S*/
+.orange_btn{height: 24px;padding: 0 18px;border-radius: 3px;background-color: #feeac9;color: #fa7300;text-align: center;line-height: 24px;}
+.orange_btn:hover{background-color: #fdd899;color: #fa7300;}
+/*global-E*/
+
+
+/*导入配送商弹窗-S*/
+.yhdbk_popwin .form_item{margin-top: 15px;text-align: left;}
+.yhdbk_popwin .form_name{float: left;width: 90px;margin-top: 4px;text-align: right;}
+.yhdbk_popwin .form_main{float: left;width: 340px;}
+.yhdbk_popwin .upload{position: relative;height: 25px;}
+.yhdbk_popwin .upload .real_ipt{position: absolute;z-index: 5;top: 0;left:0;bottom: 0;width: 183px;opacity: 0;filter: alpha(opacity=0);}
+.yhdbk_popwin .upload .show_ipt{float: left;width: 178px;height: 22px;padding-left:3px;border: solid 1px #ccc;line-height: 22px;color: #666;}
+.yhdbk_popwin .upload a{float: left;margin-left: 5px;}
+.yhdbk_popwin .download_demo{display: inline-block;margin: 20px 5px 0;}
+/*导入配送商弹窗-E*/

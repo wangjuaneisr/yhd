@@ -1,0 +1,7 @@
+{
+  "name": "echart",
+  "version": "0.0.1",
+  "dependencies": {
+    "echarts": "^4.1.0"
+  }
+}

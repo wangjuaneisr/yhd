@@ -1,0 +1,178 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>1号店2017年年会抽奖</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/lottery.css">
+</head>
+<body>
+<embed src="images/music.mp3" hidden="true" autostart="true" loop="true" style="position:absolute">
+    <div id="container">
+        <div class="wrap1200">
+            <div class="lottery_container">
+                <div class="luck_box">
+
+                </div>
+                <div class="txt_center">
+                    <a href="javascript:;" id="b_stop" class="thoughtbot">停止</a>
+                    <a href="javascript:;" id="b_run" class="start_btn thoughtbot">开始抽奖</a>
+                </div>
+            </div>
+
+            <div class="clearfix all_name">
+                <div class="all_name_bg"></div>
+                <div class="all_con">
+                    <div class="center_bg start"></div>
+                    <div class="selected_box lottery_show">
+                        <h3 class="lottery_show">二等奖</h3>
+                        <div class="lottery_show prize_box">
+                            <em class="prize"></em>
+                            (<span></span>)
+                        </div>
+                        <div class="selected_person_box">
+                            <div id="selected_person">
+                                <ul class="selected_person_list blank clearfix">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 弹窗 S-->
+    <div class="Ag-common-dialog templet-open-box ingnore_pop">
+        <div class="Acd-rel-dialog box-rim">
+            <div class="Acd-rel-body box-cont">
+                <a class="icon pop-close close_btn" href="javascript:;"></a>
+                <div class="content_con">
+                    <p style="margin: 10px;">确定重新抽取吗？</p>
+                    <div class="items btn_box">
+                        <a href="javascript:;" class="sure_btn pop-close">确认</a>
+                        <a href="javascript:;" class="cancel_btn pop-close">取消</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗 E-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<!--     <script src="js/jscrollpane/jscrollpane.min.js"></script>
+    <script src="js/jscrollpane/jquery.mousewheel.js"></script> -->
+    <script type="text/javascript" src="js/ini.js"></script>
+    <script type="text/javascript" src="js/popupbox.js"></script>
+    <script>
+        //随机抽奖
+        var timer,numArr,prizeNumber= 0,_index;
+        $('.txt_center').off().on('click','.start_btn',function(){
+            $('#selected_person .selected_person_list li').removeClass('stopped');
+            $('#b_stop').removeClass('reLottery_btn');
+            $('.center_bg').addClass('start');
+            $('.selected_box h3').text(window.ini[prizeNumber].name);
+            var _total= 0,_em='';
+            for(var k in window.ini[prizeNumber].prize){
+                _total += window.ini[prizeNumber].prize[k].num;
+                if(k==(window.ini[prizeNumber].prize.length-1)){
+                    _em += "<em>"+window.ini[prizeNumber].prize[k].name+":"+window.ini[prizeNumber].prize[k].num+"部</em>";
+                }else{
+                    _em += "<em>"+window.ini[prizeNumber].prize[k].name+":"+window.ini[prizeNumber].prize[k].num+"部，</em>";
+                }
+
+            }//console.log(_em);
+            $('.prize_box span').empty().append(_em);
+            $('.prize_box .prize').text("奖品：共"+_total+"个");
+            $('.lottery_show').show();
+            clearInterval(timer);
+            $('#b_stop').addClass('yes_btn');
+            timer = setInterval(function(){
+                numArr=run($('#selected_person ul'),window.ini[prizeNumber].num,m_name,true);
+            },100);
+            setTimeout(function(){
+                $('#selected_person').jScrollPane();
+            },200);
+        });
+
+        //停止
+        function stopFun(){
+            clearInterval(timer);
+            $('#selected_person .selected_person_list li').addClass('stopped');
+            if($(this).hasClass('reLottery_btn')){//重新抽取
+                $('#b_run').addClass('start_btn');
+            }else{//console.log(prizeNumber);
+                $('#b_stop').removeClass('.yes_btn');
+                $('#b_run').addClass('start_btn');
+                prizeNumber++;
+            }
+            $('.center_bg').removeClass('start');
+        }
+        $('.txt_center').on('click','.yes_btn',function(){
+            stopFun();
+        });
+
+        //空格键
+        $(document).keydown(function(e){
+            if(!e) var e = window.event;
+            if(e.keyCode==32){
+                stopFun();
+            }
+        });
+
+
+        //obj--随机容器,number--几等奖对应几个,_file--人员信息数组
+        function run(obj,number,_file,flag){
+            var json = {};//标记非重复
+            var arr = [];//随机数组
+            function createRandom2(num,from,to){
+                while (arr.length < num) {
+                    //产生单个随机数
+                    var ranNum=Math.ceil(Math.random()*(to-from))+from;
+                    //通过判断json对象的索引值是否存在?来标记?是否重复 索引的唯一性
+                    if (!json[ranNum]) {
+                        json[ranNum] = 1;
+                        arr.push(ranNum);
+                    }
+                }//console.log(window.ini[prizeNumber].name);
+                return arr;
+            }
+            var _len = _file.length;
+            var brr = createRandom2(number,0,_len);//目标数组
+            var _li='';
+//            if(flag)prizeNumber++;
+            for(var k in brr){
+                var _name = m_name[arr[k]].split('-');//console.log(_name);
+                if(flag){
+                    _li +='<li>'
+                            +'<div class="domain_box"><em>'+_name[1]+'-供应链开发部</em><a href="javascript:;" class="close_img">重新抽取</a></div>'
+                            +'<div class="name_prize"><em class="name">'+_name[0]+'</em><em class="prize">-真无敌高端榨汁机</em></div>'
+                            +'</li>';
+                }else{//console.log(_name);
+                    _li +='<div class="domain_box"><em>'+_name[1]+'-供应链开发部</em><a href="javascript:;" class="close_img">重新抽取</a></div>'
+                            +'<div class="name_prize"><em class="name">'+_name[0]+'</em><em class="prize">-真无敌高端榨汁机</em></div>';
+                }
+
+            }
+            obj.empty().append(_li);
+            return brr;
+        }
+
+        $('#selected_person').on('click','.close_img',function(){
+            //弹窗distribute_btn
+            var _obj = $(this).parents('li');
+
+                $(this).PopupDialog({
+                    popupClass:'.ingnore_pop',
+                    maskLayer:true
+                });
+            $('.btn_box').on('click','.sure_btn',function(){
+                $('#b_run').removeClass('start_btn');
+                _obj.parents('ul').find('li').removeClass('stopped');
+                if(!$('#b_stop').hasClass('reLottery_btn'))$('#b_stop').addClass('reLottery_btn');
+                _index = _obj.index();
+                clearInterval(timer);
+                timer = setInterval(function(){
+                    numArr=run(_obj,1,m_name,false);
+                },100);
+            });
+        });
+    </script>
+</body>
+</html>

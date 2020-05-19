@@ -1,0 +1,85 @@
+//
+page{
+  position: relative;
+  height: 100%;
+  //overflow: hidden;
+}
+.lottery{
+  width: 100%;
+  height: 100%;
+  background: url("https://img30.360buyimg.com/whfe/jfs/t1/54610/18/518/722807/5cdb7709E1b8f3608/d95dc64fb194f160.png") no-repeat;
+  background-size: 100% 100%;
+}
+.lottery .coupon-618{
+  position: relative;
+  width: 750rpx;
+  height: 182rpx;
+  padding-top: 30rpx;
+  background: url("https://img30.360buyimg.com/whfe/jfs/t30370/254/1237446407/58911/d1b98f65/5cdb7708Na58ac5cd.png")  no-repeat center 30rpx;
+  background-size: 100% auto;
+}
+.lottery .rule{
+  position: absolute;
+  right: 30rpx;
+  color: #FFFEFEFF;
+  font-size: 22rpx;
+}
+.lottery .txt{
+  color: #EFD3E2FF;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  text-align: center;
+  font-family:Adobe Heiti Std R;
+}
+.lottery .remain-chance{
+  width:313rpx;
+  height:57rpx;
+  margin: 10rpx auto 0;
+  background:rgba(35,38,58,1);
+  border-radius:5rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 57rpx;
+}
+.lottery .remain-chance span{
+  color: #DCA55FFF;
+  font-size: 36rpx;
+  line-height: 57rpx;
+  font-family:Adobe Heiti Std R;
+
+}
+.lottery .main-pic{
+  position: absolute;
+  top: 322rpx;
+  left: 0;
+  width: 750rpx;
+  height: 924rpx;
+  background: url("https://img30.360buyimg.com/whfe/jfs/t29128/210/1247183400/343277/ef9d1268/5cdb7709Nf81bf4aa.png")  no-repeat center top;
+  background-size: 100% auto;
+}
+.lottery .main-pic.ipx{
+  top:auto;
+  bottom: 0;
+  height: 1062rpx;
+  background: url("https://img30.360buyimg.com/whfe/jfs/t27859/192/2593605437/1325392/d55d1a06/5cdcfac5Nebdf0d5e.png")  no-repeat center top;
+  background-size: 100% auto;
+}
+.lottery .go-lottery{
+  position: absolute;
+  bottom:20rpx;
+  left: 50rpx;
+  width: 650rpx;
+  height: 175rpx;
+  background: url("https://img30.360buyimg.com/whfe/jfs/t1/52825/25/527/195044/5cdcc93cEc09cc848/4a93cfe0d90eb650.png")  no-repeat center;
+  background-size: 100% auto;
+}
+.lottery .my-gift{
+  position: absolute;
+  bottom:248rpx;
+  right: -5rpx;
+  width: 105rpx;
+  height: 105rpx;
+  background: url("https://img30.360buyimg.com/whfe/jfs/t11137/189/2841992542/5168/584bb093/5cdb7708N580abaae.png")  no-repeat center;
+  background-size: 100% auto;
+}

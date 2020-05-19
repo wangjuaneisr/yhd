@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <title>知识产权保障系统-检测机构查询</title>
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/ipm_common.css">
+     <link rel="stylesheet" href="css/ipm_info_maintenance.css">
+</head>
+<body>
+     <!-- 头部 S-->
+     <div class="ipm_header clearfix">
+          <a href="javascript:;" class="ipm_logo_box">
+               <img src="images/logo.png" alt="" class="ipm_logo">
+          </a>
+          <span class="ipm_user">
+               hello,
+               <em>小美女222</em>
+               <a href="javascript:;" class="exit_btn">退出</a>
+          </span>
+     </div>
+     <!-- 头部 E-->
+
+     <!--主体 S-->
+     <div class="main_container clearfix">
+          <!--导航 S-->
+          <div class="ipm_nav">
+               <dl>
+                    <dt>
+                         <a href="javascript:;" class="nav highlight"><i class="iconfont font_icon">&#xe636;</i>案件管理<i class="iconfont drop_icon">&#xe638;</i></a>
+                    </dt>
+                    <dd><a href="javascript:;" class="nav">案件查询及处理</a></dd>
+                    <dd><a href="javascript:;" class="nav">新增案件</a></dd>
+               </dl>
+               <dl>
+                    <dt>
+                         <a href="javascript:;" class="nav"><i class="iconfont font_icon">&#xe643;</i>案件管理<i class="iconfont drop_icon">&#xe638;</i></a>
+                    </dt>
+                    <dd><a href="javascript:;" class="nav">案件查询及处理</a></dd>
+                    <dd><a href="javascript:;" class="nav">新增案件</a></dd>
+               </dl>
+               <dl>
+                    <dt>
+                         <a href="javascript:;" class="nav"><i class="iconfont font_icon">&#xe63b;</i>案件管理<i class="iconfont drop_icon">&#xe638;</i></a>
+                    </dt>
+                    <dd><a href="javascript:;" class="nav">案件查询及处理</a></dd>
+                    <dd><a href="javascript:;" class="nav">新增案件</a></dd>
+               </dl>
+          </div>
+          <!--导航 E-->
+
+          <!--页面右侧 S-->
+          <div class="ipm_container">
+               <!--面包屑导航 -->
+               <div class="crumbs clearfix">
+                    <a href="javascript:;" class="fir_nav">检测机构查询</a>
+               </div>
+
+               <!--页面内容 S-->
+               <div class="page_container">
+                    <!--查询 S-->
+                    <div class="ipm_search_box">
+                         <div class="clearfix">
+                              <div class="ipm_items">
+                                   <label>机构名称：</label>
+                                   <input type="text" class="item_input">
+                              </div>
+                              <div class="ipm_items">
+                                   <label>机构类型：</label>
+                                   <a href="javascript:;" class="item_input">
+                                        <div class="selected_box clearfix">
+                                             <input class="selected">
+                                             <i class="iconfont drop_btn"></i>
+                                        </div>
+                                        <div class="drop_box">
+                                             <ul>
+                                                  <li>待质检方处理</li>
+                                                  <li>案件完成</li>
+                                                  <li>处罚结果</li>
+                                                  <li>寄出给品牌方</li>
+                                             </ul>
+                                        </div>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="btn_box">
+                              <a href="javascript:;" class="red_gradient_btn search_btn">查询</a>
+                              <a href="javascript:;" class="light_blue_btn  clear_btn">清空</a>
+                         </div>
+                    </div>
+                    <!--查询 E-->
+                    <!--表格 S-->
+                    <div class="ipm_table_box">
+                         <div class="operate_box clearfix">
+                              <a href="javascript:;" class="operate_btn add_case_btn"><i class="iconfont">&#xe63c;</i>新增机构</a>
+                         </div>
+                         <div class="table_box">
+                              <table cellpadding="0" cellspacing="0" width="100%" class="ipm_table">
+                                   <thead>
+                                        <tr>
+                                             <th>机构名称</th>
+                                             <th>机构类型</th>
+                                             <th>主账号名</th>
+                                             <th>员工姓名</th>
+                                             <th>联系方式</th>
+                                             <th>状态</th>
+                                             <th>操作</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn table_edit_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                             <td>专业检测</td>
+                                             <td>品质</td>
+                                             <td>DD2342234</td>
+                                             <td>小明</td>
+                                             <td>123123124</td>
+                                             <td>未启用</td>
+                                             <td>
+                                                  <a href="javascript:;" class="table_btn">编辑</a>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">启用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定启用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_start_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use none">停用</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定停用吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_end_use">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="has_tooltip">
+                                                       <a href="javascript:;" class="table_btn table_start_use">删除</a>
+                                                       <div class="tooltip_box none">
+                                                            <s class="above"></s>
+                                                            <s class="under"></s>
+                                                            <div class="tip_note">
+                                                                <p>确定删除吗？</p>
+                                                            </div>
+                                                            <div class="pop_btn_box"><a href="javascript:;" class="blue_gradient_btn sure_delete">确定</a><a href="javascript:;" class="light_blue_btn cancle">取消</a></div>
+                                                       </div>
+                                                  </div>
+                                             </td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                              <div class="page_turn_container clearfix">
+                                   <div class="page_turn_box">
+                                        <a href="javascript:;" class="page_btn prev_page">上一页</a>
+                                        <span class="page_num_box"></span>
+                                        <a href="javascript:;" class="page_btn next_page">下一页</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <!--表格 E-->
+               </div>
+               <!--页面内容 E-->
+          </div>
+          <!--页面右侧 E-->
+     </div>
+     <!--主体 E-->
+
+     <!-- 停用成功弹框-S -->
+     <div class="pop_common_dialog pop_keytips pop_end_succeed">
+         <div class="pop_keytips_relbox">
+             <div class="pop_key_notice_txt">
+                 <p class="pop_tips_txt"><i class="iconfont icon_green">&#xe639;</i>停用成功</p>
+             </div>
+         </div>
+     </div>
+     <!-- 停用成功弹框-E -->
+
+     <!-- 启用成功弹框-S -->
+     <div class="pop_common_dialog pop_keytips pop_start_succeed">
+         <div class="pop_keytips_relbox">
+             <div class="pop_key_notice_txt">
+                 <p class="pop_tips_txt"><i class="iconfont icon_green">&#xe639;</i>启用成功</p>
+             </div>
+         </div>
+     </div>
+     <!-- 启用成功弹框-E -->
+
+     <!-- 删除成功弹框-S -->
+     <div class="pop_common_dialog pop_keytips pop_delete_succeed">
+         <div class="pop_keytips_relbox">
+             <div class="pop_key_notice_txt">
+                 <p class="pop_tips_txt"><i class="iconfont icon_green">&#xe639;</i>删除成功</p>
+             </div>
+         </div>
+     </div>
+     <!-- 删除成功弹框-E -->
+
+
+</body>
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/dialog.js"></script>
+     <script src="js/ipm_common.js"></script>
+     <script src="js/ipm_detection_organization.js"></script>
+</html>

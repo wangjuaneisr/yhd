@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选品设置</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/easyui.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/sale_audit.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.easyui.min.js"></script>
+</head>
+<body>
+<div class="sale_audit_container">
+    <!--全选-->
+    <div class="choice_pro_box">
+        <label>请选择参加活动的商品：</label>
+        <input type="checkbox" class="fl" id="pro_all_check">
+        <label for="pro_all_check">全部宠物类商品参加活动(默认为有系统促销区间、毛利区间的商品参加活动)</label>
+    </div>
+    <!--搜索与导入出-->
+    <div class="clearfix">
+        <div class="search_pro_code_box fl">
+            <select name="pro_code" id="operation_pro_code" class="fl">
+                <option value="">商品码</option>
+                <option value="1231233">1231233</option>
+                <option value="1231233">1231233</option>
+            </select>
+            <div class="search_box fl">
+                <input type="text" class="search fl">
+                <a href="javascript:;" class="sale_icons search_icon fr"></a>
+            </div>
+        </div>
+        <div class="btn_box fr">
+            <a href="javascript:;" class="fl blue_link import_btn">导入</a>
+            <a href="javascript:;" class="fl blue_link export_btn">导出</a>
+        </div>
+    </div>
+    <!--表格-->
+    <div class="table_box pro_table_box tabs-panels" data-options="fit:true">
+        <table class="easyui-datagrid" data-options="fitColumns:true" id="product_table">
+            <thead>
+                <tr>
+                    <th data-options="field:'enterOrNot',width:140,align:'center'">是否参加活动</th>
+                    <th data-options="field:'proSupplier',width:140,align:'center'">供应商</th>
+                    <th data-options="field:'proCode',width:140,align:'center'">商品码</th>
+                    <th data-options="field:'proName',width:140,align:'center'">商品名</th>
+                    <th data-options="field:'systemPriceSection',width:140,align:'center'">系统促销价区间</th>
+                    <th data-options="field:'grossSection',width:140,align:'center'">毛利区间</th>
+                    <th data-options="field:'lowPriceSection',width:140,align:'center'">低价区间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="proCheck">参加</td>
+                    <td><p class="td_ten">这里最多显示两行10个字</p></td>
+                    <td>9012930</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                    <td><input type="text" value="10%">——<input type="text" value="20%"></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="proCheck">参加</td>
+                    <td><p class="td_ten">这里最多显示两行10个字</p></td>
+                    <td>9012930</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                    <td><input type="text" value="10%">——<input type="text" value="20%"></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="proCheck">参加</td>
+                    <td><p class="td_ten">这里最多显示两行10个字</p></td>
+                    <td>9012930</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                    <td><input type="text" value="10%">——<input type="text" value="20%"></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="proCheck">参加</td>
+                    <td><p class="td_ten">这里最多显示两行10个字</p></td>
+                    <td>9012930</td>
+                    <td><p class="td_sixTeen">这里最多展示两行16个字</p></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                    <td><input type="text" value="10%">——<input type="text" value="20%"></td>
+                    <td><input type="text" value="35">——<input type="text" value="40"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="easyui-panel">
+            <div class="easyui-pagination" data-options="total:114"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

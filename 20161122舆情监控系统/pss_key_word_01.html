@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>一级关键词</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<body class="pss_home_page">
+<div class="pss_header clearfix">
+    <div class="system_name fl">
+        <h3>舆情系统</h3>
+    </div>
+    <div class="user_name_box fr">
+        <a href="javascript:;" class="user_name fl">王大锤</a>
+        <i class="icon drop_btn"></i>
+        <div class="user_exit_box clearfix">
+            <i class="icon exit fl"></i>退出登录
+            <i class="angle before"></i>
+            <i class="angle after"></i>
+        </div>
+    </div>
+</div>
+<div class="pss_container clearfix">
+    <div class="pss_nav_container">
+        <ul class="nav_box">
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">首页</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">舆情处理</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">数据统计</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                    <a href="javascript:;" class="category_link">二级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">网站管理</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">预警设置</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                    <a href="javascript:;" class="category_link">三级标题</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+            <!-- 菜单二级类目 -->
+            <li class="nav_item">
+                <div class="nav_item_title clearfix">
+                    <i class="icon item_icon"></i>
+                    <span class="title_text">关键词管理</span>
+                    <i class="icon icon_right"></i>
+                </div>
+                <div class="three_category_box none">
+                    <a href="javascript:;" class="category_link">一级关键词</a>
+                    <a href="javascript:;" class="category_link">二级关键词</a>
+                </div>
+            </li>
+            <!-- 菜单二级类目 -->
+        </ul>
+    </div>
+    <div class="pss_main_container">
+        <div class="select_items_box clearfix">
+            <div class="items">
+                <label>关键词：</label>
+                <a href="javascirpt:;" class="drop_select_box clearfix">
+                    <input type="text">
+                </a>
+            </div>
+
+            <div class="items">
+                <label>时间：</label>
+                <a href="javascirpt:;" class="drop_select_box time_select_box clearfix">
+                    <input id="startDate" type="text" class="Wdate ipt2_left date7 WdateFmtErr WdateFmtErr" value="2016-03-01" timetype="multiple,day" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'#F{$dp.$D(\'endDate\')}'})">
+                    <input type="text" class="ipt2_center date7" value="-" readonly="readonly">
+                    <input id="endDate" type="text" class="Wdate ipt2_right date7" value="2016-03-30" onclick="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'startDate\')}'})">
+                </a>
+            </div>
+        </div>
+        <div class="search_btn_box">
+            <a href="javascript:;" class="search_btn">搜&nbsp;索</a>
+        </div>
+        <div class="web_table_box">
+            <div class="table_operate clearfix">
+                <a href="javascript:;" class="add_web_btn add_keyword_01"><i class="iconfont fl">&#xe62e;</i><em class="fr">添加一级关键词</em></a>
+            </div>
+            <div class="table_content_box">
+                <table width="100%" cellpadding="0" cellspacing="0" class="web_management_table">
+                    <thead>
+                       <tr>
+                           <th width="15%">关键词</th>
+                           <th width="25%">配置网站ID</th>
+                           <th width="15%">创建时间</th>
+                           <th width="15%">创建人</th>
+                           <th width="15%">状态</th>
+                           <th width="15%">操作</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>凤凰资讯</td>
+                            <td>
+                                <div class="editor_box fir_key_word clearfix">
+                                    <span class="tip">001，002，003</span>
+                                    <i class="icon add_icon"></i>
+                                    <div class="drop_box">
+                                        <div class="search_box clearfix">
+                                            <input type="text" value="yihaodian" class="fl">
+                                            <i class="icon icon_search fr"></i>
+                                        </div>
+                                        <div class="check_list">
+                                            <ul>
+                                                <li><input type="checkbox" id="key_word_01" class="all_check"><label for="key_word_01">全选</label></li>
+                                                <li><input type="checkbox" id="key_word_02" class="check_box"><label for="key_word_02">001</label>凤凰资讯</li>
+                                                <li><input type="checkbox" id="key_word_03" class="check_box"><label for="key_word_03">002</label>新浪新闻</li>
+                                                <li><input type="checkbox" id="key_word_04" class="check_box"><label for="key_word_04">003</label>国家药监局</li>
+                                            </ul>
+                                            <i class="angel after"></i>
+                                            <i class="angel before"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="saved_box">
+                                    <span>
+                                        <em>001，</em>
+                                        <em>002，</em>
+                                        <em>003</em>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                12/06/2016
+                            </td>
+                            <td>
+                                王大锤
+                            </td>
+                            <td>
+                                已上线
+                            </td>
+                            <td>
+                                <div class="editor_box">
+                                    <a href="javascript:;" class="operate_btn save_btn">保存</a>
+                                    <a href="javascript:;" class="operate_btn cancel_btn">取消</a>
+                                </div>
+                                <div class="saved_box">
+                                    <a href="javascript:;" class="operate_btn editor_btn start_btn">开启</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1号店</td>
+                            <td>
+                                <div class="editor_box fir_key_word clearfix">
+                                    <span class="tip">001，002，003</span>
+                                    <i class="icon add_icon"></i>
+                                    <div class="drop_box">
+                                        <div class="search_box clearfix">
+                                            <input type="text" value="yihaodian" class="fl">
+                                            <i class="icon icon_search fr"></i>
+                                        </div>
+                                        <div class="check_list">
+                                            <ul>
+                                                <li><input type="checkbox" id="key_word_01" class="all_check"><label for="key_word_01">全选</label></li>
+                                                <li><input type="checkbox" id="key_word_02" class="check_box"><label for="key_word_02">001</label>凤凰资讯</li>
+                                                <li><input type="checkbox" id="key_word_03" class="check_box"><label for="key_word_03">002</label>新浪新闻</li>
+                                                <li><input type="checkbox" id="key_word_04" class="check_box"><label for="key_word_04">003</label>国家药监局</li>
+                                            </ul>
+                                            <i class="angel after"></i>
+                                            <i class="angel before"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="saved_box">
+                                    <span>
+                                        <em>001，</em>
+                                        <em>002，</em>
+                                        <em>003</em>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                12/06/2016
+                            </td>
+                            <td>
+                                王大锤
+                            </td>
+                            <td>
+                                已上线
+                            </td>
+                            <td>
+                                <div class="editor_box">
+                                    <a href="javascript:;" class="operate_btn save_btn">保存</a>
+                                    <a href="javascript:;" class="operate_btn cancel_btn">取消</a>
+                                </div>
+                                <div class="saved_box">
+                                    <a href="javascript:;" class="operate_btn editor_btn start_btn">开启</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>JD</td>
+                            <td>
+                                <div class="editor_box fir_key_word clearfix">
+                                    <span class="tip">001，002，003</span>
+                                    <i class="icon add_icon"></i>
+                                    <div class="drop_box">
+                                        <div class="search_box clearfix">
+                                            <input type="text" value="yihaodian" class="fl">
+                                            <i class="icon icon_search fr"></i>
+                                        </div>
+                                        <div class="check_list">
+                                            <ul>
+                                                <li><input type="checkbox" id="key_word_01" class="all_check"><label for="key_word_01">全选</label></li>
+                                                <li><input type="checkbox" id="key_word_02" class="check_box"><label for="key_word_02">001</label>凤凰资讯</li>
+                                                <li><input type="checkbox" id="key_word_03" class="check_box"><label for="key_word_03">002</label>新浪新闻</li>
+                                                <li><input type="checkbox" id="key_word_04" class="check_box"><label for="key_word_04">003</label>国家药监局</li>
+                                            </ul>
+                                            <i class="angel after"></i>
+                                            <i class="angel before"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="saved_box">
+                                    <span>
+                                        <em>001，</em>
+                                        <em>002，</em>
+                                        <em>003</em>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                12/06/2016
+                            </td>
+                            <td>
+                                王大锤
+                            </td>
+                            <td>
+                                已上线
+                            </td>
+                            <td>
+                                <div class="editor_box">
+                                    <a href="javascript:;" class="operate_btn save_btn">保存</a>
+                                    <a href="javascript:;" class="operate_btn cancel_btn">取消</a>
+                                </div>
+                                <div class="saved_box">
+                                    <a href="javascript:;" class="operate_btn editor_btn start_btn">开启</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>凤凰资讯</td>
+                            <td>
+                                <div class="editor_box fir_key_word clearfix">
+                                    <span class="tip">001，002，003</span>
+                                    <i class="icon add_icon"></i>
+                                    <div class="drop_box">
+                                        <div class="search_box clearfix">
+                                            <input type="text" value="yihaodian" class="fl">
+                                            <i class="icon icon_search fr"></i>
+                                        </div>
+                                        <div class="check_list">
+                                            <ul>
+                                                <li><input type="checkbox" id="key_word_01" class="all_check"><label for="key_word_01">全选</label></li>
+                                                <li><input type="checkbox" id="key_word_02" class="check_box"><label for="key_word_02">001</label>凤凰资讯</li>
+                                                <li><input type="checkbox" id="key_word_03" class="check_box"><label for="key_word_03">002</label>新浪新闻</li>
+                                                <li><input type="checkbox" id="key_word_04" class="check_box"><label for="key_word_04">003</label>国家药监局</li>
+                                            </ul>
+                                            <i class="angel after"></i>
+                                            <i class="angel before"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="saved_box">
+                                    <span>
+                                        <em>001，</em>
+                                        <em>002，</em>
+                                        <em>003</em>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                12/06/2016
+                            </td>
+                            <td>
+                                王大锤
+                            </td>
+                            <td>
+                                已上线
+                            </td>
+                            <td>
+                                <div class="editor_box">
+                                    <a href="javascript:;" class="operate_btn save_btn">保存</a>
+                                    <a href="javascript:;" class="operate_btn cancel_btn">取消</a>
+                                </div>
+                                <div class="saved_box">
+                                    <a href="javascript:;" class="operate_btn editor_btn start_btn">开启</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--翻页-->
+        <div class="table_page clearfix">
+            <div class="page_num fl">
+                <div class="page_box fl total">
+                    <label>条目总数：</label>
+                    <em>12345</em>
+                </div>
+                <div class="page_box fl each_page">
+                    <label>每页显示</label>
+
+                    <div class="num_sel fl">
+                        <input type="text" value="30" class="num_enter">
+                        <i class="icon top"></i><i class="icon down"></i>
+                    </div>
+                    <label>共</label>
+                    <em class="total_num">25</em>
+                    <label>页</label>
+                </div>
+            </div>
+            <div class="page_change fr">
+                <div class="page_btn_box fl">
+                    <a href="javascript:;" class="page_btn first_btn icon"></a>
+                    <a href="javascript:;" class="page_btn prev_btn icon"></a>
+                    <a href="javascript:;" class="page_btn num_btn">1</a>
+                    <a href="javascript:;" class="page_btn num_btn">2</a>
+                    <a href="javascript:;" class="page_btn num_btn">3</a>
+                    <a href="javascript:;" class="page_btn num_btn">4</a>
+                    <a href="javascript:;" class="page_btn num_btn">5</a>
+                    <a href="javascript:;" class="page_btn num_btn cur">6</a>
+                    <a href="javascript:;" class="page_btn next_btn icon"></a>
+                    <a href="javascript:;" class="page_btn last_btn icon"></a>
+                </div>
+                <div class="page_enter_box fl">
+                    <div class="page_box">
+                        <label>第</label>
+                        <input class="page_enter fl" value="5" type="text">
+                        <label>页</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 已保存 S-->
+<div class="status_back_pop saved_pop">
+    <a href="javascript:;" class="link_btn">已保存</a>
+</div>
+<!-- 已保存 E-->
+
+<!-- 弹窗 添加一级关键词 S-->
+<div class="Ag-common-dialog templet-open-box add_keyword_01_pop">
+    <div class="Acd-rel-dialog box-rim">
+        <div class="Acd-rel-body box-cont">
+
+            <a class="icon pop-close close_btn" href="javascript:;"></a>
+            <div class="content_con">
+                <h3 class="key_word_tit">新建关键词</h3>
+                <div class="items web_manage">
+                    <label for="key_word">关键词：</label><input type="text" id="key_word" class="key_word">
+                </div>
+                <div class="items web_manage">
+                    <label for="type_box">属性：</label>
+                    <select name="" id="type_box">
+                        <option value="">负面</option>
+                        <option value="">正面</option>
+                    </select>
+                </div>
+                <div class="items web_manage">
+                    <label for="weight_box">权重：</label>
+                    <select name="" id="weight_box">
+                        <option value="">2</option>
+                        <option value="">1</option>
+                    </select>
+                </div>
+                <div class="items btn_box">
+                    <a href="javascript:;" class="sure_btn pop-close">确认</a>
+                    <a href="javascript:;" class="cancel_btn pop-close">取消</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 弹窗 添加一级关键词 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="My97DatePicker/WdatePicker.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/publicly_supervise_system.js"></script>
+</html>

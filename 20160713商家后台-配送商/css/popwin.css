@@ -1,0 +1,45 @@
+/*
+*description : 弹窗;
+*author : yuting;
+*date:2016-02-26;
+*/
+
+/*后台弹窗 global - S*/
+.popup_mask{position:fixed;_position:absolute;left:0;top:0;z-index:1002;width:100%;background-color:#000;filter:alpha(opacity=40);opacity:0.4;}
+.yhdbk_popwin{position:absolute;left:50%;z-index:1005;margin: 6px;border: solid 1px #b4b4b4;background-color: #fff;}
+.yhdbk_popwin .yhdbk_popwin_title{background-color: #fff;height: 45px;line-height: 45px;}
+.yhdbk_popwin .yhdbk_popwin_title > h3{height: 45px;margin: 0 10px;padding-left: 15px;background: url(../images/spwin_title.png) 0 bottom repeat-x;line-height: 40px;
+color: #333;font-size: 14px;font-family: 'simsun';}
+.yhdbk_popwin .yhdbk_popwin_close{position: absolute;right: 10px;top: 15px;width: 10px;height: 10px;background: url(../images/popwin_close.png) no-repeat;cursor: pointer;overflow: hidden;}
+.yhdbk_popwin .yhdbk_popwin_close:hover{background-position: 0 -10px;}
+.yhdbk_popwin .yhdbk_popwin_content{padding: 20px 10px 40px 10px;background-color: #fff;}
+.yhdbk_popwin .text_center{text-align: center;}
+.yhdbk_popwin .yhdbk_popwin_bottom_toolbar{margin-top: 20px;text-align: center;}
+.yhdbk_popwin .yhdbk_popwin_button{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	margin: 0 5px;
+	background-color: #eb734e;
+	border: none 0;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-family: 'simsun';
+	cursor: pointer;
+	outline: none;
+  }
+  .yhdbk_popwin .yhdbk_popwin_button_gray{
+	background-color: #e5e5e5;
+	color: #666;
+  }
+.yhdbk_popwin .yhdbk_popwin_shadow{position: absolute;left: -6px;right: -6px;top: -6px;bottom: -6px;z-index: -1;width: 100%;height: 100%;border: solid 6px #000;opacity: .2;filter: alpha(opacity=20);}
+.yhdbk_popwin_content{padding: 30px 20px;}
+.yhdbk_popwin .success_tip{margin: 35px 50px;text-align: center;}
+.success_icon{display: inline-block;width: 24px;height: 23px;margin: 0 5px;background: url(../images/success.png) no-repeat center;vertical-align: middle;}
+/*后台弹窗 global - E*/

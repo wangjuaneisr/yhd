@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>平台操作日志管理</title>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="My97DatePicker/WdatePicker.js"></script>
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/prism_monitor.css">
+    <link rel="stylesheet" href="css/prism_manager.css">
+</head>
+<body>
+<!--通用头部 S-->
+<div class="prism_head clearfix">
+    <div class="prism_logo">
+        <a href="prism_home.html">
+            <img src="images/logo.png" alt="" class="prism_img">
+        </a>
+    </div>
+    <div class="prism_user clearfix">
+        <h2 class="sys_name fl">线上-南汇&nbsp;IDC</h2>
+        <div class="user_info fr">
+            <label for="userName" class="fl">当前用户：</label>
+            <p id="userName" class="fl">user 007</p>
+            <a href="javascript:;" class="fr esc_btn">退出</a>
+        </div>
+    </div>
+</div>
+<!--通用头部 E-->
+
+<!--主体 S-->
+<div class="main_container clearfix">
+    <!--nav S-->
+    <div class="nav_box">
+        <dl>
+            <dt><p>元数据管理</p></dt>
+            <dd data-class="dataManage" class="cur"><a href="prism_data.html" target="_blank"><p>数据源管理</p></a></dd>
+            <dd data-class="dataGroupManage"><a href="prism_data_group.html" target="_blank"><p>数据源组管理</p></a></dd>
+            <dd data-class="logicManage"><a href="#" target="_blank"><p>逻辑表管理</p></a></dd>
+            <dd data-class="poolManage"><a href="#" target="_blank"><p>Pool配置管理</p></a></dd>
+        </dl>
+        <dl>
+            <dt>业务监控</dt>
+            <dd data-class="realMonitor"><a href="prism_monitor.html" target="_blank"><p>实时监控</p></a></dd>
+            <dd data-class="monitorSearch"><a href="#" target="_blank"><p>监控数据查询</p></a></dd>
+            <dd data-class="abnormalSearch"><a href="#" target="_blank"><p>异常查询</p></a></dd>
+            <dd data-class="sqlSearch"><a href="#" target="_blank"><p>慢sql查询</p></a></dd>
+            <dd data-class="dataVisitorSearch"><a href="#" target="_blank"><p>数据层访问日志查询</p></a></dd>
+        </dl>
+        <dl>
+            <dt>系统管理</dt>
+            <dd data-class="serverManege">
+                <a href="prism_manager.html" target="_blank"><p>Prism-manager服务器</p>
+                    <p>集群管理</p></a>
+            </dd>
+            <dd data-class="logManage"><a href="prism_platform_record.html" target="_blank"><p>平台操作日志管理</p></a></dd>
+        </dl>
+        <dl>
+            <dt>帮助中心</dt>
+            <dd data-class="commonQuestion"><a href="#" target="_blank"><p>常见问题</p></a></dd>
+            <dd data-class="uploadDocument"><a href="#" target="_blank"><p>文档下载</p></a></dd>
+        </dl>
+    </div>
+    <!--nav E-->
+
+    <!--content S-->
+    <div class="content_box"  data-class="dataManage">
+        <!--tab S-->
+        <div class="tab_box clearfix">
+            <div class="tab_list">
+                <a href="javascript:;" class="tab on" data-class="searchData">
+                    <i class="iconfont"></i>查询条件
+                </a>
+            </div>
+        </div>
+        <!--tab E-->
+
+        <!--page 查询S-->
+        <div class="page_box" data-class="">
+            <!--查询条件-->
+            <div class="common_box search_box clearfix">
+                <!--创建时间-->
+                <div class="common_item search_item">
+                    <label>创建时间</label>
+                    <div class="item">
+                        <input id="setTimeStart" type="text" class="Wdate" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'setTimeEnd\')}',lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+                        <em class="time_line">-</em>
+                        <input id="setTimeEnd" type="text" class="Wdate" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'setTimeStart\')}',lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+                    </div>
+                </div>
+
+                <!--IDC-->
+                <div class="common_item search_item">
+                    <label>IDC</label>
+                    <div class="item">
+                        <a href="javascript:;" class="item_box item_long">南汇IDC</a>
+                        <i class="iconfont">&#xe658;</i>
+                        <div class="item_drop long">
+                            <ul>
+                                <li>mysql1</li>
+                                <li>mysql2</li>
+                                <li>mysql3</li>
+                                <li>mysql4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--操作系统名称-->
+                <div class="common_item search_item">
+                    <label>操作系统名称</label>
+                    <div class="item">
+                        <a href="javascript:;" class="item_box item_long">window77</a>
+                        <i class="iconfont">&#xe658;</i>
+                        <div class="item_drop long">
+                            <ul>
+                                <li>window77</li>
+                                <li>window77window77</li>
+                                <li>window77</li>
+                                <li>主库window77window77window77地址主库地址</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--操作结果-->
+                <div class="common_item search_item">
+                    <label>操作结果</label>
+                    <div class="item">
+                        <a href="javascript:;" class="item_box item_long">window77</a>
+                        <i class="iconfont">&#xe658;</i>
+                        <div class="item_drop long">
+                            <ul>
+                                <li>window77</li>
+                                <li>window77window77</li>
+                                <li>window77</li>
+                                <li>主库window77window77window77地址主库地址</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--用户名-->
+                <div class="common_item search_item">
+                    <label>用户名</label>
+                    <div class="item hover">
+                        <input type="text" class="item_box item_long">
+                    </div>
+                </div>
+
+                <!--来源主机-->
+                <div class="common_item search_item">
+                    <label>来源主机</label>
+                    <div class="item hover">
+                        <input type="text" class="item_box item_long">
+                    </div>
+                </div>
+
+            </div>
+            <!--按钮-->
+            <div class="common_btn_box search_btn_box">
+                <a href="javascript:;" class="common_btn search_btn">查询</a>
+                <a href="javascript:;" class="common_btn clear_btn">清空</a>
+            </div>
+            <!--表格-->
+            <div class="table_box">
+                <div class="search_result">
+                    <label>查询结果：</label>
+                    <em>共20条</em>
+                </div>
+                <div class="table_content">
+                    <div class="table_content_box clearfix" style="border-right: none;border-bottom: none;">
+                        <!--可横向滚动表格内容-->
+                        <div class="table_body" style="border: 1px #ddd solid;border-right: none;">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>IDC</th>
+                                    <th>操作名称</th>
+                                    <th>用户名</th>
+                                    <th>来源主机</th>
+                                    <th>操作时间</th>
+                                    <th>操作结果</th>
+                                    <th>操作详细信息</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>DCD</td>
+                                    <td>创建数据源</td>
+                                    <td>8080</td>
+                                    <td>Leader</td>
+                                    <td>
+                                        <p>2016-02-20</p>
+                                        <p>12:00:00</p>
+                                    </td>
+                                    <td>成功</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>DCD</td>
+                                    <td>创建数据源</td>
+                                    <td>8080</td>
+                                    <td>Leader</td>
+                                    <td>
+                                        <p>2016-02-20</p>
+                                        <p>12:00:00</p>
+                                    </td>
+                                    <td>成功</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="page_turn_box page_container">
+                        <a href="javascript:;"  class="iconfont page_btn first_page">&#xe679;</a>
+                        <a href="javascript:;"  class="iconfont page_btn prev_page">&#xe68e;</a>
+                        <span class="page_num_box"></span>
+                        <a href="javascript:;"  class="iconfont page_btn next_page">&#xe600;</a>
+                        <a href="javascript:;"  class="iconfont page_btn last_page">&#xe609;</a>
+                    </div>
+                </div>
+            </div>
+            <!--page E-->
+        </div>
+
+        <!--content E-->
+        <!-- 弹窗 服务器当前运营状态S-->
+        <div class="Ag-common-dialog templet-open-box prism_manager_pop">
+            <div class="Acd-rel-dialog box-rim">
+                <i class="iconfont pop-close">&#xe63b;</i>
+                <div class="Acd-rel-body box-cont">
+                    <div class="content_con">
+                        <h3>服务器当前运营状态</h3>
+                        <div class="table_tips">
+                            <div class="data_id fl">
+                                <label>数据源ID：</label><em>dsGroupId:mysql:upload</em>
+                            </div>
+                            <div class="detect_time fr">
+                                <label>检测时间：</label><em>2016-02-20 12:00:00.156</em>
+                            </div>
+                        </div>
+                        <div class="pop_table_box">
+                            <div class="table_head">
+                                <table cellspacing="0" cellpadding="0">
+                                    <thead>
+                                    <tr>
+                                        <th width="433">服务器</th>
+                                        <th width="83">查询对象</th>
+                                        <th width="89">相关信息</th>
+                                        <th width="100">状态</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table_body">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                    <tr>
+                                        <td width="433">host1</td>
+                                        <td width="83">ZK集群连接</td>
+                                        <td width="89"></td>
+                                        <td width="80" class="green">正常</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="433">host1</td>
+                                        <td width="83">ZK集群连接</td>
+                                        <td width="89"></td>
+                                        <td width="80" class="green">正常</td>
+                                    </tr>
+                                    <tr class="no_use">
+                                        <td width="433">host1</td>
+                                        <td width="83">ZK集群连接</td>
+                                        <td width="89"></td>
+                                        <td width="80" class="green">不可用 <a href="###" class="more">详情</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="433">host1</td>
+                                        <td width="83">ZK集群连接</td>
+                                        <td width="89"></td>
+                                        <td width="80" class="green">正常</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 弹窗 E-->
+    </div>
+
+    <!--主体 E-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/prism.js"></script>
+</html>

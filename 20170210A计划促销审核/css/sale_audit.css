@@ -1,0 +1,471 @@
+.sale_audit_container{
+    margin: 20px;
+}
+.sale_icons{
+    background: url("../images/icons.png");
+}
+/*待审核活动 S*/
+.sale_audit_container .ready_audit_box{
+    height: 60px;
+    padding-left: 10px;
+    background-color: #E0ECFF;
+    color: #333;
+    font: normal 14px/60px 'Microsoft YaHei';
+}
+.sale_audit_container .ready_audit_box .week_list{
+    float: left;
+    width: 100px;
+    height: 40px;
+    margin: 9px 0 9px 10px;
+    background-color: #e6eef9;
+    border: 1px #ccc solid;
+    font: normal 12px/20px 'Microsoft YaHei';
+    text-align: center;
+}
+.sale_audit_container .ready_audit_box .setting{
+    margin-right: 20px;
+}
+.sale_audit_container .ready_audit_box .setting .setting_icon{
+    width: 30px;
+    height: 60px;
+    background-position: -37px 20px;
+}
+.sale_audit_container .ready_audit_box .week_list:hover,.sale_audit_container .ready_audit_box .week_list.cur{
+    background-color: #b8d1f9;
+    border-color: #8cb6f8;
+    color: #333;
+}
+/*待审核活动 E*/
+
+/*折叠周次 S*/
+.sale_audit_container .week_list_container .week_fold_box{
+    height: 40px;
+    color: #333;
+    font: normal 14px/40px 'Microsoft YaHei';
+}
+.week_list_container .week_fold_box .week_fold_btn:hover{
+    color: #333;
+}
+.week_list_container .week_fold_box .week_fold_btn .drop_icon{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background-position: 5px 8px;
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    -moz-transition: -moz-transform 0.2s ease-in;
+    -o-transition: -o-transform 0.2s ease-in;
+    -ms-transition: -ms-transform 0.2s ease-in;
+}
+.week_list_container .week_fold_box .week_fold_btn.show_btn{
+    display: none;
+}
+.week_list_container .week_fold_box .week_fold_btn.fold_btn{
+    display: block;
+}
+.week_list_container.cur .week_fold_box .week_fold_btn.show_btn{
+    display: block;
+}
+.week_list_container.cur .week_fold_box .week_fold_btn.fold_btn{
+    display: none;
+}
+
+.week_list_container .week_fold_box .week_fold_btn.show_btn .drop_icon{
+    -webkit-transform: rotateZ(180deg);
+    -moz-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+/*折叠周次 E*/
+.week_list_container .week_list_box{
+    overflow: hidden;
+}
+.week_list_container .week_list_box .week_list{
+    margin-top: -5px;
+    border-left:1px #ddd solid;
+}
+.week_list_container .week_list_box .week_list .week_items{
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    border-top:1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    color: #333;
+    font: normal 12px/30px 'Microsoft YaHei';
+    text-align: center;
+}
+.week_list_box .week_list .week_items .audit_icon{
+    position: absolute;
+    right: 4px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-position: 0 -22px;
+}
+.week_list_box .week_list .week_items.no_audit .audit_icon{
+   background-position: 0 -52px;
+}
+ .week_list_box .week_list .week_items:hover{
+    background-color: #E0ECFF;
+ }
+ /*活动设置*/
+.activity_setting_box{
+    /*height: 120px;*/
+    margin-top: 20px;
+    border: 1px #ddd solid;
+    color: #333;
+    font: normal 16px/40px 'Microsoft YaHei';
+    text-align: center;
+}
+.activity_setting_box .activity_setting{
+    float: left;
+    width: 33.3%;
+    padding: 10px 0;
+}
+.activity_setting_box .activity_setting .act_name{
+    font-size:18px;
+}
+.activity_setting_box .activity_setting .num{
+    font-size: 24px;
+}
+.activity_setting_box .activity_setting .num .editor_num{
+    display: none;
+}
+.activity_setting_box .activity_setting.editing .num .editor_num{
+    display: inline-block;
+}
+.activity_setting_box .activity_setting.editing .num label{
+    display: none;
+}
+.activity_setting_box .activity_overview{
+    background-color: #E0ECFF;
+}
+.activity_setting_box .activity_setting .activity_btn a{
+    display: inline-block;
+    color: #06c;
+    font-size:14px;
+}
+.activity_setting_box .activity_setting.editing .activity_btn a.edit_btn{
+    display: none;
+}
+.activity_setting_box .activity_setting .activity_btn .sure_btn{
+    display: none;
+}
+.activity_setting_box .activity_setting.editing .activity_btn .sure_btn{
+    display: inline-block;
+}
+.activity_setting_box .activity_setting .activity_btn .act_btn{
+    min-width: 40px;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px #aaa solid;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    color: #333;
+    line-height: 30px;
+}
+
+/*活动切换*/
+.activity_switch_box .tab_switch_box{
+    margin-top: 20px;
+    border: 1px #ddd solid;
+    border-top: none;
+    border-right: none;
+}
+.activity_switch_box .tab_switch_box .activity_tab_list li{
+    float: left;
+    height: 30px;
+    padding: 0 15px;
+    background-color: #f8f8f8;
+    border-top: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    color: #333;
+    font: normal 14px/30px 'Microsoft YaHei';
+    cursor: pointer;
+}
+.activity_switch_box .tab_switch_box .activity_tab_list li:hover,.activity_switch_box .tab_switch_box .activity_tab_list li.cur{
+    background-color: #E0ECFF;
+}
+.activity_switch_box .activity_operation_box{
+    height: 30px;
+    margin: 20px 0;
+    color: #333;
+    font: normal 14px/30px 'Microsoft YaHei';
+}
+.activity_switch_box .product_num{
+    margin-left: 30px;
+}
+.product_num .num_distribute_box{
+    position: relative;
+    float: left;
+}
+.product_num .num_distribute_box .num_distribute{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 110px;
+    padding: 0 20px;
+    margin-left: -75px;
+    background-color: #fff;
+    border: 1px #ddd solid;
+    color: #333;
+    z-index: 2;
+}
+.product_num .num_distribute_box .angle_sign{
+    position: absolute;
+    top: -16px;
+    right: 50%;
+    width: 0;
+    height: 0;
+    margin-right: -8px;
+    border-width: 8px;
+    border-color: transparent transparent #ddd transparent;
+    border-style: solid;
+}
+.product_num .num_distribute_box .bottom_angle{
+    top: -15px;
+    border-color: transparent transparent #fff transparent;
+}
+.product_num .num_distribute_box:hover .num_distribute{
+    display: block;
+}
+.product_num .num_distribute_box .num_distribute ul li:hover{
+    color: #f60;
+    cursor: pointer;
+}
+#operation_pro_code{
+    height: 30px;
+    border: 1px #ddd solid;
+}
+.search_pro_code_box .search_box{
+    width: 200px;
+    height: 28px;
+    margin-right: 20px;
+    border: 1px #ddd solid;
+}
+.search_pro_code_box .search_box input.search{
+    width: 160px;
+    height: 28px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font: normal 12px/28px 'Microsoft YaHei';
+}
+.search_pro_code_box .search_box a.search_icon{
+    width: 30px;
+    height: 30px;
+    background-position: 5px -118px;
+}
+.activity_switch_box .export_box{
+    margin-right: 20px;
+}
+.activity_switch_box .export_box i.export_icon{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-position: 2px -74px;
+}
+.activity_switch_box .export_box:hover{
+    color: #4779c8;
+}
+.activity_switch_box .export_box:hover i.export_icon{
+    background-position: -38px -74px;
+}
+.activity_switch_box .setting_pass_btn{
+    padding: 0 10px;
+    background-color: #4779c8;
+    color: #fff;
+    font: normal 14px/30px 'Microsoft YaHei';
+}
+.activity_switch_box .setting_pass_btn:hover{
+    background-color: #38588b;
+}
+.activity_switch_box .pro_delete_operation{
+    height: 30px;
+    margin: 10px 0;
+}
+.activity_switch_box .pro_delete_operation .delete_btn{
+    display: inline-block;
+    height: 28px;
+    padding: 0 10px;
+    border: 1px #ddd solid;
+    line-height: 30px;
+    background-color: #E0ECFF;
+}
+.table_box tr{
+    height: 40px;
+}
+.table_box .td_sec{
+    min-height: 20px;
+    margin: 5px 0;
+}
+.table_box .td_sec label{
+    float: left;
+}
+.table_box .td_sec.td_sec_tit label{
+    min-width: 60%;
+    text-align: right;
+}
+.table_box p.td_ten{
+    width: 64px;
+    height: 60px;
+    margin: 0 auto;
+    white-space: normal;
+    line-height: 30px;
+    overflow: hidden;
+}
+.table_box p.td_sixTeen{
+    width: 82px;
+    height: 60px;
+    margin: 0 auto;
+    white-space: normal;
+    line-height: 30px;
+    overflow: hidden;
+}
+.table_box .td_sec input{
+    max-width: 80px;
+}
+.table_box .td_sec em{
+    float: left;
+}
+
+
+/*选品设置*/
+.choice_pro_box{
+    height: 40px;
+}
+#pro_all_check{
+    position: relative;
+    top: 13px;
+    margin: 0 5px;
+}
+.choice_pro_box label{
+    float: left;
+    color: #333;
+    font: normal 14px/40px 'Microsoft YaHei';
+}
+.btn_box .blue_link{
+    height: 30px;
+    padding: 0 10px;
+    font: normal 14px/30px 'Microsoft YaHei';
+}
+.pro_table_box{
+    margin-top: 10px;
+}
+.pro_table_box tr td input[type="text"]{
+    width: 40px;
+    margin: 0 5px;
+}
+.pro_table_box tr td input[type="checkbox"]{
+    position: relative;
+    top: 3px;
+    margin-right: 4px;
+}
+.pro_table_box tr td .num{
+    margin-left: 5px;
+}
+
+/*生效中*/
+.progress_circle_wrap{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    margin: 14px 15px;
+}
+.data_box{
+    margin: 20px 10px 0 0;
+}
+.data_box p{
+    font: 12px/20px 'Microsoft YaHei';
+    text-align: left;
+}
+.progress_wrapper{
+    position: absolute;
+    top:0;
+    width: 50px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.circleProgress{
+    position: absolute;
+    top:0;
+    width: 90px;
+    height: 90px;
+    border:4px solid #ddd;
+    border-radius: 50%;
+}
+.rightcircle{
+    right:0;
+    border-top:4px solid green;
+    border-right:4px solid green;
+    /*-webkit-transform: rotate(90deg);*/
+    /*-webkit-animation: circleProgressLoad_right 5s linear infinite;*/
+}
+.leftcircle{
+    left:0;
+    border-bottom:4px solid green;
+    border-left:4px solid green;
+    /*-webkit-animation: circleProgressLoad_left 5s linear infinite;*/
+}
+.right{
+    right:0;
+}
+.left{
+    left:0;
+}
+.product_num .num_distribute_box .num_distribute.satisfaction_box{
+    left: 90%;
+    width: 500px;
+    padding: 10px;
+    margin-left: -260px;
+}
+.product_num .satisfaction_box .satisfaction{
+    height: 30px;
+    color: #333;
+    font: normal 14px/30px 'Microsoft YaHei';
+}
+.product_num .satisfaction_box .satisfaction .recommend{
+    line-height: 60px;
+}
+.product_num .satisfaction_box .satisfaction li{
+    margin: 10px 0;
+}
+.product_num .satisfaction_box .satisfaction .score{
+    float: left;
+}
+.product_num .satisfaction_box .satisfaction .recommend .score{
+    float: right;
+    margin-right: 10px;
+}
+.product_num .satisfaction_box .satisfaction .star_icon{
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-position: 3px -156px;
+}
+.product_num .satisfaction_box .satisfaction .recommend .star_icon{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    background-position: 0px -194px;
+}
+.product_num .satisfaction_box .satisfaction .reason{
+    width: 200px;
+    padding: 0 10px;
+    height: 24px;
+    margin-top: 3px;
+    outline: none;
+}
+.product_num .satisfaction_box .satisfaction .recommend .reason{
+    width: 480px;
+    height: 90px;
+    color: #333;
+    font: normal 12px/30px 'Microsoft YaHei';
+}

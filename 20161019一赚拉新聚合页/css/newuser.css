@@ -1,0 +1,103 @@
+/*global*/
+.yhdApp_download_box{width: 1200px;height: 120px;}
+.yhdApp_download_box .yhd_app_logo{width: 323px;height: 120px;}
+.yhdApp_download_box .app_store_box{margin-top: 48px;}
+.yhdApp_download_box .app_store_box ul li{float: left;padding:0 20px; font: 14px/20px 'Microsoft YaHei';cursor: pointer;}
+
+.container_newuser{ margin-top: 10px;}
+.container_newuser .user_pic_box{width: 550px;height:480px;}
+.container_newuser .user_pic_box .user_pic{display: block;margin:75px auto;}
+
+
+.container_newuser .info_box{width: 430px;height: 370px;padding-top: 100px;background: url("../images/formBg.png") no-repeat;}
+.container_newuser .info_box .info_con{width: 284px;margin: 0 auto 40px;}
+/*邀请提示*/
+.info_box .info_con .info_tips p{color: #666465;text-align: center;}
+.info_box .info_con .info_tips p.tit{height: 38px;font: normal 18px/38px 'Microsoft YaHei';}
+.info_box .info_con .info_tips p.tit em{margin: 0 5px;color: #f45832;font-weight: bold;}
+.info_box .info_con .info_tips p.notice{height: 44px;font: normal 24px/44px 'Microsoft YaHei';}
+.info_box .info_con .info_tips p.notice em{margin: 0 5px;color: #45b1de;}
+
+/*手机验证*/
+.info_box .form_box{margin: 10px 0 15px;}
+.info_box .form_box .items{height: 46px;background-color: #f2f2f2;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;}
+.info_box .form_box .items .phone_num{display:block;width:98%;margin:0 auto;border: none;outline: none;background-color: #f2f2f2;color:#666;font: normal 20px/46px 'Microsoft YaHei';text-indent: 20px;overflow: hidden;}
+.info_box .form_box .items .check_code_btn{float:left;padding: 0 15px;background-color: #fab019;color: #fff;font: normal 18px/46px 'Microsoft YaHei'; }
+.info_box .form_box .items .check_code_btn .recheckBtn{display: none;}
+.info_box .form_box .items .check_code{float: left;width:120px;padding-left:10px;background-color: #f2f2f2;border: none;outline: 0;color:#666;font: normal 20px/46px 'Microsoft YaHei';}
+.info_box .form_box .items .check_code_active{width: 120px;padding: 0;text-align: center;}
+.info_box .form_box .items .check_code_active .recheckBtn{display: block;}
+.info_box .form_box .items .check_code_active .checkBtn{display: none;}
+.info_box .form_box .items .check_code_active{background-color: #c3c3c3;color: #fff;}
+
+
+.info_box .form_box .items .coupon_btn{display: block;background-color: #c3c3c3; color: #fff;font: normal 20px/46px 'Microsoft YaHei';text-align: center;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;}
+.info_box .form_box .items .get{background-color: #f3514f;color: #fff;}
+.info_box .form_box .items .got{background-color: #c3c3c3;color: #fff;}
+
+.activity_rule_box .act_btn{display:block;height: 28px;color:#0066cc;font: normal 14px/28px 'Microsoft YaHei';text-align: center;}
+
+
+/*小提示*/
+.info_box .form_box .error_tips{height: 24px;color: #ff0000;font: normal 12px/24px 'Simsun';}
+.info_box .form_box .error_tips .star{margin-right: 10px;font-family: 'Simsun';font-style: normal;}
+
+
+/*弹窗*/
+/*--- @通用遮罩层 ----*/
+.popup-iframe{position:absolute;left:0;top:0;z-index:800;width:100%;background-color:#000;filter:alpha(opacity=70);opacity:0.3;}
+.Ag-maskLayer {position: absolute;left: 0;top: 0;z-index: 810;width: 100%; height:100%;filter: alpha(opacity=70);opacity: 0.6;background: #000;}
+
+/*--- @通用弹窗模块 ----*/
+.Ag-common-dialog{position:absolute; z-index:999; width:80%; left:50%;}
+.Acd-rel-dialog{ position:relative;background:#fff;}
+.Acd-rel-head{ height:45px; padding:0px 20px;  line-height:45px; background-color:#ededed; font-family:"microsoft yahei"; font-size:14px; color:#333; border-bottom:1px solid #e6e6e6;}
+.Acd-rel-body{height:330px; padding:15px; background-color:#fff;}
+.dialog-main-close{ display: block;  position: absolute;width:24px;height:23px;right:-32px;top:0px; background-image:url(../images/dialogclose.gif); background-size:24px auto; background-position:0px 0px;-moz-transition:-moz-transform 0.5s ease 0s;transition:transform 0.5s ease 0s;}
+.dialog-main-close:hover{ background-position:0px 0px;-o-transform:rotate(180deg);transform:rotate(180deg);}
+.delay-dispear{display: none; width:222px;height:92px;border:1px solid #e6e6e6;background-color:#fff;text-align: center;}
+.delay-dispear p{margin-top:32px;}
+.delay-dispear h3{position: relative; margin-top:40px;font-size: 14px;font-weight: normal;color: #666;}
+
+.templet-open-box{display: none;width:290px;}
+.Ag-common-dialog .close_btn{position:absolute;top:15px;right:15px;width: 10px;height: 10px;background:url("../images/close.png") no-repeat;cursor: pointer;}
+.Ag-common-dialog .box-cont-title h3{height: 30px;line-height: 30px;text-align: center;}
+.Ag-common-dialog .box-cont-title .underline_con{height: 8px;background: url("../images/headBg.png") repeat-x;}
+.Ag-common-dialog .rule_content{height: 270px;margin-top:10px;padding: 8px 10px;border: 1px #ddd solid;color: #333;font-weight: bold;text-align: center;overflow-y: auto;}
+.Ag-common-dialog .rule_content .item{margin-bottom: 20px;line-height: 18px;text-align: left;}
+.Ag-common-dialog .rule_content .item h4{color: #ff4141;font:bold 12px/18px 'Simsun';}
+.Ag-common-dialog .rule_content .item p{color: #666;font: 12px/18px 'Simsun';}
+.Ag-common-dialog .rule_content .item p.intro{text-indent: 26px;}
+
+/*自定义弹窗样式*/
+.act_rule_pop{width: 530px;height: 360px;background-color: #fff;border:5px solid #ccc; border-color:rgba(0 ,0 ,0 ,.2);/*_border-color:#ccc;*/}
+.Ag-common-dialog .content_con .scroll_box{width: 100%;height: 100%;}
+
+
+.app_code_pop{width: 650px;padding: 10px;}
+.app_code_pop .Acd-rel-body{height: 442px;}
+.app_code_pop .icon{background: url("../images/icon.png")}
+.app_code_pop .device_list{margin-top: 40px;margin-right: -32px;}
+.app_code_pop .device_list li{float: left;margin-right: 33px;}
+.app_code_pop .device_list .tag{width: 97px;height:98px;background-position: -99px -167px;text-align: center;cursor: pointer;}
+.app_code_pop .device_list .tag.on{background-position: 0 -167px;}
+.app_code_pop .device_list i.icon{display: inline-block;margin: 18px 0 0 2px;}
+.app_code_pop .device_list i.iphone{width: 34px;height: 62px; background-position: 0 0;}
+.app_code_pop .device_list i.android{width: 36px;height: 62px; background-position: -71px 0;}
+.app_code_pop .device_list i.ipad{width: 42px;height: 62px; background-position: -158px 0;}
+.app_code_pop .device_list i.androidPad{width: 40px;height: 62px; background-position: 0 -86px;}
+.app_code_pop .device_list i.wap{width: 42px;height: 62px; background-position: -158px -86px;}
+.app_code_pop .device_list p.app_name{height: 16px; margin-top: 12px;color:#333;font: 14px/16px Arial,Helvetica,sans-serif;text-align: center;cursor: pointer;}
+
+.app_code_pop .download_box{height: 224px;margin-top:50px;background-color: #f2f2f2;}
+.app_code_pop .download_box p.download_tip{color: #333;font: 14px/40px 'Microsoft YaHei';text-align: center;}
+.app_code_pop .download_box .dowbload_pc_btn{display: inline-block;width: 190px;height: 54px; background-position:0 -545px; }
+.app_code_pop  .download_btn_box{width: 400px;margin: 63px 0;text-align: center;}
+.app_code_pop .app_code_box{width: 163px;height: 174px;margin: 30px 56px 0 0;background-position: 0 -354px;}
+
+
+
+
+
+
+

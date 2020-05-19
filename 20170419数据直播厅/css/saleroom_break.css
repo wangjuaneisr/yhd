@@ -1,0 +1,85 @@
+.saleroom_break{
+    background: url(../images/break_bg.png);
+}
+.break_sale_container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1200px;
+    height: 340px;
+    margin-top: -170px;
+    margin-left: -600px;
+    color: #fefeff;
+    text-align: center;
+}
+.break_sale_container .break_time{
+    font: 24px/30px Arial,Tahoma;
+}
+.break_sale_container .break_time em.ml{
+    margin-right: 20px;
+}
+.break_sale_container .break_txt{
+    font: 30px/60px 'Microsoft YaHei';
+}
+.break_sale_container .break_num{
+    position: relative;
+    margin: 50px auto;
+    color: #82befc;
+    font:80px/100px 'Myriad Pro';
+    text-align: center;
+    font-size: 0;
+}
+.break_sale_container .break_num .sec{
+    display: inline-block;
+}
+.break_sale_container .break_num .sec s,
+.break_sale_container .break_num .sec em{
+    float: left;
+    width: 57px;
+    height: 60px;
+    background: url("../images/number.png") no-repeat 0 0;
+    text-decoration: none;
+    -webkit-transition: all .5s ease .5s;
+    -moz-transition: all .5s ease .5s;
+    -o-transition: all .5s ease .5s;
+    transition: all .5s ease .5s;
+}
+.break_sale_container .break_num .sec em{
+    margin-right: 4px;
+}
+.break_sale_container .break_num .sec em.zero{
+    background-position: 0 0;
+}
+.break_sale_container .break_num .sec em.one{
+    background-position: 0 -60px;
+}
+.break_sale_container .break_num .sec em.two{
+    background-position: 0 -120px;
+}
+.break_sale_container .break_num .sec em.three{
+    background-position: 0 -180px;
+}
+.break_sale_container .break_num .sec em.four{
+    background-position: 0 -240px;
+}
+.break_sale_container .break_num .sec em.five{
+    background-position: 0 -300px;
+}
+.break_sale_container .break_num .sec em.six{
+    background-position: 0 -360px;
+}
+.break_sale_container .break_num .sec em.seven{
+    background-position: 0 -420px;
+}
+.break_sale_container .break_num .sec em.eight{
+    background-position: 0 -480px;
+}
+.break_sale_container .break_num .sec em.nine{
+    background-position: 0 -540px;
+}
+.break_sale_container .break_num .sec s.dit{
+    background-position: 0 -600px;
+}
+.break_sale_container .break_num .sec s.comma{
+    background-position: 0 -660px;
+}

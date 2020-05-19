@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>创建组合促销</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/yhdbk.css">
+	<link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- bk-sales-manager -->
+<div class="bk-sales-manager create-discount-sales">
+	<!-- bread -->
+	<div class="bread clearfix">
+		<div class="yhdbk-crumbs-01">
+			<span>您的位置：</span>
+			<a href="#" class="blue-link">营销管理</a>>
+			<a href="#" class="blue-link">促销管理</a>>
+			<span class="cur-page">创建组合促销</span>
+		</div>
+		<a href="#" class="blue-link enter-help">进入商家帮助中心</a>
+	</div>
+	<!-- /bread -->
+	<!-- bk-sales-md -->
+	<div class="bk-sales-md set-sales-info">
+		<h2>设置促销基本信息</h2>
+		<div class="bk-sales-con">
+			<div class="set-list clearfix">
+				<label class="form-name">促销名称：</label>
+				<div class="extend">
+					<input type="text" class="sales-name"></input>
+				</div>
+		              <p class="error-tip">请填写促销名称</p>
+			</div>
+			<div class="set-list clearfix">
+				<label class="form-name">促销时间：</label>
+				<div class="extend">
+					<div class="clearfix">
+						<input type="text" class="same-text first-time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked:pickedFunc})">
+						<em class="time-connect">—</em>
+						<input type="text" class="same-text last-time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked:pickedLast})">
+					</div>
+					<div class="continue-days clearfix none mt">
+						<a href="javascript:" class="yhdbk-button-04">持续<em>3</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>5</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>7</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>30</em>天</a>
+					</div>					
+				</div>
+				<p class="error-tip">请填写促销名称</p>
+			</div>
+			<div class="set-list clearfix sale-type">
+				<label class="form-name">促销类型：</label>
+				<div class="extend clearfix">
+					<div class="sale-type-list sale-type-tips">满<em class="num">件</em><em class="money">元</em></div>	
+					<div class="sale-type-list"><input type="checkbox" />减现金</div>
+					<div class="sale-type-list"><input type="checkbox" />折扣</div>
+					<div class="sale-type-list"><input type="checkbox" />赠品</div>
+					<div class="sale-type-list"><input type="checkbox" />换购</div>		
+				</div>
+				<p class="error-tip">请填写促销名称</p>
+			</div>
+			<div class="set-list clearfix sale-limit">
+				<label class="form-name">限制促销：</label>
+				<div class="extend clearfix">
+					<p class="limit">限制每个账户购买<input type="text" placeholder="不限" />次</p>
+					<p class="act-tips">
+						<input type="checkbox" />促销活动可以累计参加
+						<span class="sale-tips">对于多级促销，仅【满<em>x</em>元减<em>y</em>元】支持累计优惠</span>
+					</p>
+					<p class="notice">该促销限制，仅对【满<em>x</em>元减<em>y</em>元】生效！</p>
+				</div>
+			</div>
+			<div class="set-list clearfix">
+				<label class="form-name">展示渠道：</label>
+				<div class="extend">
+						<ul class="tab-tit clearfix">
+							<li>
+								<input type="radio" name="search-way" /><label>B2C促销</label>
+							</li>
+							<li>
+								<input type="radio" name="search-way" /><label>O2O</label>
+							</li>
+						</ul>
+				</div>
+			</div>
+			<div class="set-list clearfix sale-limit">
+				<label class="form-name">门店选择：</label>
+				<div id="treeinit1" class="clearfix">
+					<div class="zone_left">
+						<p class="zone_tit">
+							<label class="fl ml"><input type="checkbox" class="checkAll">全选</label>类目
+						</p>
+						<ul class="ztree ztree_all" id="zone_tree1"></ul>
+					</div>
+					<div class="zone_center">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="zone_right">
+						<p class="remove_all">
+							<span>已选择
+								<b class="text-orange checkCount">0</b>  个，还剩
+								<b class="text-orange nocheckCount">14</b>个可选
+							</span>
+							<a href="javascript:;" class="clearAll"></a>
+						</p>
+						<ul class="ztree ztree_all" id="zone_tree_result1"></ul>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- /bk-sales-md -->
+</div>
+<!-- bk-sales-ft -->
+<div class="bk-sales-ft">
+	<p>
+		<a href="javascript:;" class="yhdbk-button-02 btn-create-success">创建促销</a>
+		<a href="javascript:;" class="yhdbk-button-03 btn-whether-delete">取消</a>
+	</p>
+</div>
+<!-- /bk-sales-ft -->
+<!-- /bk-sales-manager -->
+</body>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="lib/yhdbk.min.js"></script>
+<script type="text/javascript" src="lib/popwin.js"></script>
+<script type="text/javascript" src="js/treeinit.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(function () {
+
+       treeSet1(); //初始化树1结构     
+       treeSet2(); //初始化树2结构     
+
+	//表格全选
+	$('.table-choose-all').change(function(){
+		if ($(this).is(":checked")) {
+			$(this).parents().siblings('.correlation-table').find('table').find('input.tab-check-son').attr('checked',true);
+		}else{
+			$(this).parents().siblings('.correlation-table').find('table').find('input.tab-check-son').removeAttr('checked');
+		}
+	})
+});
+//初始化树1结构  
+function treeSet1(){
+      var zNodes_gl1 = [
+            {name:"全部",open:true,
+                children:[
+                    {
+                        name: "杭州区域",
+                        children: [{
+                            name: "111"
+                        },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            },
+                            {
+                                name: "111"
+                            },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            },
+                            {
+                                name: "111"
+                            },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            }]
+                    },
+                    {
+                        name: "上海区域",
+                        children: [{
+                            name: "111"
+                        },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            },
+                            {
+                                name: "111"
+                            },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            },
+                            {
+                                name: "111"
+                            },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            }]
+                    },
+                    {
+                        name: "北京区域",
+                        children: [{
+                            name: "111"
+                        },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            },
+                            {
+                                name: "111"
+                            },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            },
+                            {
+                                name: "111"
+                            },
+                            {
+                                name: "222"
+                            },
+                            {
+                                name: "333"
+                            },
+                            {
+                                name: "444"
+                            },
+                            {
+                                name: "555"
+                            }]
+                    }
+                ]}
+
+        ];
+      initTree($("#treeinit1"), $("#zone_tree1"), $("#zone_tree_result1"), zNodes_gl1);	
+}
+//初始化树2结构  
+function treeSet2(){
+       var zNodes_gl1 = [{
+	      	name: "1号商城",
+	      	children: [{
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      },
+	      {
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      },
+	      {
+	      		name: "111"
+	      	},
+	      	{
+	      		name: "222"
+	      	},
+	      	{
+	      		name: "333"
+	      	},
+	      	{
+	      		name: "444"
+	      	},
+	      	{
+	      		name: "555"
+	      }]
+      }];
+      initTree($("#treeinit2"), $("#zone_tree2"), $("#zone_tree_result2"), zNodes_gl1);	
+};
+//日历
+var date;
+function pickedFunc(){
+	$(this).parent().next('.continue-days').show();
+	var s = $(".first-time").val();
+	var arr =  s.split(/-|-|\s|:/);
+	date = (new Date(arr[0],arr[1],arr[2],arr[3],arr[4])).getTime();
+	return date;
+}
+function pickedLast() {
+	$('.continue-days').hide();
+}
+$(".continue-days a").click(function(){
+	var txt = parseInt($(this).find("em").text());
+	var addTime = txt*24*60*60*1000;
+	if($(".first-time").val()==''){
+		alert("请选择开始时间");
+		return false;
+	}
+	var lastTime =date+addTime;
+	var format = function(time, format){
+		var t = new Date(time);
+		var tf = function(i){return (i < 10 ? '0' : '') + i};
+		return format.replace(/yyyy|MM|dd|HH|mm|ss/g, function(a){
+			switch(a){
+				case 'yyyy':
+				return tf(t.getFullYear());
+				break;
+				case 'MM':
+				return tf(t.getMonth() + 1);
+				break;
+				case 'mm':
+				return tf(t.getMinutes());
+				break;
+				case 'dd':
+				return tf(t.getDate());
+				break;
+				case 'HH':
+				return tf(t.getHours());
+				break;
+				case 'ss':
+				return tf(t.getSeconds());
+				break;
+			}
+		})
+	}
+	$(".last-time").val(format(lastTime, 'yyyy-MM-dd HH:mm:ss'));
+	$(this).parent('.continue-days').hide();
+});
+</script>
+</html>

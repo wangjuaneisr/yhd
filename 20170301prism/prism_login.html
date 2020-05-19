@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="renderer" content="webkit">
+     <title>prism登录页</title>
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/prism.css">
+     <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="prism_login_bg">
+     <!-- 登录页 -->
+     <div class="prism_login_container">
+          <div class="logo_box">
+
+          </div>
+          <div class="login_box">
+               <div class="login">
+                    <div class="log_title clearfix">
+                         <h2>登录</h2>
+                    </div>
+                    <div class="log_fill">
+                         <label for="userId">账号</label>
+                         <input type="text" id="userId">
+                    </div>
+                    <div class="log_fill">
+                         <label for="userPassword">密码</label>
+                         <input type="password" id="userPassword">
+                    </div>
+                    <div class="log_tips clearfix">
+                         <div class="tips free_login">
+                              <i type="checkbox" class="prism_icon fl"></i>
+                              <label class="free_login fl">本机免登陆</label>
+                         </div>
+                         <div class="tips password_tips">
+                              <i class="iconfont fl">&#xe634;</i>
+                              <em class="fl">您的密码有误</em>
+                         </div>
+                    </div>
+                    <a href="javascript:;" class="login_btn">登录</a>
+               </div>
+          </div>
+     </div>
+
+</body>
+     <script src="js/jquery-1.11.3.min.js"></script>
+     <script src="js/prism.js"></script>
+     <script>
+          //选择免登陆
+          $('.free_login').on('click',function(){
+               $(this).toggleClass('checked');
+          });
+          //输入
+          $('.log_fill').on('keyup','input',function(){
+               var brr = $('.log_fill input');
+               var flag= everyMatch(brr);
+               if(flag){
+                    $('.login_btn').addClass('active_btn');
+               }else{
+                    $('.login_btn').removeClass('active_btn');
+               }
+          });
+
+          //验证是否为空
+          function everyMatch(arr){
+               var flag=1;
+               $.each(arr,function(){
+                    if(!$(this).val()) {
+                         flag=0;
+                    }
+               });
+               return flag;
+          }
+     </script>
+</html>

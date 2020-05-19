@@ -1,0 +1,37 @@
+.main_container .content_box .tab_box{
+    margin:0 30px;
+    background-color: #fff;
+}
+.main_container .content_box .tab_box .tab_list{
+    border: none;
+}
+.content_box .tab_box a,.content_box .tab_box a.tab.on{
+    height: 40px;
+    border: none;
+}
+.page_box .search_range_box{
+    padding: 10px 0;
+    color: #333;
+    font: 12px/24px 'Simsun';
+}
+.page_box .search_range_box label,.page_box .search_range_box input{
+    float: left;
+}
+.page_box .search_range_box input{
+    width: 12px;
+    height: 12px;
+    margin: 6px 3px 0 0;
+}
+.page_box .search_range_box .all_tips{
+    width: 88px;
+    padding-right: 10px;
+}
+.page_box .search_range_box .tips{
+    margin-right: 30px;
+ }
+.common_box .search_item{
+    min-width: 30%;
+}
+.common_btn_box{
+    border-bottom: 1px #ddd solid;
+}

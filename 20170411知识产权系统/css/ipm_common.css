@@ -1,0 +1,782 @@
+@charset "utf-8";
+/*
+ *Description :  知识产权系统;
+ *Author : Wang Juan;
+ *Date : 2017/04/11;
+**/
+/*iconfont 引用*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('../ipmIconfont/iconfont.eot');
+    src: url('../ipmIconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../ipmIconfont/iconfont.woff') format('woff'),
+    url('../ipmIconfont/iconfont.ttf') format('truetype'),
+    url('../ipmIconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*头部 公用样式 S*/
+html,body{
+    height: 100%;
+    background-color: #333e50;
+}
+img{width:auto;}
+.ipm_header{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 0px 10px #bcd7ed;
+    background-color: #fff;
+    line-height: 70px;
+    z-index: 2;
+}
+.ipm_header .ipm_logo_box{
+    float: left;
+}
+.ipm_header img.ipm_logo{
+    width: 189px;
+    height: 25px;
+    margin: 22px 25px 0 25px;
+    padding-right: 25px;
+    border-right: 1px #d6e3ee solid;
+}
+.ipm_header span.ipm_user{
+    float: right;
+    margin-right: 40px;
+    color: #505e70;
+    font: 12px/70px 'Microsoft YaHei';
+}
+.ipm_header span.ipm_user a.exit_btn{
+    margin-left: 5px;
+    color: #5ac7f9;
+    font: 12px/70px 'Microsoft YaHei';
+}
+/*头部 公用样式 E*/
+
+/*页面导航 S*/
+.main_container{
+    height: 100%;
+    background-color: #f6f9fb;
+}
+.main_container .ipm_nav{
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 100%;
+    background-color: #333e50;
+    z-index: 4;
+}
+.main_container .ipm_nav dl:first-child{
+    margin-top: 20px;
+}
+.main_container .ipm_nav dl a{
+    position: relative;
+    display: block;
+    padding: 0 40px 0 30px;
+    border-right: 4px #333e50 solid;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #78859a;
+    font: 14px/50px 'Microsoft YaHei';
+}
+.main_container .ipm_nav dl .nav:hover{
+    background-color: #293546;
+    border-color: #293546;
+    color: #ddecff;
+}
+.main_container .ipm_nav dl .nav.highlight{
+    background-color: #243042;
+    border-color: #5ac7f9;
+    color: #ddecff;
+}
+
+.main_container .ipm_nav dl .nav .iconfont{
+    color: #9aa1b3;
+}
+.main_container .ipm_nav dl .nav .font_icon{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.main_container .ipm_nav dl dd .nav{
+    padding-left: 60px;
+}
+.main_container .ipm_nav dl .nav .drop_icon{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    transition: transform .2s ease .0s;
+}
+.main_container .ipm_nav dl.hide .nav .drop_icon{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.main_container .ipm_nav dl.hide dd{
+    height: 0;
+    overflow: hidden;
+}
+/*页面导航 E*/
+
+
+
+/*页面内容*/
+.main_container .ipm_container{
+    margin:0px 0px 0 240px;
+    padding: 20px 30px 50px;
+    background-color: #f6f9fb;
+    overflow: hidden;
+}
+
+/*面包屑 通用样式 S*/
+.ipm_container .crumbs{
+    height: 36px;
+    padding-bottom: 16px;
+}
+.ipm_container .crumbs a{
+    float: left;
+    color: #243042;
+    font: 16px/36px 'Microsoft YaHei';
+}
+.ipm_container .crumbs .nav_slice{
+    float: left;
+    margin: 0 10px;
+    font: 16px/36px 'Microsoft Yahei';
+}
+.ipm_container .crumbs a.sec_nav{
+    color: #31beff;
+    font: 16px/36px 'Microsoft Yahei';
+}
+/*面包屑 通用样式 E*/
+
+
+/*页面背景色*/
+.ipm_container .page_container{
+    padding: 25px 20px 30px;
+    background-color: #fff;
+}
+.page_container .ipm_search_box{
+    padding-bottom: 10px;
+    border-bottom: 1px #d8e4ec solid;
+}
+.page_container .ipm_search_box .ipm_items{
+    float: left;
+    width: 33.33%;
+    min-width: 290px;
+    min-height: 34px;
+}
+/*圆角框通用 样式 S*/
+.ipm_items{
+    padding: 8px 0;
+}
+.ipm_items>label{
+    float: left;
+    min-width: 90px;
+    color: #505e70;
+    font: 12px/30px 'Simsun';
+    text-align: right;
+}
+.ipm_items .item_input{
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 28px;
+    padding: 0 10px;
+    border: 1px #d8e4ec solid;
+    border-radius: 6px;
+    background-color: #f9fcfe;
+    outline: none;
+}
+.ipm_items input.item_input:focus{
+    border-color: #3abefb;
+}
+.ipm_items input.item_input{
+    color: #505e70;
+}
+.ipm_items .item_input .selected_box .selected{
+    float: left;
+    width: 160px;
+    height: 28px;
+    padding-right: 20px;
+    border: none;
+    background-color: #f9fcfe;
+    outline: none;
+    color: #505e70;
+    line-height: 28px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.ipm_items .item_input .selected_box .iconfont{
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    color: #727e8c;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    transition: transform .2s ease .0s;
+}
+.ipm_items .item_input .drop_box{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    width: 200px;
+    padding: 10px 0;
+    border: 1px #d8e4ec solid;
+    border-top: none;
+    border-radius: 6px;
+    border-top-right-radius:0 ;
+    border-top-left-radius:0 ;
+    background-color: #fff;
+    line-height: 30px;
+    text-align: left;
+    z-index: 2;
+}
+.ipm_items .item_input .drop_box ul{
+    max-height: 100px;
+    overflow: auto;
+}
+.ipm_items .item_input .drop_box ul::-webkit-scrollbar{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 6px;
+    height: 20px;
+}
+.ipm_items .item_input .drop_box ul::-webkit-scrollbar-track{
+    width: 20px;
+}
+.ipm_items .item_input .drop_box ul::-webkit-scrollbar-thumb{
+    background:#ccc;
+    border-radius:4px;
+}
+.ipm_items .item_input .drop_box li{
+    padding: 0 10px;
+    color: #505e70;
+    white-space: nowrap;
+}
+.ipm_items .item_input .drop_box li:hover{
+    background-color: #eaf1f6;
+}
+.ipm_items .on{
+    height: 32px;
+    background-color: #fff;
+    border-color: #3abefb;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.ipm_items .cur{
+    background-color: #fff;
+    border-color: #3abefb;
+}
+.ipm_items .cur .selected_box .selected{
+    background-color: #fff;
+}
+.ipm_items .on .drop_box{
+    display: block;
+    border-color: #3abefb;
+}
+.ipm_items .on .selected_box .selected {
+    border-bottom: 1px #d8e4ec solid;
+    background-color: #fff;
+}
+.ipm_items .on .selected_box .iconfont{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+/*圆角框通用 样式 S*/
+
+/*表格 S*/
+table.ipm_table tr th{
+    height: 40px;
+    border-bottom: 1px #dae5ed solid;
+    color: #8998ad;
+    font: 12px 'Microsoft YaHei';
+}
+table.ipm_table tr td{
+    height: 50px;
+    color: #505e70;
+    font: 12px 'Arial,Simsun';
+    text-align: center;
+}
+table.ipm_table tbody tr:nth-child(odd) td{
+    background-color: #fff;
+}
+table.ipm_table tbody tr:nth-child(even) td{
+    background-color: #f6f9fb;
+}
+table tbody tr td .table_btn{
+    color: #55bff0;
+}
+table tbody tr td .table_btn:hover{
+    color: #ff6359;
+}
+table.ipm_table tbody tr:hover td{
+    background-color: #f1f7fd;
+}
+table.ipm_table tbody tr.selected td{
+    background-color: #dceffb;
+}
+
+/*翻页*/
+.page_turn_box {
+    float: right;
+    height: 20px;
+    padding: 20px 15px 0;
+    text-align: center;
+}
+.page_turn_box .page_btn {
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    margin-right: 2px;
+    border: 1px #fff solid;
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+.page_turn_box .page_btn:hover{
+    background-color: #f6f9fb;
+}
+.page_turn_box .page_btn.cur {
+    color: #fff;
+    background-color: #5ac7f9;
+}
+/*表格 E*/
+
+/*通用按钮样式 S*/
+/*蓝色按钮  无边框*/
+.blue_btn{
+    color: #1da6e5;
+}
+/*红色渐变按钮 多用于确定*/
+.red_gradient_btn{
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+    border-radius: 34px;
+    color: #fff;
+    font: 14px/34px 'Simsun';
+    text-align: center;
+    background-color: #ff6055;
+    background: -moz-linear-gradient(left, #ff6055,  #ff7b74);
+    background: -webkit-linear-gradient(left, #ff6055,  #ff7b74);
+    background: -moz-linear-gradient(left, #ff6055,  #ff7b74);
+    background: -o-linear-gradient(left, #ff6055,  #ff7b74);
+    background: linear-gradient(to right, #ff6055,  #ff7b74);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6055', endColorstr='#ff7b74',GradientType=1 );
+
+}
+/*浅蓝色按钮  多用于取消*/
+.light_blue_btn{
+    display: inline-block;
+    width: 100px;
+    height: 32px;
+    border-radius: 34px;
+    background-color: #f9fcfe;
+    border: 1px #dae5ed solid;
+    color: #8998ad;
+    font: 12px/32px 'Simsun';
+}
+.light_blue_btn:hover{
+    background-color: #e6f2fa;
+}
+.red_gradient_btn:hover{
+    background-color: #fc4a3d;
+    background: -moz-linear-gradient(left, #fc4a3d,  #ff756d);
+    background: -webkit-linear-gradient(left, #fc4a3d,  #ff756d);
+    background: -moz-linear-gradient(left, #fc4a3d,  #ff756d);
+    background: -o-linear-gradient(left, #fc4a3d,  #ff756d);
+    background: linear-gradient(to right, #fc4a3d,  #ff756d);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc4a3d', endColorstr='#ff756d',GradientType=1 );
+
+}
+/*蓝色渐变按钮*/
+.blue_gradient_btn{
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+    border-radius: 34px;
+    color: #fff;
+    font: 14px/34px 'Simsun';
+    text-align: center;
+    background-color: #27b8fb;
+    background: -moz-linear-gradient(left, #27b8fb,  #59c7f9);
+    background: -webkit-linear-gradient(left, #27b8fb,  #59c7f9);
+    background: -moz-linear-gradient(left, #27b8fb,  #59c7f9);
+    background: -o-linear-gradient(left, #27b8fb,  #59c7f9);
+    background: linear-gradient(to right, #27b8fb,  #59c7f9);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27b8fb', endColorstr='#59c7f9',GradientType=1 );
+}
+.blue_gradient_btn:hover{
+    background-color: #04a8f3;
+    background: -moz-linear-gradient(left, #04a8f3,  #51c2f6);
+    background: -webkit-linear-gradient(left, #04a8f3,  #51c2f6);
+    background: -moz-linear-gradient(left, #04a8f3,  #51c2f6);
+    background: -o-linear-gradient(left, #04a8f3,  #51c2f6);
+    background: linear-gradient(to right, #04a8f3,  #51c2f6);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04a8f3', endColorstr='#51c2f6',GradientType=1 );
+}
+/*操作按钮 灰色边框 带iconfont*/
+a.operate_btn{
+    display: inline-block;
+    width: 120px;
+    height: 32px;
+    margin-right: 10px;
+    border: 1px #dae5ed solid;
+    border-radius: 32px;
+    color: #8998ad;
+    font: 12px/32px 'Simsun';
+    text-align: center;
+}
+a.operate_btn:hover{
+    color: #fff;
+    background-color: #27b8fb;
+    background: -moz-linear-gradient(left, #27b8fb, #59c7f9);
+    background: -webkit-linear-gradient(left, #27b8fb, #59c7f9);
+    background: -moz-linear-gradient(left, #27b8fb, #59c7f9);
+    background: -o-linear-gradient(left, #27b8fb, #59c7f9);
+    background: linear-gradient(to right, #27b8fb, #59c7f9);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27b8fb', endColorstr='#59c7f9',GradientType=1 );
+    border-color: #5ac7f9;
+}
+a.operate_btn .iconfont{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    color: #5ac7f9;
+}
+a.operate_btn:hover .iconfont{
+    color: #fff;
+}
+/*文件相关按钮*/
+.file_btn{
+    float: left;
+    height: 32px;
+    padding: 0 20px;
+    margin-right: 10px;
+    background-color: #f9fcfe;
+    border: 1px #d8e4ec solid;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    color: #8998ad;
+    font: 12px/32px Arial,Simsun;
+}
+.file_btn em{
+    float: left;
+}
+.file_btn em.file_name{
+    max-width: 154px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.file_btn i{
+    float: right;
+    margin-left: 20px;
+    color: #5ac7f9;
+    vertical-align: middle;
+    transition: transform .2s ease .0s;
+}
+.file_btn i:hover{
+    transform: scale(1.2);
+}
+/*通用按钮样式 E*/
+
+
+/* 弹框-shiwen2-20170412-S */
+
+/*弹框遮罩*/
+.popup_mask{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    background-color:#000;
+    filter:alpha(opacity=60);
+    opacity:0.4;
+    z-index:9;
+}
+.popup_iframe{
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:15;
+    width:100%;
+    background-color:#000;
+    filter:alpha(opacity=60);
+    opacity:0.4;
+}
+/*t弹窗按钮 */
+.pop_btn_box{
+    text-align: center;
+}
+.pop_common_dialog .blue_gradient_btn{
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+.pop_common_dialog .light_blue_btn{
+    width: 78px;
+    height: 28px;
+    line-height: 28px;
+}
+.pop_common_dialog .red_gradient_btn{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+}
+/*有标题弹框*/
+.pop_common_dialog{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    width: 410px;
+    margin-left: -205px;
+    border: 5px solid #000;
+    border-color: rgba(0 ,0 ,0 ,.2);
+    background-color: #fff;
+}
+.pop_common_box{
+    position: relative;
+    border: 1px solid #b4b4b4;
+}
+.dialog_main_close{
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    width: 9px;
+    height: 9px;
+}
+.dialog_main_close .iconfont{
+    font-size: 9px;
+}
+.pop_common_tit{
+    padding: 0 20px;
+}
+.pop_common_tit .pop_tit{
+    height: 40px;
+    border-bottom: 1px solid #f0f3f8;
+    color: #505e70;
+    line-height: 40px;
+}
+.pop_common_dialog .btn_box,
+.tooltip_box .btn_box{
+    text-align: center;
+}
+.pop_common_dialog .btn_box a,
+.tooltip_box .btn_box a{
+    margin: 0 5px;
+}
+
+/*自动关闭弹框*/
+.pop_keytips{
+    width: 200px;
+}
+.pop_keytips_relbox{
+    width: 200px;
+    padding: 30px 0;
+}
+.pop_key_notice_txt{
+    text-align: center;
+}
+.pop_tips_txt{
+    height: 20px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.pop_tips_txt .iconfont{
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.pop_tips_txt .iconfont.icon_green{
+    color: #6edc80;
+}
+.cunt_down_tip{
+    height: 12px;
+    margin-top: 10px;
+    color: #737f8e;
+    line-height: 12px;
+}
+
+/*提示框*/
+.tooltip_box {
+    position: relative;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    z-index: 2;
+    width: 200px;
+    margin-left: -100px;
+    border: 1px solid #d7e3ec;
+    background-color: #fff;
+}
+.tooltip_box s {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -7px;
+    border-style: dotted dashed solid;
+    border-color: transparent transparent #d7e3ec transparent;
+    border-width: 7px;
+    font-size: 0;
+    line-height: 0;
+}
+.tooltip_box s.under {
+    top: -12px;
+    border-color: transparent transparent #fff transparent;
+}
+.tip_note{
+    padding: 20px 15px 0;
+}
+.tip_note p {
+    color: #505e70;
+    line-height: 12px;
+    text-align: center;
+}
+.tooltip_box .pop_btn_box{
+    padding: 15px 0;
+}
+.tooltip_box .pop_btn_box a{
+    margin: 0 5px;
+}
+.tooltip_box .blue_gradient_btn{
+    width: 80px;
+    height: 30px;
+    font: 12px/30px 'sinsum';
+}
+.tooltip_box .light_blue_btn{
+    width: 78px;
+    height: 28px;
+    font: 12px/28px 'sinsum';
+}
+/* 弹框-E */
+
+/* 日历-shiwen2-20170413-S */
+.selecDatePeriod{
+    position: relative;
+    float: left;
+    height: 28px;
+    padding: 0px 5px;
+    border: 1px #d8e4ec solid;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #f9fcfe;
+    cursor: pointer;
+}
+.timeSelectBar{
+    height: 28px;
+}
+.timeSelectBar input{
+    float: left;
+    border: none;
+    background-color: #f9fcfe;
+    font-size: 14px;
+    font-family: Arial;
+}
+.timeSelectBar input.tselect-same{
+    width: 76px;
+    height: 28px;
+    color: #505e70;
+    line-height: 28px;
+    cursor: pointer;
+}
+.timeSelectBar input.lineInput{
+    width: 14px;
+    height: 28px;
+    padding: 0 3px;
+    border: none;
+    color: #8998ad;
+    line-height: 28px;
+}
+.timeSelectBar .iconfont{
+    position: relative;
+    top: -1px;
+    height: 28px;
+    color: #c5cad0;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+}
+.selecDatePeriod:hover .iconfont{
+    color: #5ac7f9;
+}
+
+.timeHideModel{
+    position:absolute;
+    right: 0;
+    top:28px;
+    z-index: 5;
+    width:508px;
+    background:#fafafa;
+    border:1px solid #ccc;
+}
+.selecDatePeriod .leftShow{
+    left: 0;
+    right: auto;
+}
+.dateTabBtn{
+    height:28px;
+    border-bottom:1px
+    solid #8dd6f7;
+    padding-left:40px;
+}
+.detailDateWarp , .detailDateCont{
+    position:static;
+    text-align: center;
+}
+.detailDateWarp .sureClose{
+    display:inline-block;
+    height:22px;
+    line-height:22px;
+    padding:0px 18px;
+    background-color:#f99a34;
+    color:#fff;
+    font-size:12px;
+    margin:10px auto;
+    border-radius:2px;
+}
+.detailDateWarp .sureClose:hover{
+    background-color:#ec8210;
+}
+
+/* 日历-E */

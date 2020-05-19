@@ -1,0 +1,62 @@
+
+/**
+ * Created by wangjuan5
+ */
+
+
+/*dateinput*/
+.selecDatePeriod{position:relative; width: 190px; height:30px;margin-left: 10px; border:1px solid #ddd;border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px;}
+.timeSelectBar{ height:30px;}
+.timeSelectBar .iconfont{position: absolute;top: 0;right: 4px;cursor: pointer;color: #666;z-index: -1; }
+.selecDatePeriod:hover .timeSelectBar i.iconfont{color:#09af5c;}
+.timeSelectBar input{ float:left; font-family:'Tahoma' ; font-size:12px; color:#666; border:none;cursor: pointer;}
+.timeSelectBar input.tselect-same{ height:18px;background-color: transparent;line-height:18px; padding:6px 0px 6px 10px;}
+.timeSelectBar input.startInput{ width:64px;}
+.timeSelectBar input.lineInput{ width:14px; height:28px; line-height:28px; padding:0 5px; color:#999; border:none;}
+.timeSelectBar input.endInput{ width:70px;  padding:6px 12px 0 0px ;}
+
+.timeHideModel{ position:absolute; left:-100px; top:30px; z-index:333; width:514px; background:#fafafa; border:1px solid #ddd;border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px;}
+.dateTabBtn{display: none;height:28px; border-bottom:1px solid #09af5c; padding-left:40px;}
+.dateTabBtn a{  float:left; display:inline-block;color:#999; height:28px; padding:0px 25px; line-height:28px; font-size:12px; margin-top:-1px; border-bottom:1px solid #09af5c; border-top:1px solid #ddd; background-color:#efefef;  }
+.dateTabBtn a.current , .flowSource .sTitle .dateTabBtn a.current{ border:1px solid #09af5c;border-bottom:1px solid #d5edf9; background-color:#d5edf9; color:#666; }
+.detailDateWarp , .detailDateCont{ position:static; text-align: center;}
+.detailDateWarp .sureClose{ display:inline-block; height:22px; line-height:22px; padding:0px 18px; background-color:#f99a34; color:#fff; font-size:12px; margin:10px auto; border-radius:2px;}
+.detailDateWarp .sureClose:hover{ background-color:#ec8210;}
+.calenderBox .table-condensed tbody td{line-height: 16px;}
+
+.calenderBox .table-condensed tbody td.active{border-color:  #09af5c;color: #09af5c;}
+.calenderBox .table-condensed tbody td:hover{border-color:  #09af5c;color:  #09af5c;}
+.calenderBox .table-condensed tbody td.pressed {background-color: #09af5c;color: #fff;}
+.calenderBox .table-condensed thead th {color: #666;}
+
+.calenderBox a.prev, .calenderBox a.next {
+    position: absolute;
+    top: 12px;
+    width: 14px;
+    border-right: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.calenderBox a.prev {
+    left: 0;
+    top:12px;
+    width: 14px;
+    border-right: none;
+    background-color: #f2f2f2;
+}
+.calenderBox a.next{
+    right: 0;
+}
+.calenderBox a.prev i, .calenderBox a.next i {
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 14px;
+    height: 20px;
+    background:url('../images/icon.png') -188px -68px no-repeat;
+}
+.calenderBox a.next i{background-position: -186px -88px;}
+.calenderBox a.next:hover i{background-position: -186px -88px;}
+.calenderBox a.prev:hover i{background-position: -188px -68px;}
+.calenderBox .table-condensed-date{width: 50%;padding: 4px 15px;}

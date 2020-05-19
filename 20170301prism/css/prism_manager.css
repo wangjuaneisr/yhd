@@ -1,0 +1,27 @@
+.prism_manager_pop{
+    width: 750px;
+    height: 360px;
+}
+.prism_manager_pop .Acd-rel-dialog{
+    width: 750px;
+    height: 360px;
+}
+.prism_manager_pop .Acd-rel-body{
+    width: 710px;
+    height: 340px;
+    padding:10px 20px;
+}
+.prism_manager_pop .Acd-rel-body .content_con{
+    height: 340px;
+}
+.prism_manager_pop .Acd-rel-body .content_con h3{
+    border-bottom: 1px #ddd solid;
+    color: #333;
+    font: bold 16px/40px 'Microsoft YaHei';
+}
+.prism_manager_pop .Acd-rel-body .table_tips{
+    height: 40px;
+    padding-top: 5px;
+    color: #666;
+    font: 12px/40px 'Tahoma,Simsun';
+}

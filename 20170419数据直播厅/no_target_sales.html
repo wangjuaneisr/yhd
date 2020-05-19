@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>无目标金额</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/data_live_holl.css">
+</head>
+<body class="no_target_sales">
+<!--<div class="space">-->
+    <!--<div class="stars">-->
+        <!--<div class="star"></div>-->
+        <!--&lt;!&ndash;<div class="star pink"></div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="star blue"></div>&ndash;&gt;-->
+        <!--<div class="star yellow"></div>-->
+        <!--<div class="blink a-bounceinT"></div>-->
+        <!--&lt;!&ndash;<div class="swing"></div>&ndash;&gt;-->
+        <!--<div class="stay"></div>-->
+        <!--<div class="stay stay1"></div>-->
+        <!--<div class="stay stay2"></div>-->
+        <!--<div class="stay stay3"></div>-->
+        <!--<div class="stay stay4"></div>-->
+        <!--<div class="stay stay5"></div>-->
+        <!--<div class="stay stay6"></div>-->
+        <!--<div class="stay stay7"></div>-->
+        <!--<div class="stay stay8 "></div>-->
+        <!--<div class="stay stay9"></div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="data_live_hall">
+    <!--头部-->
+    <div class="dlh_header clearfix">
+        <div class="dlh_header_l dlh_border_box">
+            <a class="head_logo_box" href="data_live_holl.html">
+                <img src="images/logo_txt.png" alt="">
+            </a>
+            <div class="header_time_box">
+                <em class="date_year">2017/5/10</em>
+                <em class="hour_second">17:12:45</em>
+            </div>
+            <div class="header_shop_box">
+                <img src="images/shop_logo.png" alt="">
+                <em>百草味旗舰店</em>
+            </div>
+            <div class="angel_box"></div>
+        </div>
+        <div class="decoration_btn_box">
+            <a href="screen_decoration.html" class="decoration_btn"><em><i class="iconfont"></i>大屏装修</em></a>
+            <a href="javascript:;" class="decoration_btn highlight full_screen_btn" id="full_screen_btn" style="display: block;"><em><i class="iconfont"></i>进入全屏</em></a>
+            <a href="javascript:;" class="decoration_btn highlight full_screen_btn" id="quit_screen_btn" style="display: none;"><em><i class="iconfont"></i>退出全屏</em></a>
+        </div>
+    </div>
+
+    <!--固定部分-->
+    <div class="dlh_fixed_container clearfix">
+        <div class="dlh_module_box today_sale">
+            <div class="module_tit">
+                <span class="tit clearfix">
+                    <i class="fl icon ts_icon"></i>
+                    <em class="fl">今日成交金额（&yen;）</em>
+                </span>
+            </div>
+            <div class="module_graph">
+                <div class="turnover">
+                    <p>3,242,244</p>
+                    <div class="turnover_per">
+                        <i class="icon phone_icon"></i>
+                        <em>80%</em>
+                    </div>
+                </div>
+            </div>
+            <div class="module_data clearfix">
+                <div class="data yesterday_data">
+                    <div class="num clearfix">
+                        <em>4,354,244.45</em>
+                    </div>
+                    <div class="en clearfix">
+                        <em>昨日成交金额（&yen;）</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dlh_module_box">
+            <img src="images/lineChart.png" alt="">
+        </div>
+    </div>
+
+    <!--非固定部分-->
+    <div class="dlh_unfixed_container  clearfix">
+        <div class="dlh_module_box data_over_box">
+            <div class="container clearfix">
+                <div class="module_data clearfix">
+                    <div class="module_tit dlh_border_box  clearfix">
+                        <i class="icon tit_icon"></i>
+                        <h3>热销类目榜</h3>
+                        <div class="angel_box"></div>
+                    </div>
+                    <div class="module_data">
+                        <dl class="rank_list no_border_list clearfix">
+                            <dd class="fir">
+                                <i class="r_bg">1</i>
+                                <em class="bar"></em>
+                                <h4>煎饼果子来一套</h4>
+                                <span>&yen;<em>3,345</em></span>
+                            </dd>
+                            <dd class="sec">
+                                <i class="r_bg">2</i>
+                                <em class="bar"></em>
+                                <h4>牛奶</h4>
+                                <span>&yen;<em>2,324,345</em></span>
+                            </dd>
+                            <dd class="thi">
+                                <i class="r_bg">3</i>
+                                <em class="bar"></em>
+                                <h4>糕点</h4>
+                                <span>&yen;<em>3,345</em></span>
+                            </dd>
+                            <dd class="four">
+                                <i class="r_bg">4</i>
+                                <em class="bar"></em>
+                                <h4>饼干</h4>
+                                <span>&yen;<em>3,345</em></span>
+                            </dd>
+                            <dd class="five">
+                                <i class="r_bg">5</i>
+                                <em class="bar"></em>
+                                <h4>香菜</h4>
+                                <span>&yen;<em>3,345</em></span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dlh_module_box">
+            <div class="container clearfix">
+                <div class="module_tit dlh_border_box  clearfix">
+                    <i class="icon tit_icon"></i>
+                    <h3>店铺商品榜</h3>
+                    <div class="angel_box"></div>
+                </div>
+                <div class="module_data">
+                    <dl class="rank_list no_border_list  clearfix">
+                        <dt>访客数</dt>
+                        <dd class="bg_dd">
+                            <i class="r_bg rank fir">1</i>
+                            <h4>年货大礼包1920g年货大礼包1920g</h4>
+                            <span>&yen;<em>3,345</em></span>
+                        </dd>
+                        <dd class="bg_dd">
+                            <i class="r_bg rank sec">2</i>
+                            <h4>纸皮核桃3带盒装袋装</h4>
+                            <span>&yen;<em>2,324,345</em></span>
+                        </dd>
+                        <dd class="bg_dd">
+                            <i class="r_bg rank thi">3</i>
+                            <h4>年货大礼包1920g</h4>
+                            <span>&yen;<em>3,345</em></span>
+                        </dd>
+                        <dd class="bg_dd">
+                            <i class="r_bg ">4</i>
+                            <h4>年货大礼包1920g</h4>
+                            <span>&yen;<em>3,345</em></span>
+                        </dd>
+                        <dd class="bg_dd">
+                            <i class="r_bg ">5</i>
+                            <h4>年货大礼包1920g</h4>
+                            <span>&yen;<em>3,345</em></span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="dlh_module_box dynamic_circle_box">
+            <div class="container clearfix">
+                <div class="module_tit dlh_border_box  clearfix">
+                    <i class="icon tit_icon"></i>
+                    <h3>访客地域分布</h3>
+                    <div class="angel_box"></div>
+                </div>
+                <div class="module_data" >
+                    <dl class="rank_list no_border_list clearfix">
+                        <dt>城市</dt>
+                        <dd class="loop_dd clearfix">
+                            <div class="loop_chart_box">
+                                <canvas id="loop_canvas" class="loop_canvas" width="138" height="138"></canvas>
+                            </div>
+                            <div class="loop_figure">
+                                <div class="figure clearfix">
+                                    <i class="cir_i cir_fir"></i>
+                                    <em class="area_per">上海70%</em>
+                                </div>
+                                <div class="figure clearfix">
+                                    <i class="cir_i cir_sec"></i>
+                                    <em class="area_per">江苏10%</em>
+                                </div>
+                                <div class="figure clearfix">
+                                    <i class="cir_i cir_thi"></i>
+                                    <em class="area_per">浙江10%</em>
+                                </div>
+                                <div class="figure clearfix">
+                                    <i class="cir_i cir_four"></i>
+                                    <em class="area_per">北京10%</em>
+                                </div>
+                                <div class="figure clearfix">
+                                    <i class="cir_i cir_five"></i>
+                                    <em class="area_per">广州10%</em>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/data_live_holl.js"></script>
+<script>
+    var arr = [60,10,10,10,10],
+            start = 0,
+            c =[],
+            n= 0,
+            m=arr.length-1;//从小到大排序
+    arr.sort(function(a,b){return b-a});//从大大小排列
+    cirGen(arr,n,m);
+    //递归调用
+    function cirGen(arr,n,m){
+        if(n==m){
+            return c[n]=100;
+        }else{
+            return c[n]=cirGen(arr,++n,m)-arr[n];
+        }
+    }
+    var _result = c.reverse();//圆弧长度数组
+    var color = ["#344f63","#1679b7","#1796b3","#1aa6b3","#1ab397"];
+    circleGenerate("loop_canvas",60,arr,_result,color);
+
+    function circleGenerate(x,y,z,s,c){
+        var  width_canvas = 138,
+                height_canvas = 138;
+        var _canvas = x,
+                _r = y,
+                i = 100;
+        var canvas = document.getElementById(_canvas),
+                context =  canvas.getContext("2d");
+        canvas.width = width_canvas;
+        canvas.height = height_canvas;
+
+        for(var k in _result){
+            context.beginPath();
+            context.arc(_r+10 ,_r+10 , _r-(20-k),0.4*Math.PI,0.4*Math.PI+0.02*_result[k]*Math.PI);
+            context.lineWidth = 20+2*k;
+            context.strokeStyle = c[k];
+            context.stroke();
+        }
+
+        context.font="14px Tohama";
+        context.textAlign='center';//文本水平对齐方式
+        context.fillStyle="#aafeff"; // 圆心百分数
+        context.fillText('上海',_r+10,65); // 圆心百分数
+        context.fillText(i-20+'%',_r+10,85); // 圆心百分数
+        context.textBaseline='middle';//文本垂直方向，基线位置
+    }
+</script>
+</html>

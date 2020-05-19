@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*
+ *Description :  轮播放大图;
+ *Author : Wang Juan5;
+ *Date : 2016/12/13;
+ *upDate: 2016/12/22
+**/
+/*#detail-tag-id-6 .book-detail-content{*/
+    /*height: 314px;*/
+/*}*/
+/*#detail-tag-id-6 .book-detail-content.open{*/
+    /*height: auto;*/
+/*}*/
+.book-detail-item {
+    overflow: hidden;
+    margin: 0 20px;
+    padding-top: 20px;
+}
+.book-detail-item .more {
+    padding: 10px 0 0 10px;
+}
+.book-detail-item .more a {
+    /*color: #005aa0;*/
+}
+.book-detail-item .item-mt {
+    height: 25px;
+    border-bottom: 3px solid #e4393c;
+}
+.book-detail-item .item-mt h3 {
+    line-height: 28px;
+    width: 99px;
+    height: 25px;
+    overflow: hidden;
+    color: #FFF;
+    padding-left: 20px;
+    background: url(//static.360buyimg.com/item/main/1.0.30/css/i/item.sprite.png) no-repeat 0 -13px;
+}
+.book-detail-item .item-mc {
+    padding: 18px 10px 0;
+}
+.book-detail-item .book-detail-content {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+
+.book-detail-item .illustrated li {
+    border: 1px solid #fff;
+    float: left;
+    width: 150px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 18px 18px 0;
+    padding: 0 11px 0px;
+}
+.book-detail-item .illustrated li:hover {
+    border: 1px solid #ccc;
+}
+.book-detail-item .illustrated li a{
+    display: block;
+}
+.book-detail-item .illustrated li img {
+    height: 180px;
+    cursor: url(//static.360buyimg.com/item/main/1.0.30/css/i/big.cur),auto;
+}
+.ui-preview-zoom-out img {
+    cursor: url(//misc.360buyimg.com/jdf/1.0.0/ui/imgpreview/1.0.0/zoom_out.bmp),pointer;
+}
+.book-detail-item .book-detail-content {
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.book-detail-item .more {
+    padding: 10px 0 0 10px;
+}
+.book-detail-item .more a {
+    color: #005aa0;
+}

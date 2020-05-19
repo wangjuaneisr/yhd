@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>健康报告首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/calender.css">
+    <link rel="stylesheet" href="css/dateShow.css">
+    <link rel="stylesheet" type="text/css" href="css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" href="css/quality_platform.css">
+</head>
+<body>
+<!--[if lt IE 9]>
+<style type="text/css">
+    .search_con .items{width: 299px;}
+</style>
+<![endif]-->
+    <div class="main_con">
+        <!--查询条件筛选 S-->
+        <div class="search_con clearfix">
+            <div class="search_btn_con fr">
+                <a href="javascript:void(0)" class="refer_btn">查询</a>
+            </div>
+            <div class="condition_con clearfix">
+                <!--时间 S-->
+                <div class="items">
+                    <label>报告所属时间</label>
+                    <div class="selecDatePeriod fl">
+                        <div class="timeSelectBar clearfix">
+                            <input class="tselect-same startInput date13" type="text" readonly="readonly" value="2016-08-19">
+                            <input class="lineInput" type="text" readonly="" value="至">
+                            <input class="tselect-same endInput date13" type="text" readonly="readonly" value="2015-08-26">
+                            <i class="iconfont">&#xe604;</i>
+                        </div>
+                        <div class="none timeHideModel">
+                            <div class="dateTabBtn dateTabBtn1 clearfix" data-trigger="spcalendar">
+                                <a href="javascript:;" data-mode="month">按月</a>
+                                <a href="javascript:;" data-mode="week">按周</a>
+                                <a class="current" href="javascript:;" data-mode="date">按日</a>
+                            </div>
+                            <div class="detailDateWarp">
+                                <div class="detailDateCont"></div>
+                                <a class="sureClose" href="javascript:;">确定</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--时间 E-->
+
+                <div class="items">
+                    <label>报告名称</label>
+                    <a href="javascript:void(0)" class="select_con select_box report_name_con">
+                        <div class="tips clearfix">
+                            <em class="selected_con txt" id="reportName">健康度报告-2016-Q3-WK35(0908-0914)健康度报告-2016-Q3-WK35(0908-0914)健康度报告-2016-Q3-WK35(0908-0914)健康度报告-2016-Q3-WK35(0908-0914)</em>
+                            <i class="icon down"></i>
+                        </div>
+                        <ul class="select_list_con select_list report_name_list">
+                            <li class="clearfix"><em></em></li>
+                            <li class="clearfix"><em></em></li>
+                            <li class="clearfix"><em></em></li>
+                            <li class="clearfix"><em></em></li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--查询条件筛选 E-->
+    </div>
+
+    <div class="rank_room_con">
+        <div class="icon pack_up_btn">
+            <!--<a href="javascript:;"><i class="icon pack_up_btn"></i></a>-->
+        </div>
+        <div class="ranking_con">
+        <!--排名 S-->
+        <div class="rank_box_top clearfix suspend_box">
+            <!--三级部门排名 S-->
+            <div class="ranking_box departmentRank_con fl">
+
+                <div class="ranking_hd">
+                    <h3>三级部门排名</h3>
+                </div>
+                <div class="rank_box clearfix">
+                   <dl class="top_rank">
+                       <dt>Top榜</dt>
+                       <dd class="clearfix"><label title="1. 前台导购">1. 前台导购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="2. 平台交易部">2. 平台交易部</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="3. 团购与闪购">3. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="4. 团购与闪购">4. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="5. 团购与闪购">5. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="6. 团购与闪购6. 团购与闪购6. 团购与闪购">6. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="7. 团购与闪购">7. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="8. 团购与闪购">8. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="9. 团购与闪购">9. 团购与闪购</label><em class="num">100%</em></dd>
+                       <dd class="clearfix"><label title="10. 团购与闪购">10. 团购与闪购</label><em class="num">100%</em></dd>
+                   </dl>
+                    <dl class="bottom_rank">
+                        <dt>Bottom榜</dt>
+                        <dd class="clearfix"><label title="1. 前台导购">1. 前台导购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="2. 平台交易部">2. 平台交易部</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="3. 团购与闪购">3. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="4. 团购与闪购">4. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="5. 团购与闪购">5. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="6. 团购与闪购6. 团购与闪购6. 团购与闪购">6. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="7. 团购与闪购">7. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="8. 团购与闪购">8. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="9. 团购与闪购">9. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="10. 团购与闪购">10. 团购与闪购</label><em class="num">100%</em></dd>
+                    </dl>
+                </div>
+            </div>
+            <!--三级部门排名 E-->
+
+            <!--Domain排名 S-->
+            <div class="ranking_box departmentRank_con fl">
+                <div class="ranking_hd">
+                    <h3>Domain排名</h3>
+                </div>
+                <div class="rank_box clearfix domain_rank_box">
+                    <dl class="top_rank">
+                        <dt>Top榜</dt>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                        <dd class="clearfix"><label></label><em class="num"></em></dd>
+                    </dl>
+                    <dl class="bottom_rank">
+                        <dt>Bottom榜</dt>
+                        <dd class="clearfix"><label title="1. 前台导购">1. 前台导购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="2. 平台交易部">2. 平台交易部</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="3. 团购与闪购">3. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="4. 团购与闪购">4. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="5. 团购与闪购">5. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="6. 团购与闪购6. 团购与闪购6. 团购与闪购">6. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="7. 团购与闪购">7. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="8. 团购与闪购">8. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="9. 团购与闪购">9. 团购与闪购</label><em class="num">100%</em></dd>
+                        <dd class="clearfix"><label title="10. 团购与闪购">10. 团购与闪购</label><em class="num">100%</em></dd>
+                    </dl>
+                </div>
+            </div>
+            <!--Domain排名 S-->
+        </div>
+        <!--排名 S-->
+
+        <!--悬浮排名 S-->
+        <!--<div class="suspend_box clearfix rank_box_top">-->
+
+        <!--</div>-->
+        <!--悬浮排名 E-->
+
+        <!--收起 S-->
+        <div class="rank_toggle_box">
+                <a class="fr more_btn" href="javascript:void(0)">更多<i class="icon down"></i></a>
+                <a class="fr more_btn hide_btn" href="javascript:void(0)">收起<i class="icon up"></i></a>
+        </div>
+        <!--收起 E-->
+    </div>
+    </div>
+    <!--表格 S-->
+    <div class="table_con">
+        <!--图例 S-->
+        <div class="example_con">
+            <div class="report_name_box">
+                <h3 class="report_name">健康度报告-2016-Q3-WK35(0908-0914)</h3>
+            </div>
+            <div class="table_operation_con">
+                <div class="export_btn_box fr">
+                    <a href="javascript:void(0)" class="export_btn fr"><i class="iconfont"></i>导出</a>
+                </div>
+                <div class="example_box fl">
+                    <ul class="clearfix">
+                        <li><span class="color green"></span><label>优秀</label></li>
+                        <li><span class="color orange"></span><label>合格</label></li>
+                        <li><span class="color red"></span><label>危险</label></li>
+                        <li><span class="color gray"></span><label>不适用</label></li>
+                        <li><span class="color transparent"></span><label>无数据</label></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--图例 E-->
+        <div class="toggle_head_con">
+            <table  cellpadding="0" cellspacing="0" class="toggle_head">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="12%" class="real_td">部门及domain</th>
+                        <th rowspan="2" width="8%" class="real_td">整体健康度</th>
+                        <th colspan="3" width="">效率分析</th>
+                        <th colspan="3" width="">成本分析</th>
+                        <th colspan="5" width="">质量分析</th>
+                        <th colspan="2" width="">过程分析</th>
+                    </tr>
+                    <tr>
+                        <th width="7%" class="short_td real_td">进度绩效指数</th>
+                        <th width="7%" class="short_td real_td">stroy按时上线率</th>
+                        <th width="7%" class="short_td real_td">最大偏差率</th>
+                        <th width="5%" class="short_td real_td">上线占比</th>
+                        <th width="6%" class="short_td real_td">开发投入占率</th>
+                        <th width="6%" class="short_td real_td">资源利用率</th>
+                        <th width="7%" class="short_td real_td">S1、S2事故数</th>
+                        <th width="5%" class="short_td real_td">线上bug</th>
+                        <th width="6%" class="short_td real_td">pool Error</th>
+                        <th width="7%" class="short_td real_td">发布成功率</th>
+                        <th width="7%" class="short_td real_td">dailyBuild通过率</th>
+                        <th width="5%" class="short_td real_td">NC通过率</th>
+                        <th width="5%" class="short_td real_td">过程符合度</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="table_body_con health_table_con">
+            <table cellpadding="0" cellspacing="0" class="toggle_table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="12%" class="real_td">部门及domain</th>
+                        <th rowspan="2" width="8%" class="real_td">整体健康度</th>
+                        <th colspan="3" width="">效率分析</th>
+                        <th colspan="3" width="">成本分析</th>
+                        <th colspan="5" width="">质量分析</th>
+                        <th colspan="2" width="">过程分析</th>
+                    </tr>
+                    <tr>
+                        <th width="7%" class="short_td real_td">进度绩效指数</th>
+                        <th width="7%" class="short_td real_td">stroy按时上线率</th>
+                        <th width="7%" class="short_td real_td">最大偏差率</th>
+                        <th width="5%" class="short_td real_td">上线占比</th>
+                        <th width="6%" class="short_td real_td">开发投入占率</th>
+                        <th width="6%" class="short_td real_td">资源利用率</th>
+                        <th width="7%" class="short_td real_td">S1、S2事故数</th>
+                        <th width="5%" class="short_td real_td">线上bug</th>
+                        <th width="6%" class="short_td real_td">pool Error</th>
+                        <th width="7%" class="short_td real_td">发布成功率</th>
+                        <th width="7%" class="short_td real_td">dailyBuild通过率</th>
+                        <th width="5%" class="short_td real_td">NC通过率</th>
+                        <th width="5%" class="short_td real_td">过程符合度</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--表格 E-->
+
+
+
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.ztree.all-3.5.min.js"></script>
+<script src="js/popupbox.js"></script>
+<script src="js/datepickerCore.js"></script>
+<script src="js/datepickerUi.js"></script>
+<script src="js/quality_platform.js"></script>
+<script>
+
+    //单选下拉
+    var selectData = {
+        rows:[{
+            "id":"1111",
+            "name":"健康度报告-2016-Q3-WK35(0908-0914)"
+        },{
+            "id":"2222",
+            "name":"健康度报告-2016-Q3-WK36(0908-0914)"
+        },{
+            "id":"3333",
+            "name":"健康度报告-2016-Q3-WK37(0908-0914)"
+        },{
+            "id":"4444",
+            "name":"健康度报告-2016-Q3-WK38(0908-0914)"
+        },{
+            "id":"5555",
+            "name":"健康度报告-2016-Q3-WK39(0908-0914)"
+        },{
+            "id":"6666",
+            "name":"健康度报告-2016-Q3-WK40(0908-0914)"
+        }]
+    };
+    var _li = $('.report_name_list li em');
+    _li.each(function(k){
+        _li.eq(k).text(selectData.rows[k].name);
+        _li.eq(k).attr('id',selectData.rows[k].id);
+    });
+    var _id;
+    $('.report_name_list').on('click','li em',function(){
+        _id = $(this).attr('id');//console.log(_id);
+    });
+
+    //排名
+    var dataTop={
+        rows:[{
+            "name":"前台导购",
+            "data":"100%"
+        },{
+            "name":"前台导购",
+            "data":"99%"
+        },{
+            "name":"前台导购",
+            "data":"98%"
+        },{
+            "name":"前台导购",
+            "data":"97%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        },{
+            "name":"前台导购",
+            "data":"96%"
+        }]
+    }
+    var _top = $('.domain_rank_box .top_rank dd');
+    _top.each(function(k){
+        _top.eq(k).find('label').attr('title',dataTop.rows[k].name);
+        _top.eq(k).find('label').text(dataTop.rows[k].name);
+        _top.eq(k).find('.num').text(dataTop.rows[k].data);
+    });
+
+///表格
+    var json = {
+        rows: [{
+            "name": "技术部前台应用部",
+            "domainId": "1",
+            "data": ["99%", "98%", "68%", "58%", "不适用", "78%", "99%", "78%", "78%", "无数据", "99%", "78%", "78%", "99%", "100%"],
+            "dataColor":["2","2","4","4","1","4","4","2","4","4","0","2","4","4","2","1"],
+            "kids": [
+                {
+                    "name": "买家线",
+                    "domainId": "1-1",
+                    "data": ["78%", "80%", "88%", "69%", "56%", "66%", "90%", "67%", "54%", "66%", "84%", "79%", "85%", "95%", "99%"],
+                    "dataColor":["2","3","3","4","4","4","2","4","4","4","3","4","3","4","2","2"],
+                    "kids": [{
+                        "name": "前台导购",
+                        "domainId": "1-1-1",
+                        "data": ["78%", "80%", "88%", "69%", "56%", "66%", "90%", "67%", "54%", "66%", "84%", "79%", "85%", "95%", "79%"],
+                        "dataColor":["3","2","4","4","1","3","4","2","4","4","3","2","4","3","2","1"],
+                    }, {
+                        "name": "团购闪购",
+                        "domainId": "1-1-2",
+                        "data": ["78%", "80%", "88%", "69%", "56%", "66%", "90%", "67%", "54%", "66%", "84%", "79%", "85%", "95%", "79%"],
+                        "dataColor":["4","2","4","3","1","4","4","2","4","4","4","2","4","4","2","3"],
+                    }]
+                }, {
+                    "name": "移动技术部",
+                    "domainId": "1-2",
+                    "data": ["78%", "80%", "88%", "69%", "56%", "66%", "90%", "67%", "54%", "66%", "84%", "79%", "85%", "95%", "84%"],
+                    "dataColor":["3","3","4","3","3","4","4","2","4","4","3","2","4","4","2","3"],
+                    "kids": [{
+                        "name": "小区雷购",
+                        "domainId": "1-2-1",
+                        "data": ["78%", "80%", "88%", "69%", "56%", "66%", "90%", "67%", "54%", "66%", "84%", "79%", "85%", "95%", "79%"],
+                        "dataColor":["4","2","4","3","1","4","4","2","4","4","4","2","4","4","2","3"],
+                    }, {
+                        "name": "剁手价",
+                        "domainId": "1-2-2",
+                        "data": ["78%", "80%", "88%", "69%", "56%", "66%", "90%", "67%", "54%", "66%", "84%", "79%", "85%", "95%", "79%"],
+                        "dataColor":["3","3","4","3","3","4","4","2","4","4","3","2","4","4","2","3"],
+                    }]
+                }
+            ]
+        },{
+            "name": "技术部前台应用部",
+            "domainId": "2",
+            "data": ["99%", "98%", "68%", "58%", "不适用", "78%", "99%", "78%", "78%", "无数据", "99%", "78%", "78%", "99%", "100%"],
+            "dataColor":["2","2","4","4","1","4","4","2","4","4","0","2","4","4","2","1"],
+        }]
+    }
+    var _table = $('.toggle_table tbody');
+    var _tableLen = json.rows.length;
+
+    //一级部门默认加载
+    for(var i=0;i<_tableLen;i++){
+        var _tr='<tr class="father_tr" data-tr="'+json.rows[i].domainId+'"></tr>';
+        var _td='';
+        _table.append(_tr);
+        for(var j=0;j<15;j++){
+            if(j==0){//名称
+//                console.log(json.rows[i].name);
+                 _td += '<td class="tit"><div class="toggle_box"><i class="icon"></i>'+json.rows[i].name+'</div></td>'
+            }else if(j==1){
+                _td += dataRules(json.rows[i].data[j-1],json.rows[i].dataColor[j-1],j-1);
+            }else{
+                _td += '<td>'+json.rows[i].data[j-1]+'</td>';
+            }
+        }
+        _table.find('tr').eq(i).append(_td);
+    }
+
+    //2级
+    $('.health_table_con').off();
+    $('.health_table_con').on('click','.father_tr .tit',function(){
+        var _obj = $(this).parents('.father_tr');
+        var _domainId = _obj.attr('data-tr');
+        if(_obj.next('tr').attr('par-data')==_domainId){//console.log("显示");
+            $(".child_tr[par-data='"+_domainId+"']").toggleClass('hide_tr');
+        }else{//console.log("加载");
+            var _newTr='';
+            for(var k in json.rows){
+                if(json.rows[k].domainId==_domainId&&json.rows[k].kids!=''&&json.rows[k].kids!='undefined'){
+                    var len =json.rows[k].kids.length-1;
+                    for(var i=len;i>-1;i--){
+                        _newTr = '<tr class="child_tr" data-tr="'+json.rows[k].kids[i].domainId+'" par-data="'+json.rows[k].domainId+'"></tr>';
+                        _obj.after(_newTr);
+                        var _td='';
+                        for(var j=0;j<15;j++){
+                            if(j==0){//console.log();//名称
+                                _td += '<td class="tit"><div class="toggle_box"><i class="icon"></i>'+json.rows[k].kids[i].name+'</div></td>'
+                            }else if(j==1){
+                                _td += dataRules(json.rows[k].kids[i].data[j-1],json.rows[k].kids[i].dataColor[j-1],j-1);
+                            }else{
+                                _td += '<td>'+json.rows[k].kids[i].data[j-1]+'</td>';
+                            }
+                        }
+                        $(".child_tr[data-tr='"+json.rows[k].kids[i].domainId+"']").append(_td);
+                    }
+                }
+            }
+        }
+    });
+
+    //3级部分点击加载/切换
+    //$('.toggle_table').off();
+    $('.health_table_con').on('click','.child_tr .tit',function(){
+        var _obj = $(this).parents('.child_tr');
+        var _domainId = _obj.attr('data-tr');//console.log(_domainId);
+//        $(this).toggleClass('cur');
+        if(_obj.next('tr').attr('par-data')==_domainId){//console.log("显示");
+            $(".son_tr[par-data='"+_domainId+"']").toggleClass('hide_tr');
+        }else{//console.log("加载");
+            var _newTr='';
+            for(var k in json.rows){
+                for(var l in json.rows[k].kids){
+                    if(json.rows[k].kids[l].domainId==_domainId&&json.rows[k].kids!=''&&json.rows[k].kids!='undefined'){
+                        var len =json.rows[k].kids[l].kids.length-1;//console.log(json.rows[k].kids[l].kids);
+                        for(var i=len;i>-1;i--){
+                            _newTr = '<tr class="son_tr" data-tr="'+json.rows[k].kids[l].kids[i].domainId+'" par-data="'+json.rows[k].kids[l].domainId+'"></tr>';
+                            _obj.after(_newTr);
+                            var _td='';
+                            for(var j=0;j<15;j++){
+                                if(j==0){//console.log();//名称
+                                    _td += '<td class="tit"><div class="toggle_box"><i class="icon"></i>'+json.rows[k].kids[l].kids[i].name+'</div></td>'
+                                }else{
+                                    _td += dataRules(json.rows[k].kids[l].kids[i].data[j-1],json.rows[k].kids[l].kids[i].dataColor[j-1],j-1);
+                                }
+                            }
+                            $(".son_tr[data-tr='"+json.rows[k].kids[l].kids[i].domainId+"']").append(_td);
+                        }
+                    }
+                }
+            }
+        }
+    })
+
+    //数据判定规则：
+     function dataRules(dataArray,dataColor,j){
+         var _td='';
+        if(dataColor==0){//不适用
+            return _td += '<td class="nouse">'+dataArray+'</td>';
+        }else if(dataColor==1){//无数据
+            return _td += '<td class="nodata">'+dataArray+'</td>';
+        }else if(dataColor==2){//优秀
+            return _td += '<td class="good">'+dataArray+'</td>';
+        }else if(dataColor==3){//合格
+            return _td += '<td class="pass">'+dataArray+'</td>';
+        }else if(dataColor==4){//危险
+            return _td += '<td class="danger">'+dataArray+'</td>';
+        }
+
+     }
+
+
+//    表格位置固定、
+   var _tabHeight =  $('.toggle_table').find('thead').outerHeight();//console.log(_tabHeight);
+    $('.toggle_table').css('top',-_tabHeight);
+
+
+    var _con = $('.tab_hd .tab_win',window.parent.document);
+    var _iframeBox = $('.iframe_con',window.parent.document);
+
+    $('.health_table_con').outerWidth($('.health_table_con').width()+parseInt(40));
+    $('.toggle_table').on('click','tr td',function(){
+        if(!$(this).hasClass('tit')){
+            var _index = $(this).index();
+            var _title = $(this).parents('tr').find('.toggle_box').text()+'-'+$('.toggle_head .real_td').eq(_index).text();
+            var _column = $(this).parents('tr').find('.toggle_box').index();//console.log(_index);console.log(_column);
+            var _tabName = 'index_detail';
+            var _className = 'index_detail'+_index+'-'+_column;
+            var _tab = '<li class="'+_className+' cur"><em>'+_title+'</em><a href="javascript:void(0)" class="icon x_mark"></a></li>';
+            if(_className!='null'&&_className!='undefined'&&_className){
+                _con.find('li').removeClass('cur');
+                if(_con.find('li').hasClass(_className)){//tab已经打开
+                    var _obj = _con.find("li[class='"+_className+"']");
+                    _obj.addClass('cur');
+                    _obj.find('em').text(_title);//刷新tab标签
+                    _iframeBox.find('.'+_className).show().siblings().hide();
+                }else{//tab未打开
+                    _con.append(_tab);
+                    var _iframe = '<iframe src="'+_tabName+'.html"  width="1800" height="900" scrolling="no" frameborder="0"  class="iframe_box '+_className+'" onload="getData()"></iframe>';
+                    _iframeBox.append(_iframe);
+                    parent.window.quality_platform.heightSet();
+                    _iframeBox.find('.'+_className).show().siblings().hide();
+                }
+            }
+        }
+    });
+
+    quality_platform.heightSet();
+</script>
+
+</html>

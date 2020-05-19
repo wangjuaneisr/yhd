@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>促销管理</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/yhdbk.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- bk-sales-manager -->
+<div class="bk-sales-manager sales-manager">
+	<!-- bread -->
+	<div class="bread clearfix">
+		<div class="yhdbk-crumbs-01">
+			<span>您的位置：</span>
+			<a href="#" class="blue-link">营销管理</a>>
+			<span class="cur-page">促销管理</span>
+		</div>
+		<a href="#" class="blue-link enter-help">进入商家帮助中心</a>
+	</div>
+	<!-- /bread -->
+	<!-- due-remind -->
+	<div class="due-remind">
+		<i class="yhdbk-icon yhdbk-icon-01"></i>
+		<span>您有<b>8</b>个促销活动即将到期：</span>
+		<a href="#" class="blue-link">限时折扣3个</a>
+		<a href="#" class="blue-link">满就送4个</a>
+		<a href="#" class="blue-link">单品促销1个</a>
+		<a href="#" class="blue-link">查看全部</a>
+	</div>
+	<!-- /due-remind -->
+	<!-- create-sales -->
+	<ul class="create-sales clearfix">
+		<li>
+			<button type="button" class="yhdbk-button-04">创建组合促销</button>
+		</li>
+		<li>
+			<button type="button" class="yhdbk-button-04">创建满立减促销</button>
+		</li>
+		<li>
+			<button type="button" class="yhdbk-button-04">创建折扣促销</button>
+		</li>
+		<li>
+			<button type="button" class="yhdbk-button-04">创建赠品/换购促销</button>
+		</li>
+	</ul>
+	<!-- /create-sales -->
+	<!-- search-box -->
+	<div class="bk-sales-md search-box clearfix">
+		<div class="set-list-wrap">
+			<div class="set-list clearfix">
+				<label class="form-name">时间范围：</label>
+				<div class="extend">
+					<div class="clearfix">
+						<input type="text" class="same-text first-time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked:pickedFunc})">
+						<em class="time-connect">—</em>
+						<input type="text" class="same-text last-time" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked:pickedLast})">
+					</div>
+					<div class="continue-days clearfix none">
+						<a href="javascript:" class="yhdbk-button-04">持续<em>3</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>5</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>7</em>天</a>
+						<a href="javascript:" class="yhdbk-button-04">持续<em>30</em>天</a>
+					</div>					
+				</div>
+			</div>
+			<div class="set-list clearfix">
+				<label class="form-name">促销状态：</label>
+				<div class="extend">
+					<select>
+						<option>全部</option>
+						<option>未开始</option>
+						<option>进行中</option>
+						<option>已过期</option>
+						<option>已取消</option>
+					</select>
+				</div>
+			</div>	
+			<div class="set-list clearfix">
+				<label class="form-name">促销类型：</label>
+				<div class="extend">
+					<select class="">
+						<option>全部</option>
+						<option>限时折扣</option>
+						<option>满就送</option>
+						<option>单品促销</option>
+						<option>时间阶梯促销</option>
+					</select>	
+				</div>						
+			</div>		
+		</div>
+		<div class="set-list-wrap">
+			<div class="set-list clearfix">
+				<label class="form-name">到期时间：</label>
+				<div class="extend tab-tit">
+					<p class="radio-wrap"><input type="radio" name="end-time" /><label>不限</label></p>
+					<p class="radio-wrap"><input type="radio" name="end-time" /><label>3天内到期</label></p>
+					<p class="radio-wrap"><input type="radio" name="end-time" /><label>5天内到期</label></p>
+					<p class="radio-wrap"><input type="radio" name="end-time" /><label>7天内到期</label></p>
+				</div>
+			</div>	
+			<div class="set-list clearfix">
+				<label class="form-name">查询方式：</label>
+				<div class="extend">
+					<ul class="tab-tit clearfix search-way-tit">
+						<li>
+							<input type="radio" name="search-way" /><label>按促销名称查询</label>
+						</li>
+						<li>
+							<input type="radio" name="search-way" /><label>按商品名称/商品编码查询</label>
+						</li>
+					</ul>
+					<div class="tab-con-box mt none">
+						<div class="tab-con">
+							<p class="search-txt"><label>促销名称：</label><input type="text" class="sales-name" /></p>
+						</div>
+						<div class="tab-con">
+							<p class="search-txt clearfix"><label>商品名称/商品编码：</label><input type="text" class="sales-name" /></p>
+						</div>
+					</div>
+				</div>
+				<p class="error-tip">请填写促销商品</p>
+			</div>		
+		</div>
+		<div class="show-way">
+			<div class="set-list clearfix">
+					<label class="form-name">展示渠道：</label>
+					<div class="extend">
+						<ul class="tab-tit clearfix">
+							<li>
+								<input type="radio" name="search-way" /><label>B2C促销</label>
+							</li>
+							<li>
+								<input type="radio" name="search-way" /><label>O2O</label>
+							</li>
+						</ul>
+						<div class="tab-con-box mt none">
+							<div class="tab-con clearfix">
+								<p class="search-txt">
+									<label>区域商家：</label>
+									<div class="extend">
+										<select class="">
+											<option>北京</option>
+											<option>上海</option>
+											<option>东京</option>
+											<option>广州</option>
+											<option>深圳</option>
+										</select>	
+									</div>
+								</p>
+							</div>
+							<div class="tab-con clearfix">
+								<p class="search-txt">
+									<label>区域商家：</label>
+									<div class="extend">
+										<select class="">
+											<option>北京</option>
+											<option>上海</option>
+											<option>东京</option>
+											<option>广州</option>
+											<option>深圳</option>
+										</select>	
+									</div>
+								</p>
+								<em class="time-connect">——</em>
+								<p class="search-txt clearfix">
+									<label>门店：</label>
+									<div class="extend">
+										<select class="">
+											<option>北京1店</option>
+											<option>北京2店</option>
+											<option>北京3店</option>
+											<option>北京4店</option>
+											<option>北京5店</option>
+										</select>	
+									</div>
+								</p>
+							</div>
+						</div>
+					</div>
+					<p class="error-tip">请填写促销商品</p>
+				</div>	
+			</div>
+		<div class="btn-box">
+			<a href="#" class="yhdbk-button-01">查询</a>
+			<a href="#" class="yhdbk-button-03">清空</a>
+		</div>
+	</div>
+	<!-- /search-box -->
+	<!-- box-table -->
+	<div class="box-table mt">
+		<div class="clearfix mt">
+	    		<div class="fl mt">
+	    			<input type="checkbox" id="check_all" class="fl table-choose-all">
+	    			<label class="fl plr8 " for="check_all">全选</label>
+	    			<div class="box-click fl">
+	    				<a href="javascript:" class="blue-link btn-whether-sure" >批量取消</a>
+	    				<i class="icon-hover-normal icon-hover-up"></i>
+	    				<div class="btn-whether-cancel">
+	    					<button class="yhdbk-button-01 pop-close">是</button>
+	    					<button class="yhdbk-button-03 ml pop-close">否</button>
+	    				</div>
+	    			</div>
+	    			<div class="box-click fl">
+	    				<a href="javascript:" class="blue-link btn-whether-sure" >批量删除</a>
+	    				<i class="icon-hover-normal icon-hover-up"></i>
+	    				<div class="btn-whether-cancel">
+	    					<button class="yhdbk-button-01 pop-close">确定</button>
+	    					<button class="yhdbk-button-03 ml pop-close">取消</button>
+	    				</div>
+	    			</div>
+	    			<a href="#" class="blue-link sales-recycle-bin-btn fl">促销回收站</a>
+	    		</div>
+	    		<p class="tips">复制功能可对已建促销进行延期和编辑</p>
+	    	</div>
+	    	<table cellspacing="0" cellpadding="0" class="tab-header-body mt correlation-table" width="100%">
+	    		<thead>
+	    			<tr>
+	    				<th width="283" class="clearfix">
+	    					<div class="tab-col1-name">促销名称</div>
+	    				</th>
+	    				<th width="150">区域商家/门店</th>
+	    				<th width="125">促销类型</th>
+	    				<th width="270">促销时间</th>
+	    				<th width="80">促销状态</th>
+	    				<th width="160">操作</th>
+	    			</tr>
+	    		</thead>
+	    		<tbody>
+	    			<tr>
+	    				<td width="283">
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td width="125">满就送</td>
+	    				<td width="270">
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td width="80">进行中</td>
+	    				<td width="160">
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td width="283">
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td width="125">满就送</td>
+	    				<td width="270">
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td width="80">进行中</td>
+	    				<td width="160">
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+				<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    			<tr>
+	    				<td>
+	    					<input type="checkbox" class="tab-check-son tab-check">
+	    					<div class="tab-col1-name">
+	    						<a href="javasctipt:" class="blue_link">心意好礼，快来抢购</a>
+	    					</div>
+	    				</td>
+	    				<td class="hover-shop clearfix">
+    						<span class="area_shop"><em class="area">上海</em><em class="time-connect">-</em><em class="shop-name">1店</em>、</span>
+    						<span class="area_shop"><em class="area">北京</em><em class="time-connect">-</em><em class="shop-name">2店</em>、</span>
+    						<span class="area_shop"><em class="area">武汉</em><em class="time-connect">-</em><em class="shop-name">3店</em>、</span>
+    					    <span class="area_shop">等<a href="javascript:" class="blue_link">3家</a></span>
+    					    <div class="hover-pop">
+    					    	<p class="">上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店、上海1店、北京2店、武汉3店</p>
+    					    	<div class="gray"></div>
+    					    	<div class="white"></div>
+    					    </div>
+	    				</td>
+	    				<td>满就送</td>
+	    				<td>
+	    					<p>
+	    						<span>2015.09.11 00:00:00</span>
+	    						<em class="plr8">至</em>
+	    						<span>2015.09.11 00:00:00</span>
+	    					</p>
+	    					<p>促销持续：<span>19</span>天<span>19</span>小时<span>19</span>分<span>19</span>秒</p>
+	    				</td>
+	    				<td>进行中</td>
+	    				<td>
+	    					<a href="javascript:" class="blue_link">查看</a>
+	    					<a href="javascript:" class="blue_link ml" >编辑</a>
+	    					<a href="javascript:" class="blue_link ml" >复制</a>
+	    					<div class="box-click">
+	    						<a href="javascript:" class="blue_link btn-whether-sure" >取消</a>
+	    						<i class="icon-hover-normal icon-hover-up"></i>
+	    						<div class="btn-whether-cancel">
+	    							<button class="yhdbk-button-01 pop-close">是</button>
+	    							<button class="yhdbk-button-03 ml pop-close">否</button>
+	    						</div>
+	    					</div>
+	    				</td>
+	    			</tr>
+	    		</tbody>
+	    	</table>
+	    	<div class="clearfix mt">
+	    		<div class="yhdbk-page fr clearfix">
+	    			<span class="page-num">每页显示
+	    				<select name="" id="">
+	    					<option value="">30</option>
+	    				</select>
+	    			</span>
+	    			<a href="javascript:void(0)" class="page-start">首页</a>
+	    			<a href="javascript:void(0)" class="page-prev"><s></s>上一页</a>
+	    			<a href="javascript:void(0)" class="page-cur">1</a>
+	    			<a href="javascript:void(0)">2</a>
+	    			<a href="javascript:void(0)">3</a>
+	    			<a href="javascript:void(0)">4</a>
+	    			<a href="javascript:void(0)">5</a>
+	    			<a href="javascript:void(0)" class="page-next">下一页<s></s></a>
+	    			<a href="javascript:void(0)" class="page-end">末页</a>
+	    		</div>
+	    	</div>
+	</div>
+	<!-- /box-table -->
+</div>
+<!-- /bk-sales-manager -->
+</body>
+<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+$(function () {
+	//表格全选
+	$('.table-choose-all').change(function(){
+		if ($(this).is(":checked")) {
+			$(this).parents().next('.correlation-table').find('input.tab-check-son').attr('checked',true);
+		}else{
+			$(this).parents().next('.correlation-table').find('input.tab-check-son').removeAttr('checked');
+		}
+	})
+});
+
+//日历
+var date;
+function pickedFunc(){
+	$(this).parent().next('.continue-days').show();
+	var s = $(".first-time").val();
+	var arr =  s.split(/-|-|\s|:/);
+	date = (new Date(arr[0],arr[1],arr[2],arr[3],arr[4])).getTime();
+	return date;
+}
+function pickedLast() {
+	$('.continue-days').hide();
+}
+$(".continue-days a").click(function(){
+	var txt = parseInt($(this).find("em").text());
+	var addTime = txt*24*60*60*1000;
+	if($(".first-time").val()==''){
+		alert("请选择开始时间");
+		return false;
+	}
+	var lastTime =date+addTime;
+	var format = function(time, format){
+		var t = new Date(time);
+		var tf = function(i){return (i < 10 ? '0' : '') + i};
+		return format.replace(/yyyy|MM|dd|HH|mm|ss/g, function(a){
+			switch(a){
+				case 'yyyy':
+				return tf(t.getFullYear());
+				break;
+				case 'MM':
+				return tf(t.getMonth() + 1);
+				break;
+				case 'mm':
+				return tf(t.getMinutes());
+				break;
+				case 'dd':
+				return tf(t.getDate());
+				break;
+				case 'HH':
+				return tf(t.getHours());
+				break;
+				case 'ss':
+				return tf(t.getSeconds());
+				break;
+			}
+		})
+	}
+	$(".last-time").val(format(lastTime, 'yyyy-MM-dd HH:mm:ss'));
+	$(this).parent('.continue-days').hide();
+});
+</script>
+</html>

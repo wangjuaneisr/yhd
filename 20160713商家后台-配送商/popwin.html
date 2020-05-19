@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹窗</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/popwin.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button>导入配送商</button>
+<!-- 导入配送商 begin -->
+<div class="import_delivery_popwin none">
+	<div class="form_item clearfix">
+		<label for="" class="form_name">选择文件：</label>
+		<div class="form_main">
+			<div class="upload clearfix">
+				<input type="file" class="real_ipt" />
+				<input type="text" class="show_ipt" />				
+				<a href="javascript:;" class="orange_btn">上传</a>
+				<a href="javascript:;" class="orange_btn clear">清除</a>
+			</div>
+			<a href="javascript:;" class="blue_link download_demo">下载excel示例(xls格式)</a>
+		</div>
+	</div>
+</div>
+<!-- /导入配送商 end -->
+<!-- 导入成功 begin -->
+<div class="yhdbk_popwin import_success_popwin none">
+	<p class="success_tip"><i class="success_icon"></i>成功导入10000条记录！</p>
+	<div class="yhdbk_popwin_shadow"></div>	
+</div>
+<!-- 导入成功 /end -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/yhd_popwin.js"></script>
+<script src="js/script.js"></script>
+<script>
+	var import_pop = $("body").spmodal({
+			width: '450',
+      title: "导入配送商",
+      mode: "confirm",
+      content: $('.import_delivery_popwin')
+	});
+	//弹窗打开方式
+	$("button").bind('click', function(event) {
+    	import_pop.show();
+    	popwin_script.initFun();
+	});
+
+	var success_pop = $('body').spmodal({
+		width: "300",
+		delayTime: 3000, //3秒后自动消失
+  	template: $(".import_success_popwin")
+	});
+	//弹窗打开方式
+	// success_pop.show(); 
+</script>
+</body>
+</html>

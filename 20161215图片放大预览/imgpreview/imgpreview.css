@@ -1,0 +1,122 @@
+@charset "utf-8";
+/*
+ *Description :  轮播放大图;
+ *Author : Wang Juan5;
+ *Date : 2016/12/13;
+**/
+.ui-dialog {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.0980392);
+    border-image: initial;
+    border-radius: 5px;
+    z-index: 9999;
+}
+.ui-dialog-title {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-family: "Microsoft YaHei";
+    padding: 0px 10px;
+    background: rgb(243, 243, 243);
+}
+.ui-dialog-content {
+    padding: 10px;
+    /*overflow: auto;*/
+    background: rgb(255, 255, 255);
+}
+.ui-mask{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0.15;
+    z-index: 9998;
+    background-color: rgb(0, 0, 0);
+}
+.ui-preview-box {
+    padding: 10px;
+}
+.ui-preview-next, .ui-preview-prev {
+    float: left;
+    font-family: simsun;
+    font-weight: 700;
+    width: 40px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 40px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    margin-top: 120px;
+}
+.ui-preview-next:hover, .ui-preview-prev:hover {
+    background: #ddd;
+    text-decoration: none;
+}
+.ui-preview-next:active,.ui-preview-prev:active {
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.1)inset
+}
+.ui-preview-big {
+    position: relative;
+    text-align: center;
+    width: 680px;
+    border: 1px solid #eee;
+    background: url(//misc.360buyimg.com/jdf/1.0.0/ui/imgpreview/1.0.0/loading.gif) no-repeat center;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    margin: 0 20px;
+}
+.ui-preview-big img {
+    cursor: url(//misc.360buyimg.com/jdf/1.0.0/ui/imgpreview/1.0.0/zoom_in.bmp),pointer;
+    max-width: 400px;
+    max-height: 400px;
+}
+.ui-preview-zoom-out img{
+    cursor: url(//misc.360buyimg.com/jdf/1.0.0/ui/imgpreview/1.0.0/zoom_out.bmp),pointer;
+}
+.ui-preview-num {
+    overflow: hidden;
+    width: 100%;
+    zoom: 1;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.ui-dialog-close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    z-index: 100000;
+    top: 10px;
+    right: 10px;
+    width: 13px;
+    height: 13px;
+    font-size: 0px;
+    overflow: hidden;
+    background: url(//misc.360buyimg.com/jdf/1.0.0/ui/dialog/1.0.0/dialog.png) no-repeat;
+}
+/*新增控制样式*/
+.ui-preview-big img.zoomImg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    width: 900px;
+    height: 900px;
+    border: none;
+    max-width: none;
+    max-height: none;
+}
+.ui-preview-zoom-out img.zoomImg{
+    opacity: 1;
+}

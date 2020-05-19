@@ -1,0 +1,117 @@
+/*
+ *@Description:
+ *@Author:wangjuan4 2016-06-13
+ *@Update: wangjuan4 2016-06-14
+ */
+.bk_gd{width: 100%;}
+.bk_gd_con{position: relative;width:1200px;margin:0 auto;background-color: #fff;}
+
+/* 时光轴-S */
+.step_bar{position: absolute;top: 30px;left: 28px;}
+.step_bar .bg_line{position: absolute;left: 14px;top: 0;width: 1px;height: 230px;background-color: #ededed;}
+.step_bar ul li{min-width: 150px;height: 30px;line-height: 30px;padding-bottom: 20px;}
+.step_bar ul li .step_txt{display: block;color: #999;font-size: 16px;font-family: 'microsoft yahei';}
+.step_bar ul li .step_pic{position: relative;color: #ccc;font-style: normal;font-size: 16px;text-align: center;line-height: 29px;font-family: 'Arial Bold';font-weight: bold;}
+.step_bar ul li .step_pic{display: block;float: left;width: 29px;height: 29px;margin-right: 16px;background: url("../images/step.png");z-index: 2;}
+.step_bar ul li .on{position: relative; background:url("../images/step_on.png");z-index: 3;color: transparent;}
+.step_bar ul li .cur{position: relative; background: url("../images/step_cur.png");z-index: 3;color: #fff;}
+/* 时光轴-E */
+
+/* step-S */
+.gd_sp{_display:inline;float:right;width:990px;padding-left: 210px;background-color: #fff;}
+.bk_sp .conner,.bk_sp .sp_icon,.bk_sp .gd_stepbtn,.bk_sp .sp_pic,.bk_sp .sp_middle,.gd_succed sup{background:url(../images/bk_inshop_guide_sprite.png) no-repeat;}/*sprite 图*/
+.bk_sp .ap_install,.bk_sp .ap_buy{background:url(../images/bk_inshop_guide_btnsprite.png) repeat-x;}/*sprite图*/
+.bk_sp{width:940px;margin:30px 0 50px;}
+.bk_sp .bk_sp_con{height:431px;border:1px solid #E0DBDB;box-shadow:2px 2px 5px #DEE2E5;background:#f7f7f7;color:#666;}
+.bk_sp .bk_sp_con .tit{padding:10px 0;font:normal 24px/48px microsoft yahei;text-align:center;}
+.bk_sp .sp_icon1{position:absolute;top:30px;left:-22px;width:24px;height:23px;background-position:0 -20px;}
+.bk_sp .sp_icon2{position:absolute;top:-18px;right:-14px;width:80px;height:81px;background-position:-322px -410px;}
+.bk_sp .sp_main{text-align:center;}
+.bk_sp .sp_pic{display:inline-block;width:298px;height:190px;}
+.bk_sp .ap_install,.bk_sp .sp_course,.bk_sp .ap_buy{display:inline-block;width:144px;height:40px;margin-left:10px;font-size:18px;font-family:microsoft yahei;line-height:40px;}
+.bk_sp .ap_install{position: relative;background-position:0 -40px;color:#fff;}
+.bk_sp .sp_course{border:1px solid #cccfd2;background:#fff;color:#666;}
+.bk_sp .ap_buy{background-position:0 0;color:#fff;}
+.bk_sp .ap_buy:hover{background-position:0 -80px;}
+.bk_sp .sp_middle{display:inline-block;width:919px;height:5px;margin-top:5px;background-position:-80px 0;}
+.bk_sp .sp_nt{padding:15px 32px 0;text-align:left;}
+.bk_sp .gd_stepbtn{position:absolute;bottom:16px;left:50%;z-index:1;width:133px;height:64px;background-position:-266px -150px;font-size:18px;font-family:microsoft yahei;line-height:48px;text-align:center;}
+.bk_sp .gd_stepbtn .step_btn{display:block;height:64px;color:#fff;cursor:default;}
+.bk_sp .view_link{font-weight:bold;text-decoration:underline;}
+.bk_sp_fir .sp_main{margin:0 32px;text-align:left;}/*第一步start*/
+.bk_sp_fir .sp_main ol{height:245px;overflow-y:auto;}
+.bk_sp_fir .sp_main li{padding-bottom:5px;line-height:22px;}
+.bk_gd_ch{position: relative;margin-top:20px;}
+.bk_gd_ch .gd_ch{float:left;margin-right:5px;*margin-top:-3px;vertical-align:middle;}/*第一步end*/
+.bk_sp_sec .sp_pic{background-position:-702px -401px;}
+.bk_sp_thi .sp_pic{background-position:-702px -590px;}
+.bk_sp_fou .sp_pic{background-position:-701px -21px;}
+.bk_sp_fif .sp_pic{background-position:-701px -211px;}
+.bk_sp_six .gd_img{width:435px;height:261px;}
+.bk_sp_six .sp_btn{margin-top:20px;}
+
+/*提示框*/
+.bk_sp .content-tips{position: absolute;top: -36px;left: 10px;height: 24px;padding: 0 10px;line-height: 24px;border: 1px #ddd solid;background-color: #fcfcfc;color: #b5b5b5;font-size: 12px;}
+.bk_sp .content-tips .angle{position: absolute;bottom: 0px;left: 50%;margin-left: -5px;width: 0;height: 0;border-style: solid;border-width: 8px 8px 0 8px; }
+.bk_sp .content-tips .angle-before{bottom: -9px;border-color: #ddd transparent transparent transparent;}
+.bk_sp .content-tips .angle-after{bottom: -8px;border-color: #fcfcfc transparent transparent transparent; }
+
+/*当前步骤-S*/
+.cur_sp{width:941px;}
+.cur_sp .bk_sp_con{height:429px;border:2px solid #ed7225;background:#ffffec;}
+.cur_sp .bk_sp_con .tit{color:#ed7225;}
+.cur_sp .conner1{background-position:-15px 0;}
+.cur_sp .conner2{background-position:-20px 0;}
+.cur_sp .conner3{background-position:-15px -5px;}
+.cur_sp .conner4{background-position:-20px -5px;}
+.cur_sp .sp_icon1{background-position:-24px -20px;}
+.cur_sp .bk_sp_sec .sp_pic{background-position:-404px -401px;}
+.cur_sp .bk_sp_thi .sp_pic{background-position:-404px -591px;}
+.cur_sp .bk_sp_fou .sp_pic{background-position:-403px -21px;}
+.cur_sp .bk_sp_fif .sp_pic{background-position:-403px -211px;}
+.cur_sp .ap_install{background-position:0 0;}
+.cur_sp .ap_install:hover{background-position:0 -80px;}
+.cur_sp .go_sp{background-position:-266px -230px;}
+.cur_sp .go_sp .step_btn{cursor:pointer;}
+.cur_sp .go_sp:hover{background-position:-266px -310px;}
+.gd_succed{height:42px;}
+.gd_succed sup{display:inline-block;position:relative;top:9px;width:27px;height:20px;margin-right:10px;background-position:-121px -20px;}
+.gd_succed span{font-weight:bold;font-size:14px;}
+
+/*rightFixed-S*/
+.gd_rFixed{position:fixed;_position:absolute;top:50%;right:20px;margin-top:-55px;}
+.gd_rFixed a{display:block;width:110px;height:207px;background:url(../images/bk_inshop_guide_sprite.png) no-repeat -293px -525px;font-size:0;}
+
+/*二维码*/
+.yhd_code{display: none;position: relative;width: 990px;height: 250px;padding-left: 210px;background-color: #fff;text-align: center;}
+.yhd_code .yhd_code_pic{display: block;position: absolute;left: 50%;top: 10px;margin-left: -20px;width: 174px;height: 174px;}
+.yhd_code .detail{position: absolute;bottom: 0;left: 50%;width: 500px;height: 30px;margin-left: -180px;color: #333;font-size: 20px;line-height: 30px;text-align: center;}
+
+/*激活失败提示*/
+.sp_fif .activation_Btn{position: relative;}
+.sp_fif .activation-tips{position: absolute;top: -40px;left: 10px;display: block;min-width: 130px;height: 24px;padding: 0 10px;line-height: 24px;border: 1px #ddd solid;background-color: #fcfcfc;color: #b5b5b5;font-size: 12px;}
+.sp_fif .activation-tips .angle{position: absolute;bottom: 0px;left:20px;width: 0;height: 0;border-style: solid;border-width: 8px 8px 0 8px; }
+.sp_fif .activation-tips .angle-before{bottom: -9px;border-color: #ddd transparent transparent transparent;}
+.sp_fif .activation-tips .angle-after{bottom: -8px;border-color: #fcfcfc transparent transparent transparent; }
+
+
+/*--- @遮罩层 ----*/
+.popup-iframe { position: absolute; left: 0; top: 0; z-index: 9970; width: 100%; background-color: #000; filter: alpha(opacity=70); opacity: 0.3; }
+.popup-mask { position: absolute; left: 0; top: 0; z-index: 998; width: 100%; height: 100%; background-color: #000; filter: alpha(opacity=70); opacity: 0.6; }
+
+/*--- @弹窗模块部分 ----*/
+.Ag-common-dialog { display: none; position: absolute; z-index: 999; width: 300px; left: 50%; border: 4px solid #ccc; border-color: rgba(0, 0, 0, .2);/*_border-color:#ccc;*/ }
+.Acd-rel-dialog { position: relative; background: #fff; }
+.Acd-rel-head { margin: 0 10px; height: 42px; line-height: 42px; background: url(../images/spwin_title.png) repeat-x 0 bottom; font-family: "Microsoft YaHei"; font-size: 14px; color: #333; }
+.Acd-rel-head h3 { padding: 0 10px; line-height: 42px; font-size: 14px; }
+.Acd-rel-body { padding: 20px; background-color: #fff; }
+.dialog-main-close { display: block; position: absolute; width: 11px; height: 11px; right: 10px; top: 10px; background: url(../images/close_icon.png) no-repeat; }
+.Ag-common-dialog .search-box { padding: 10px 0; background-color: #f5f5f5; }
+.Ag-common-dialog .search-box .yhdbk-button-01 { width: 72px; height: 26px; margin: 10px auto 5px; padding: 0; line-height: 26px; }
+.Ag-common-dialog .search-box .yhdbk-button-01:hover { color: #fff; }
+.Ag-common-dialog .search-box .yhdbk-button-03 { width: 72px; height: 26px; margin: 10px auto 5px; padding: 0; line-height: 26px; }
+.Ag-common-dialog .search-box .all-goods { float: left; width: 200px; height: 20px; background-color: #fff; border: solid 1px #ccc; }
+.Ag-common-dialog .success_pic{display: block;float: left; width: 54px;height: 54px;}
+.Ag-common-dialog .success_tips{float: left;width: 200px;color: #666;font-family: 'microsoft YaHei';}
+.Ag-common-dialog .success_tips h3{height: 30px;line-height: 30px;font-size: 14px;}
+.Ag-common-dialog .success_tips p{height: 24px;line-height: 24px;}
